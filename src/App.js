@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import PadInput from "./components/PadInput";
+import DesignContainer from "./components/DesignContainer";
 
 function App() {
   return (
     <div>
-      <PadInput />
+      <DesignContainer />
     </div>
   );
 }
