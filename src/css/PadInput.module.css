@@ -1,0 +1,21 @@
+.PadInput {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: thick solid #9a9999;
+  background-color: #999bf8;
+  width: 230px;
+  padding: 20px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #898ac1;
+  background-color: #c2c3fb;
+  border: #8c8dca;
+  width: 100px;
+  height: 60px;
+  margin-bottom: 30px;
+}
