@@ -29,17 +29,17 @@
 }
 
 .wpad4 {
-    padding: 0;
-    margin: 0;
+   
     display:inline-block;
     width: 250px;
     height: 200px;
     background-color: blue;
-     border-radius: 25px;
-      top: 550px;
-    left: 300;
+    border-radius: 25px;
     position: absolute;
-    right: 0;
+    left: 250px;
+    right: 55px;
+    top: 550px;
+    
 }
 
 
