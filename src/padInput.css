@@ -5,9 +5,10 @@
 .MainContainer {
     background-color: rgb(191, 80, 255);
     padding: 15px 8px;
-    width: 500px;
-    margin: 0 auto;
+    width: 30%;
+    float: left;
     border-radius: 10px;
+    margin-top: 15%;
 }
 
 .MainContainer div {

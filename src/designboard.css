@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.boardContainer {
+    width:65%;
+    float: right;
+}
+
+.boardContainer div{
+    background-color: burlywood;
+    width: 50%;
+    height: 300px;
+    float: left;
+    border-radius: 25px;
+    border: solid black 1px;
+}
+
+.masterContainer {
+    width: 70%;
+    margin: 10px auto;
+}
+
