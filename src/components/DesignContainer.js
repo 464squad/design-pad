@@ -1,5 +1,6 @@
 import React from "react";
 import PadInput from "./PadInput";
+import DesignPad from "./DesignPad";
 
 class DesignContainer extends React.Component {
   constructor() {
@@ -15,6 +16,7 @@ class DesignContainer extends React.Component {
     return (
       <div>
         <PadInput />
+        <DesignPad />
         <button onClick= {this.updateEditState} className = {btnClass}>Edit</button>
       </div>
     );

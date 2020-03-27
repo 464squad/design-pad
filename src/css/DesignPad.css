@@ -1,15 +1,48 @@
-box-sizing: border-box;
 
-.wpad {
+
+.wpad, .wpad2 {
     padding: 0;
     margin: 0;
-    display: flex;
-    width: 1000px;
-    height: 500px;
+    display: inline-block;
+    width: 250px;
+    height: 200px;
     justify-content :center ;
     align-items: center;
     background-color: blue;
+    border-radius: 25px;
+      top: 50px;
+    left: 0;
 }
+
+.wpad3 {
+    padding: 0;
+    margin: 0;
+    display: table;
+    top: 50px;
+    left: 0;
+     width: 250px;
+    height: 200px;
+    justify-content :center ;
+    align-items: center;
+    background-color: blue;
+     border-radius: 25px;
+}
+
+.wpad4 {
+    padding: 0;
+    margin: 0;
+    display:inline-block;
+    width: 250px;
+    height: 200px;
+    background-color: blue;
+     border-radius: 25px;
+      top: 550px;
+    left: 300;
+    position: absolute;
+    right: 0;
+}
+
+
 
 
 
