@@ -8,7 +8,7 @@
     height: 200px;
     justify-content :center ;
     align-items: center;
-    background-color: blue;
+    background-color: darkgray;
     border-radius: 25px;
       top: 50px;
     left: 0;
@@ -24,7 +24,7 @@
     height: 200px;
     justify-content :center ;
     align-items: center;
-    background-color: blue;
+     background-color: darkgray;
      border-radius: 25px;
 }
 
@@ -33,7 +33,7 @@
     display:inline-block;
     width: 250px;
     height: 200px;
-    background-color: blue;
+   background-color: darkgray;
     border-radius: 25px;
     position: absolute;
     left: 250px;
@@ -41,6 +41,22 @@
     top: 550px;
     
 }
+
+ .wpad:hover{
+    background-color: darkturquoise;
+}
+.wpad2:hover{
+    background-color: darkturquoise;
+}
+
+.wpad3:hover{
+    background-color: darkturquoise;
+}
+
+.wpad4:hover{
+    background-color: darkturquoise;
+}
+
 
 
 
