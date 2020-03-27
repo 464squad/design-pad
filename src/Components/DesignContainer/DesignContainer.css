@@ -1,0 +1,74 @@
+
+.container {
+    /* for the gray boxes */
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+  }
+
+  
+.rectangle {
+    /* rectangle for the buttons */
+    height: 400px;
+    width: 130px;
+    background-color: #9B9AFC; 
+    font-size: 80px;
+    border: 1px solid black;;
+    margin-right:10px ;
+    
+  }
+
+  
+  .container2{
+      /* for the buttons */
+    display: inline;
+    align-items: center; 
+    
+  }
+
+  .button{
+      height :30px;
+      width: 40px;
+      background:  white;
+     color: black;
+     opacity: 0.5;
+     margin-left :5px 
+     
+  }
+
+ 
+  header{
+      font-size: 50px;
+      font-weight: 500;
+
+  }
+
+  .rectangle2{
+      /* the grey rectangle */
+      height: 200px;
+      width: 300px;
+      background-color: #999998;
+      border-radius: 30px;
+      border: 1px solid black;
+      
+       }
+
+       .editbutton{
+        height :35px;
+        width: 60px;
+        background: black;
+        color: white;
+       
+        margin-left :800px 
+       
+    
+       }
+
+       body{
+        display: flex;
+        align-items: center;
+        margin-left:30px ;
+       }
