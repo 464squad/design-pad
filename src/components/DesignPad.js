@@ -1,35 +1,31 @@
-import React from 'react';
+import React from "react";
 import "./DesignPad.css";
 
+class DesignPad extends React.Component {
+  state = {
+    color: "grey"
+  };
 
-class DesignPad extends React.Component{
-    state = {
-        color: "grey"
-        
-    }
-handleDragOver = (e) =>{
+  handleDragOver = e => {
     e.preventDefault();
-} 
+  };
 
-handleDrop = (e) =>{
+  handleDrop = e => {
     e.preventDefault();
-    const color = e.dataTransfer.getData("color")
-    this.setState({color})
+    const color = e.dataTransfer.getData("color");
+    this.setState({ color });
+  };
+
+  render() {
+    return (
+      <div
+        className="pad"
+        style={{ backgroundColor: this.state.color }}
+        onDragOver={this.handleDragOver}
+        onDrop={this.handleDrop}
+      ></div>
+    );
+  }
 }
 
-
-
-
-    render(){
-        return(
-            <div className = "pad1" style = {{backgroundColor: this.state.color}} 
-            onDragOver = {this.handleDragOver}>
-                
-            </div>
-        );
-    }
-
-    
-}
-
-export default DesignPad
+export default DesignPad;

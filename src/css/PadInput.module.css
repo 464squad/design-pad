@@ -1,0 +1,9 @@
+.PadInput {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: thick solid #9a9999;
+  background-color: #999bf8;
+  width: 230px;
+  padding: 20px;
+}
