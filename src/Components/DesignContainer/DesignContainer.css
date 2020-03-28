@@ -2,18 +2,20 @@
 .container {
     /* for the gray boxes */
     display: flex;
-    
+    flex-wrap: wrap;
     justify-content: center;
     
     align-items: center;
     
   }
 
-  
+  #one{
+    color: 'green'
+  }
 .rectangle {
     /* rectangle for the buttons */
-    height: 400px;
-    width: 130px;
+   /* height: 300px; */
+    /* width: 130px; */
     background-color: #9B9AFC; 
     font-size: 80px;
     border: 1px solid black;;
@@ -24,18 +26,23 @@
   
   .container2{
       /* for the buttons */
-    display: inline;
-    align-items: center; 
-    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 130px; 
+    padding: 5px;
+    justify-content: space-around;
   }
 
   .button{
-      height :30px;
-      width: 40px;
+      height :40px;
+      width: 60px;
       background:  white;
      color: black;
      opacity: 0.5;
-     margin-left :5px 
+     margin-bottom: 10px;
+     
+     
      
   }
 
@@ -59,7 +66,7 @@
        .editbutton{
         height :35px;
         width: 60px;
-        background: black;
+      
         color: white;
        
         margin-left :800px 
