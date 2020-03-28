@@ -4,6 +4,13 @@ import DesignBoard from './DesignBoard';
 import '../designboard.css';
 
 class DesignContainer extends React.Component{
+    constructor(props){
+        super(props)
+
+        this.state = {
+            color: 'orange'
+        }
+    }
     render() {
 
         return(

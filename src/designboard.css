@@ -7,8 +7,35 @@
     float: right;
 }
 
-.boardContainer div{
+.pad1 {
     background-color: burlywood;
+    width: 50%;
+    height: 300px;
+    float: left;
+    border-radius: 25px;
+    border: solid black 1px;
+}
+
+.pad2 {
+    background-color:burlywood;
+    width: 50%;
+    height: 300px;
+    float: left;
+    border-radius: 25px;
+    border: solid black 1px;
+}
+
+.pad3 {
+    background-color:burlywood;
+    width: 50%;
+    height: 300px;
+    float: left;
+    border-radius: 25px;
+    border: solid black 1px;
+}
+
+.pad4 {
+    background-color:burlywood;
     width: 50%;
     height: 300px;
     float: left;
