@@ -5,10 +5,7 @@ import "../css/DesignPad.css";
 class DesignPad extends React.Component {
    
 
-state={
-    count: 0,
- 
-};
+
 
 
 render(){
@@ -25,10 +22,8 @@ render(){
     );
     }
 
-fCo(){
-    const { count } = this.state;
-    return count === 0 ?  "zez" : count;
-}
+
+
     
     
 }
