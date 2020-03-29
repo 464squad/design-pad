@@ -1,3 +1,97 @@
+
+
+ /* for the gray boxes */
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    align-items: center;
+    
+  } */
+
+/*   #one{
+    color: 'green'
+  } */
+
+/* rectangle for the buttons */
+
+/* .rectangle {
+    
+    background-color: #9B9AFC; 
+    font-size: 80px;
+    border: 1px solid black;;
+    margin-right:10px ;   
+  } 
+
+*/
+
+ /* for the buttons */
+
+/*  .container2{
+     
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 130px; 
+    padding: 5px;
+    justify-content: space-around;
+  }
+*/
+
+/*
+  .button{
+      height :40px;
+      width: 60px;
+      background:  white;
+     color: black;
+     opacity: 0.5;
+     margin-bottom: 10px;
+     
+     
+     
+  }
+
+ 
+  header{
+      font-size: 50px;
+      font-weight: 500;
+
+  }
+
+*/
+
+/* the grey rectangle */
+
+/*
+
+  .rectangle2{
+      height: 200px;
+      width: 300px;
+      background-color: #999998;
+      border-radius: 30px;
+      border: 1px solid black;
+      
+       }
+
+       .editbutton{
+        height :35px;
+        width: 60px;
+      
+        color: white;
+       
+        margin-left :800px 
+       
+    
+       }
+
+       body{
+        display: flex;
+        align-items: center;
+        margin-left:30px ;
+       } */
+
 .DesignContainer__header {
   font-size: 50px;
   font-weight: 500px;
