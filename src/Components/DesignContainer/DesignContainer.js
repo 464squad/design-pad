@@ -13,52 +13,58 @@ class DesignContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      editActive: false
+      editActive: false,
+      activePanelColor: '',
+      btnColor: ''
     };
+    this.updatebtnColor = this.updatebtnColor.bind(this);
   }
 
-  updateEditButton = () => {
+  updateEditButton = event => {
+    const editBtn = document.getElementById(event.target.id).style;
     const { editActive } = this.state;
-    editActive === false
-      ? this.setState({ editActive: true })
-      : this.setState({ editActive: false });
+    if (editActive === false) {
+      this.setState({ editActive: true, activePanelColor: 'cyan' });
+      editBtn.backgroundColor = 'red';
+    } else {
+      this.setState({ editActive: false, activePanelColor: '908cff' });
+      editBtn.backgroundColor = 'black';
+    }
   };
 
-  /*
-         /*
-        <div >
-        <header>DESIGN PAD</header>
-        <EditButton/>
-        
-        <body>
-        <Controller/>  
-         <Greyboxes /> 
-           </body>
-
-         
-         </div>
-       
-       */
+  updatebtnColor = btnColor => {
+    this.setState({ btnColor });
+  };
 
   render() {
-    const { editActive } = this.state;
+    const { editActive, btnColor, activePanelColor } = this.state;
+    const { updatebtnColor } = this;
 
     return (
       <div>
         <div className='DesignContainer__header__container'>
           <header className='DesignContainer__header'>Design Pad</header>
         </div>
-
         <div className='DesignContainer__button__container'>
           <button
+            id='edit_btn'
             className='DesignContainer__EditButton'
             onClick={this.updateEditButton}
           >
             Edit
           </button>
         </div>
-        {editActive === false ? '' : <DesignPanel />}
-        <DesignBox />
+        <div className='BoxesAndPanel__container'>
+          {editActive === false ? (
+            ''
+          ) : (
+            <DesignPanel
+              changePanelColor={activePanelColor}
+              updatebtnColor={updatebtnColor}
+            />
+          )}
+          <DesignBox color={btnColor} />
+        </div>
       </div>
     );
   }
