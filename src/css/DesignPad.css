@@ -1,17 +1,16 @@
-
-
-.wpad, .wpad2 {
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    width: 250px;
-    height: 200px;
-    justify-content :center ;
-    align-items: center;
-    background-color: darkgray;
-    border-radius: 25px;
-      top: 50px;
-    left: 0;
+.wpad,
+.wpad2 {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 250px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  border-radius: 25px;
+  top: 50px;
+  left: 0;
 }
 
 .wpad3 {
@@ -43,23 +42,17 @@
     
 }
 
- .wpad:hover{
-    background-color: darkturquoise;
+.wpad:hover {
+  background-color: darkturquoise;
 }
-.wpad2:hover{
-    background-color: darkturquoise;
-}
-
-.wpad3:hover{
-    background-color: darkturquoise;
+.wpad2:hover {
+  background-color: darkturquoise;
 }
 
-.wpad4:hover{
-    background-color: darkturquoise;
+.wpad3:hover {
+  background-color: darkturquoise;
 }
 
-
-
-
-
-
+.wpad4:hover {
+  background-color: darkturquoise;
+}
