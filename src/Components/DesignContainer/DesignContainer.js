@@ -7,6 +7,7 @@ import EditButton from '../EditButton.js'
 import styles from './DesignContainer.css';
 */
 import './DesignContainer.css';
+import DesignBox from '../DesignBox/DesignBox';
 
 class DesignContainer extends Component {
   constructor(props) {
@@ -56,8 +57,8 @@ class DesignContainer extends Component {
             Edit
           </button>
         </div>
-
         {editActive === false ? '' : <DesignPanel />}
+        <DesignBox />
       </div>
     );
   }
