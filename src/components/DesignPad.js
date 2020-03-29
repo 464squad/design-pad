@@ -14,12 +14,12 @@ class DesignPad extends React.Component {
 
   render() {
     return (
-      <div className="pads">
+     
         <div className="wpad" onDrop={this.onDrop}>
           {" "}
         </div>
       
-      </div>
+      
     );
   }
 
