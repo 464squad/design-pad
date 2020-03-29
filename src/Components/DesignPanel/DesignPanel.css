@@ -2,10 +2,10 @@
   /* for the buttons */
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-evenly;
-  width: 160px;
-  margin: 4rem 4rem;
+
+  width: 300px;
+  margin: 15rem 6rem;
   padding: 2rem;
   border: 3px solid rgb(143, 143, 142);
   background-color: rgb(144, 140, 255);
@@ -13,8 +13,8 @@
 
 .DesignPanel__button {
   font-size: 15px;
-  height: 60px;
-  width: 120px;
+  height: 50px;
+  width: 80px;
   opacity: 0.5;
   margin: 0.5rem 2rem 0.5rem 2rem;
   color: rgb(126, 124, 188);
