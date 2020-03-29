@@ -1,6 +1,7 @@
 import React from "react";
-import PadInput from "./PadInput";
-import DesignPad from "./DesignPad";
+import DesignBoard from "./DesignBoard";
+// import PadInput from "./PadInput";
+// import DesignPad from "./DesignPad";
 
 class DesignContainer extends React.Component {
   constructor() {
@@ -14,10 +15,10 @@ class DesignContainer extends React.Component {
     const btnClass = this.state.editing ? "editButtonActive" : "editButton";
     return (
       <div>
-        <PadInput />
         <button onClick={this.updateEditState} className={btnClass}>
           Edit
         </button>
+        <DesignBoard />
       </div>
     );
   }
