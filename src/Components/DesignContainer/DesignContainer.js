@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './DesignContainer.css';
 
 class DesignContainer extends Component {
   constructor(props) {
@@ -8,8 +9,8 @@ class DesignContainer extends Component {
 
   render() {
     return (
-      <div>
-        <header>Design Pad</header>
+      <div className='DesignContainer__container'>
+        <header className='DesignContainer__header'>Design Pad</header>
       </div>
     );
   }
