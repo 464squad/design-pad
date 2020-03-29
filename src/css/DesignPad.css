@@ -1,58 +1,21 @@
-.wpad,
-.wpad2 {
+.wpad{
   padding: 0;
   margin: 0;
   display: inline-block;
-  width: 250px;
-  height: 200px;
+  width: 350px;
+  height: 300px;
   justify-content: center;
   align-items: center;
   background-color: darkgray;
   border-radius: 25px;
-  top: 50px;
-  left: 0;
+  top: 250px;
+  left: 600px;
+    position:absolute;
 }
 
-.wpad3 {
-    padding: 0;
-    margin: 0;
-   display:inline-block;
-    top: 570px;
-    left: 510px;
-     width: 250px;
-    height: 200px;
-    justify-content :center ;
-    align-items: center;
-     background-color: darkgray;
-     border-radius: 25px;
-      position: absolute;
-}
 
-.wpad4 {
-   
-    display:inline-block;
-    width: 250px;
-    height: 200px;
-   background-color: darkgray;
-    border-radius: 25px;
-    position: absolute;
-    left: 760px;
-    right: 55px;
-    top: 570px;
-    
-}
 
 .wpad:hover {
   background-color: darkturquoise;
 }
-.wpad2:hover {
-  background-color: darkturquoise;
-}
 
-.wpad3:hover {
-  background-color: darkturquoise;
-}
-
-.wpad4:hover {
-  background-color: darkturquoise;
-}
