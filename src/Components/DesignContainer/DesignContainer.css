@@ -1,31 +1,36 @@
 
-.container {
-    /* for the gray boxes */
+
+ /* for the gray boxes */
+
+/* .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
     align-items: center;
     
-  }
+  } */
 
-  #one{
+/*   #one{
     color: 'green'
-  }
-.rectangle {
-    /* rectangle for the buttons */
-   /* height: 300px; */
-    /* width: 130px; */
+  } */
+
+/* rectangle for the buttons */
+
+/* .rectangle {
+    
     background-color: #9B9AFC; 
     font-size: 80px;
     border: 1px solid black;;
-    margin-right:10px ;
-    
-  }
+    margin-right:10px ;   
+  } 
 
-  
-  .container2{
-      /* for the buttons */
+*/
+
+ /* for the buttons */
+
+/*  .container2{
+     
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -33,7 +38,9 @@
     padding: 5px;
     justify-content: space-around;
   }
+*/
 
+/*
   .button{
       height :40px;
       width: 60px;
@@ -53,8 +60,13 @@
 
   }
 
+*/
+
+/* the grey rectangle */
+
+/*
+
   .rectangle2{
-      /* the grey rectangle */
       height: 200px;
       width: 300px;
       background-color: #999998;
@@ -78,4 +90,14 @@
         display: flex;
         align-items: center;
         margin-left:30px ;
-       }
+       } */
+
+.DesignContainer__header {
+  font-size: 50px;
+  font-weight: 500px;
+}
+
+.DesignContainer__container {
+  display: flex;
+  justify-content: center;
+}

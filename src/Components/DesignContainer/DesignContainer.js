@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+/*
 import Controller from './Controller.js';
 import Greyboxes from './Greyboxes.js'
 import EditButton from '../EditButton.js'
 import styles from './DesignContainer.css';
+*/
+import './DesignContainer.css';
+
 
 class DesignContainer extends Component {
   constructor(props) {
@@ -17,6 +21,7 @@ class DesignContainer extends Component {
     
   render() {
     return (
+      /*
         <div >
         <header>DESIGN PAD</header>
         <EditButton/>
@@ -29,7 +34,11 @@ class DesignContainer extends Component {
          
          </div>
        
-      
+       */
+
+      <div className='DesignContainer__container'>
+        <header className='DesignContainer__header'>Design Pad</header>
+      </div>
     );
   }
 }
