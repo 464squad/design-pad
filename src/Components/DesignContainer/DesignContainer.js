@@ -36,15 +36,35 @@ class DesignContainer extends Component {
     this.setState({ btnColor });
   };
 
+  resetButton = () => {
+    const boxes = document.querySelectorAll('#mainBox div');
+
+    boxes.forEach(item => {
+      item.style.background = '#999998';
+    });
+  };
+
   render() {
     const { editActive, btnColor, activePanelColor } = this.state;
-    const { updatebtnColor, updateEditButton } = this;
+    const { updatebtnColor, updateEditButton, resetButton } = this;
 
     return (
       <div>
         <div className='DesignContainer__header__container'>
           <header className='DesignContainer__header'>Design Pad</header>
         </div>
+
+        {editActive === true ? (
+          <button
+            className='DesignContainer__reset_button'
+            onClick={resetButton}
+          >
+            Reset
+          </button>
+        ) : (
+          ''
+        )}
+
         <div className='DesignContainer__button__container'>
           <button
             id='edit_btn'
@@ -54,6 +74,7 @@ class DesignContainer extends Component {
             Edit
           </button>
         </div>
+
         <div className='BoxesAndPanel__container'>
           {editActive === false ? (
             ''

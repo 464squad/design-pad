@@ -113,7 +113,7 @@
 
   color: white;
 
-  margin: 1rem 2rem 1rem 2rem;
+  margin: 0.5rem 2rem 0.5rem 2rem;
   background-color: black;
 }
 
@@ -121,4 +121,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.DesignContainer__reset_button {
+  height: 40px;
+  width: 75px;
+  font-size: 15px;
+  color: lightcoral;
+  margin: 1rem 2rem 1rem 2rem;
+  background-color: lightcyan;
 }

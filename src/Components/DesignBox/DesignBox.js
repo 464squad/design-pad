@@ -8,7 +8,7 @@ const handleBox = (event, props) => {
 
 const DesignBox = props => {
   return (
-    <div className='DesignBox__container'>
+    <div id='mainBox' className='DesignBox__container'>
       <div
         id='box1'
         onDragEnter={e => {
