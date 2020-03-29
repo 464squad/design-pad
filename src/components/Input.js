@@ -9,7 +9,7 @@ export default function Input(props) {
   return (
     <div
       className={styles.Input}
-      draggable="true"
+      draggable={props.edit}
       onDragStart={handleOnDragStart}
     >
       {props.color}

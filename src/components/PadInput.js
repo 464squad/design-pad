@@ -6,14 +6,14 @@ export default class PadInput extends React.Component {
   render() {
     return (
       <div className={styles.PadInput}>
-        <Input color="red" />
-        <Input color="green" />
-        <Input color="blue" />
-        <Input color="yellow" />
-        <Input color="orange" />
-        <Input color="purple" />
-        <Input color="pink" />
-        <Input color="gray" />
+        <Input edit={this.props.edit} color="red" />
+        <Input edit={this.props.edit} color="green" />
+        <Input edit={this.props.edit} color="blue" />
+        <Input edit={this.props.edit} color="yellow" />
+        <Input edit={this.props.edit} color="orange" />
+        <Input edit={this.props.edit} color="purple" />
+        <Input edit={this.props.edit} color="pink" />
+        <Input edit={this.props.edit} color="gray" />
       </div>
     );
   }
