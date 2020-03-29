@@ -38,7 +38,7 @@ class DesignContainer extends Component {
 
   render() {
     const { editActive, btnColor, activePanelColor } = this.state;
-    const { updatebtnColor } = this;
+    const { updatebtnColor, updateEditButton } = this;
 
     return (
       <div>
@@ -49,7 +49,7 @@ class DesignContainer extends Component {
           <button
             id='edit_btn'
             className='DesignContainer__EditButton'
-            onClick={this.updateEditButton}
+            onClick={updateEditButton}
           >
             Edit
           </button>
