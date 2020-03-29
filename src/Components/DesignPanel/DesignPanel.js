@@ -27,7 +27,7 @@ const DesignPanel = () => {
       <button id='7' className='DesignPanel__button' draggable='true'>
         7
       </button>
-      <button id='8' className='DesignPanel__button' draggable='true'>
+      <button id='8' className='DesignPanel__button'>
         8
       </button>
     </div>

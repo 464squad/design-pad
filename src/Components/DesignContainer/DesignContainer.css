@@ -1,6 +1,4 @@
-
-
- /* for the gray boxes */
+/* for the gray boxes */
 
 /* .container {
     display: flex;
@@ -27,7 +25,7 @@
 
 */
 
- /* for the buttons */
+/* for the buttons */
 
 /*  .container2{
      
@@ -95,9 +93,26 @@
 .DesignContainer__header {
   font-size: 50px;
   font-weight: 500px;
+  margin: 1rem 0 1rem 0;
 }
 
-.DesignContainer__container {
+.DesignContainer__header__container {
   display: flex;
   justify-content: center;
+}
+
+.DesignContainer__button__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.DesignContainer__EditButton {
+  height: 40px;
+  width: 75px;
+  font-size: 15px;
+
+  color: white;
+
+  margin: 1rem 2rem 1rem 2rem;
+  background-color: black;
 }

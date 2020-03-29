@@ -43,9 +43,20 @@ class DesignContainer extends Component {
     const { editActive } = this.state;
 
     return (
-      <div className='DesignContainer__container'>
-        <header className='DesignContainer__header'>Design Pad</header>
-        <button onClick={this.updateEditButton}>Edit</button>
+      <div>
+        <div className='DesignContainer__header__container'>
+          <header className='DesignContainer__header'>Design Pad</header>
+        </div>
+
+        <div className='DesignContainer__button__container'>
+          <button
+            className='DesignContainer__EditButton'
+            onClick={this.updateEditButton}
+          >
+            Edit
+          </button>
+        </div>
+
         {editActive === false ? '' : <DesignPanel />}
       </div>
     );

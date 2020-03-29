@@ -3,19 +3,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
-  width: 300px;
-  margin: 15rem 6rem;
-  padding: 2rem;
+  height: 325px;
+  width: 150px;
+  margin: 2rem 1rem 1rem 4rem;
+  padding: 1rem;
   border: 3px solid rgb(143, 143, 142);
   background-color: rgb(144, 140, 255);
 }
 
 .DesignPanel__button {
   font-size: 15px;
-  height: 50px;
-  width: 80px;
+  height: 38px;
+  width: 60px;
   opacity: 0.5;
-  margin: 0.5rem 2rem 0.5rem 2rem;
+  margin: 1.2rem 0 0 0;
   color: rgb(126, 124, 188);
 }
