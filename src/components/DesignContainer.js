@@ -1,5 +1,6 @@
 import React from "react";
 import PadInput from "./PadInput";
+import DesignPad from "./DesignPad";
 
 class DesignContainer extends React.Component {
   constructor() {
