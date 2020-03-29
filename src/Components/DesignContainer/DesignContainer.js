@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DesignPanel from '../DesignPanel/DesignPanel';
 /*
 import Controller from './Controller.js';
 import Greyboxes from './Greyboxes.js'
@@ -7,21 +8,23 @@ import styles from './DesignContainer.css';
 */
 import './DesignContainer.css';
 
-
 class DesignContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
-    }
+      editActive: false
+    };
   }
- 
-  
 
-    
-  render() {
-    return (
-      /*
+  updateEditButton = () => {
+    const { editActive } = this.state;
+    editActive === false
+      ? this.setState({ editActive: true })
+      : this.setState({ editActive: false });
+  };
+
+  /*
+         /*
         <div >
         <header>DESIGN PAD</header>
         <EditButton/>
@@ -36,13 +39,28 @@ class DesignContainer extends Component {
        
        */
 
-      <div className='DesignContainer__container'>
-        <header className='DesignContainer__header'>Design Pad</header>
+  render() {
+    const { editActive } = this.state;
+
+    return (
+      <div>
+        <div className='DesignContainer__header__container'>
+          <header className='DesignContainer__header'>Design Pad</header>
+        </div>
+
+        <div className='DesignContainer__button__container'>
+          <button
+            className='DesignContainer__EditButton'
+            onClick={this.updateEditButton}
+          >
+            Edit
+          </button>
+        </div>
+
+        {editActive === false ? '' : <DesignPanel />}
       </div>
     );
   }
 }
-
-
 
 export default DesignContainer;
