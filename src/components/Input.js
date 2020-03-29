@@ -11,6 +11,10 @@ export default function Input(props) {
       className={styles.Input}
       draggable={props.edit}
       onDragStart={handleOnDragStart}
+      style={{
+        backgroundColor: props.edit ? "white" : "#c2c3fb",
+        color: props.edit ? "gray" : "#898ac1"
+      }}
     >
       {props.color}
     </div>

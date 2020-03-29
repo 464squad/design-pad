@@ -1,5 +1,5 @@
 import React from "react";
-import "./DesignPad.css";
+import "../css/DesignPad.css";
 
 class DesignPad extends React.Component {
   state = {
