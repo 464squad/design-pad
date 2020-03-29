@@ -1,5 +1,5 @@
 import React from 'react';
-import './DesignPanel';
+import './DesignPanel.css';
 
 const handleDrag = (e, color) => {};
 
