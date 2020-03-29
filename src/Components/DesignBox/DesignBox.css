@@ -1,0 +1,14 @@
+.DesignBox__container {
+  /* for the gray boxes */
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 54%;
+}
+.DesignBox__boxes {
+  /* the grey rectangle */
+  height: 300px;
+  width: 400px;
+  background-color: #999998;
+  border-radius: 30px;
+  border: 1px solid black;
+}
