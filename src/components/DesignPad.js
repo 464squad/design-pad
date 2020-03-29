@@ -9,23 +9,17 @@ state={
     count: 0,
  
 };
-styles ={
-    fontSize: 100,
-    fontWeight: 'bold'
-};
 
 
 render(){
-   /* return(
-     <div className="wpad">
-
-         </div>  )
-         */
+  
     return( 
-        <div>
-       
-        <span style={this.styles}> {this.fCo()}</span>
-    <button> BTest   </button>
+    
+       <div class="pads">
+        <div class="wpad"> </div>
+         <div class="wpad2"> </div>
+         <div class="wpad3"> </div>
+           <div class="wpad4"> </div>
             </div>
     
     );
