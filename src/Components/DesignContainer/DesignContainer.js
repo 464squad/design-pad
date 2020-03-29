@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DesignPanel from '../DesignPanel/DesignPanel';
 
 class DesignContainer extends Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class DesignContainer extends Component {
     return (
       <div>
         <header>Design Pad</header>
+        <DesignPanel />
       </div>
     );
   }
