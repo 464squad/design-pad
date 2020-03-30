@@ -1,63 +1,28 @@
 import React from "react";
 import "../css/PadInput.css";
+import Pad from "./Pad";
 
-class PadInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.onDrag = this.onDrag.bind(this);
-  }
-
-  onDrag = event => {
-    event.preventDefault();
-    console.log("You are dragging me");
-  };
-
-  onDragOver = event => {
-    event.preventDefault();
-  };
-
-  onDrop = event => {
-    console.log("I have been dropped");
-  };
-
-  render() {
-    return (
-      <div className="main-container">
-        <div className="row">
-          <div draggable onDrag={this.onDrag}>
-            1
-          </div>
-          <div draggable onDrag={this.onDrag}>
-            2
-          </div>
-        </div>
-        <div className="row">
-          <div draggable onDrag={this.onDrag}>
-            3
-          </div>
-          <div draggable onDrag={this.onDrag}>
-            4
-          </div>
-        </div>
-        <div className="row">
-          <div draggable onDrag={this.onDrag}>
-            5
-          </div>
-          <div draggable onDrag={this.onDrag}>
-            6
-          </div>
-        </div>
-        <div className="row">
-          <div draggable onDrag={this.onDrag}>
-            7
-          </div>
-          <div draggable onDrag={this.onDrag}>
-            8
-          </div>
-        </div>
+function PadInput(props) {
+  return (
+    <div className="main-container">
+      <div className="row">
+        <Pad editing={props.editing} color="blue" />
+        <Pad editing={props.editing} color="red" />
       </div>
-    );
-  }
+      <div className="row">
+        <Pad editing={props.editing} color="purple" />
+        <Pad editing={props.editing} color="green" />
+      </div>
+      <div className="row">
+        <Pad editing={props.editing} color="pink" />
+        <Pad editing={props.editing} color="yellow" />
+      </div>
+      <div className="row">
+        <Pad editing={props.editing} color="black" />
+        <Pad editing={props.editing} color="orange" />
+      </div>
+    </div>
+  );
 }
 
 export default PadInput;

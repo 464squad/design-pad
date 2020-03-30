@@ -1,6 +1,5 @@
 import React from "react";
 import DesignPad from "./DesignPad";
-import PadInput from "./PadInput";
 import "../css/DesignBoard.css";
 
 class DesignBoard extends React.Component {
