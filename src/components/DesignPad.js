@@ -2,37 +2,29 @@ import React from "react";
 import "../css/DesignPad.css";
 
 class DesignPad extends React.Component {
-
-   
-
-
-
   state = {
-    count: 0
+    color: "light-grey"
   };
 
+  onDragOver = event => {
+    event.preventDefault();
+  };
+
+  onDrop = event => {
+    event.preventDefault();
+    this.setState({ color: event.dataTransfer.getData("color") });
+    console.log("I have been dropped");
+  };
 
   render() {
     return (
-     
-        <div className="wpad" onDrop={this.onDrop}>
-          {" "}
-        </div>
-      
-      
+      <div
+        className="wpad"
+        onDragOver={this.onDragOver}
+        onDrop={this.onDrop}
+        style={{ backgroundColor: this.state.color }}
+      ></div>
     );
   }
-
-
-
-
-    
-    
-
-  fCo() {
-    const { count } = this.state;
-    return count === 0 ? "zez" : count;
-  }
-
 }
 export default DesignPad;

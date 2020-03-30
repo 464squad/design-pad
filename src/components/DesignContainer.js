@@ -4,23 +4,23 @@ import PadInput from "./PadInput";
 import "../css/DesignContainer.css";
 
 class DesignContainer extends React.Component {
-  constructor() {
-    super();
-    this.state = { editing: false };
-  }
+  state = { editing: false };
 
-  updateEditState = event => {
-    this.setState({ editing: !this.state.editing });
+  updateEditState = () => {
+    this.setState(props => ({
+      editing: !props.editing
+    }));
   };
 
   render() {
     const btnClass = this.state.editing ? "editButtonActive" : "editButton";
+    const editing = this.state.editing;
     return (
       <div>
         <button className={btnClass} onClick={this.updateEditState}>
           Edit
         </button>
-        <PadInput />
+        <PadInput editing={editing} />
         <DesignBoard />
       </div>
     );
