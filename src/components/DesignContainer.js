@@ -17,9 +17,13 @@ class DesignContainer extends React.Component {
     const editing = this.state.editing;
     return (
       <div>
-        <button className={btnClass} onClick={this.updateEditState}>
-          Edit
-        </button>
+        <div>
+          <h1>Design Pad</h1>
+          <button className={btnClass} onClick={this.updateEditState}>
+            Edit
+          </button>
+        </div>
+
         <PadInput editing={editing} />
         <DesignBoard />
       </div>
