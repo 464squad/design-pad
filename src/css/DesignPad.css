@@ -1,0 +1,19 @@
+.wpad {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 510px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  border-radius: 25px;
+  top: -250px;
+  left: 80px;
+    position: relative;
+    
+}
+
+/* .wpad:hover {
+  background-color: darkturquoise;
+} */
