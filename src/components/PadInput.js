@@ -1,7 +1,7 @@
 import React from 'react';
 import '../padInput.css';
 import { DragDropContainer, DropTarget } from 'react-drag-drop-container';
-
+import EditBttn from './EditBttn'
 class PadInput extends React.Component{
     constructor(props){
         super(props)
