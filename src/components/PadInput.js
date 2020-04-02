@@ -6,48 +6,53 @@ class PadInput extends React.Component {
 
      this.state = {
          padButtons: [
-            {id:1, num: "1", cssName: "padButton1"}, 
-            {id:2, num: "2", cssName: "padButton2"}, 
-            {id:3, num: "3", cssName: "padButton3"}, 
-            {id:4, num: "4", cssName: "padButton4"}, 
-            {id:5, num: "5", cssName: "padButton5"}, 
-            {id:6, num: "6", cssName: "padButton6"}, 
-            {id:7, num: "7", cssName: "padButton7"}, 
-            {id:8, num: "8", cssName: "padButton8"}
-        ]
-        
-     }
-    }
-    onDrag = (event, padButton) => {
-        event.preventDefault();
-        this.props.onDrag(this.state.padButton)
-        }
-      
-    
 
-     
+            {id: 1, color: "rgb(250, 4, 4)" },
+            {id: 2, color: "rgb(248, 113, 2)" },
+            {id: 3, color: "rgb(253, 249, 5"}, 
+            {id: 4, color: "rgb(72, 243, 4)"}, 
+            {id: 5, color: "rgb(3, 175, 243)"}, 
+            {id: 6, color: "rgb(67, 2, 247)"}, 
+            {id: 7, color: "rgb(199, 2, 248)"}, 
+            {id: 8, color: "rgb(87, 2, 61)"}
+        ]
+     }
+
+
+     }
+
+     onInputDrag = (event, padButton) => {
+        event.preventDefault();
+        this.props.onDrag(padButton)
+     }
  
-    render() {
+    render(){
         const {padButtons} = this.state;
         return(
-            <div className= "padButton">
+            <div className= 'padInput'>
                 {
-                    padButtons.map (padButton =>
-                        <div 
+                    padButtons.map((padButton)=>{
+                        return(
+                        <div
+                            className= "padButton"
                             key={padButton.id}
-                            draggable
-                            onDrag={ (event) => this.onDrag(event, padButton.cssName)}
+                            draggable={true}
+                            onDrag={(event) => this.onInputDrag(event, padButton)}
                         >
-                            {padButton.num}
+                        {padButton.id}
                         </div>
-                    )
+                        )
+
+                    })
                 }
             </div>
+                    
+
         )
     }
+    
+    
 }
-    
-    
 
+export default PadInput
 
-export default PadInput;
