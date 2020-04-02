@@ -1,14 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
-import DesignPad from './components/DesignPad.js'
-import PadInput from './components/PadInput.js'
+import DesignContainer from './components/DesignContainer'
 
 
 function App() {
   return (
     <div className="App">
-      <PadInput />
-      <DesignPad />
+      <DesignContainer />
     </div>
   );
 }

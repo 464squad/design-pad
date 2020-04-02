@@ -7,35 +7,49 @@ class PadInput extends React.Component {
 
      this.state = {
          padButtons: [
-            {id:1, num: "1"}, 
-            {id:2, num: "2"}, 
-            {id:3, num: "3"}, 
-            {id:4, num: "4"}, 
-            {id:5, num: "5"}, 
-            {id:6, num: "6"}, 
-            {id:7, num: "7"}, 
-            {id:8, num: "8"}
-        ]
+            {id: 1, color: "black" },
+            {id: 3, color: "pink"}, 
+            {id: 4, color: "purple"}, 
+            {id: 5, color: "blue"}, 
+            {id: 6, color: "red"}, 
+            {id: 7, color: "orange"}, 
+            {id: 8, color: "yellow"}
+        ],
+
+         draggedInput: {}
      }
 
 
+     }
+
+     onInputDrag = (event, padButton) => {
+        event.preventDefault();
+        this.props.onDrag(padButton)
      }
  
     render(){
         const {padButtons} = this.state;
         return(
-            <div className= "padButton">
+            <div>
                 {
-                    padButtons.map (padButton =>
+                    padButtons.map((padButton)=>{
+                        return(
+
                         <div
+                            className= "padButton"
                             key={padButton.id}
-                            draggable
+                            draggable={true}
+                            onDrag={(event) => this.onInputDrag(event, padButton)}
                         >
-                            {padButton.num}
+                        {padButton.id}
                         </div>
-                    )
+                        )
+
+                    })
                 }
             </div>
+                    
+
         )
     }
     

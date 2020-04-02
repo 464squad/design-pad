@@ -1,7 +1,5 @@
 import React from 'react'
-// import { ReactComponent } from '*.svg';
 import '../designpad.css';
-import PadInput from './PadInput.js'
 
 
 class DesignPad extends React.Component {
@@ -9,25 +7,26 @@ class DesignPad extends React.Component {
         super(props);
    
         this.state = {
-            color: 'rgb(250, 4, 4)'
+            color: 'gray'
         }
     }
 
  
-    onDropHandler = (event) => {
-        // if (padButton.num === "1") {
-
-        // }
+    onDrop = (event) => {
+        console.log("Dropped something right here")
+        this.setState({
+            color: this.props.currentInput.color
+        })
     }
 
-    dragOver = (event) => {
+    onDragOver = (event) => {
         event.preventDefault();
       }
 
     render(){
         return(
             <div>
-                <div className="testPad" style={{background: this.state.color}} onDragOver={() => this.dragOver()} onDrop={() => this.onDropHandler()}></div>
+                <div className="testPad" style={{background: this.state.color}} onDragOver={this.onDragOver} onDrop={() => this.onDrop()}></div>
             </div>
         )
     }
