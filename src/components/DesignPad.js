@@ -1,5 +1,5 @@
 import React from 'react'
-import '../designpad.css';
+import '../design.css';
 
 
 class DesignPad extends React.Component {
@@ -7,7 +7,7 @@ class DesignPad extends React.Component {
         super(props);
    
         this.state = {
-            color: 'gray'
+            color: 'white'
         }
     }
  
@@ -30,5 +30,6 @@ class DesignPad extends React.Component {
         )
     }
 }
+
 
 export default DesignPad

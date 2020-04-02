@@ -1,5 +1,5 @@
 import React from 'react';
-import '../designpad.css';
+import '../design.css'
 
 class PadInput extends React.Component {
      constructor(props) {
@@ -7,33 +7,36 @@ class PadInput extends React.Component {
 
      this.state = {
          padButtons: [
-            {id: 1, color: "black" },
-            {id: 3, color: "pink"}, 
-            {id: 4, color: "purple"}, 
-            {id: 5, color: "blue"}, 
-            {id: 6, color: "red"}, 
-            {id: 7, color: "orange"}, 
-            {id: 8, color: "yellow"}
-        ],
-
-         draggedInput: {}
+            {id: 1, color: "rgb(250, 4, 4)" },
+            {id: 2, color: "rgb(248, 113, 2)" },
+            {id: 3, color: "rgb(253, 249, 5"}, 
+            {id: 4, color: "rgb(72, 243, 4)"}, 
+            {id: 5, color: "rgb(3, 175, 243)"}, 
+            {id: 6, color: "rgb(67, 2, 247)"}, 
+            {id: 7, color: "rgb(199, 2, 248)"}, 
+            {id: 8, color: "rgb(87, 2, 61)"}
+          ]
+       }
      }
 
-     }
-     
      onInputDrag = (event, padButton) => {
         event.preventDefault();
         this.props.onDrag(padButton)
      }
+
+     dragStartHandler(event,padButton) {
+        console.log(event); // undefined
+        this.props.onDragStart(padButton)
+       }
  
     render(){
         const {padButtons} = this.state;
+
         return(
-            <div>
+            <div className= 'padInput'>
                 {
                     padButtons.map((padButton)=>{
                         return(
-
                         <div
                             className= "padButton"
                             key={padButton.id}
@@ -47,12 +50,9 @@ class PadInput extends React.Component {
                     })
                 }
             </div>
-                    
-
+                
         )
-    }
-    
-    
+    }   
 }
 
 export default PadInput
