@@ -1,102 +1,102 @@
-.testPad {
-    height: 400px;
-    width: 400px;
-    border-radius: 50px;
+.designContainer {
+  padding: 10px; 
 }
-.DesignContainer {
-    padding: 10px; 
-  }
 
-  .edit_button {
-    height: 300px;
-    width: 400px;
-    border-radius: 50px;
+.designContainer div {
+display: flex;
+line-height: 30px;
+flex-direction: row;
+justify-content: center;
+border: 2px #ccc solid;
+padding: 10px;
+
+box-shadow: 0 10px 30px rgba(207, 207, 223, 0.22), 0 10px 35px   rgba(139, 151, 221, 0.22);
+font-family: 'Avenir Next', sans-serif;
+justify-content: space-around;
+
+
 }
-  
-  .DesignContainer div {
-  display: flex;
-  line-height: 30px;
-  flex-direction: row;
-  justify-content: center;
-  border: 2px #ccc solid;
-  padding: 10px;
-  background-color: grey;
-  box-shadow: 0 10px 30px rgba(207, 207, 223, 0.22), 0 10px 35px   rgba(139, 151, 221, 0.22);
-  font-family: 'Avenir Next', sans-serif;
-  justify-content: space-around;
-  
-  }
-  
-  .SiteTitle {
-  width: 450px;
-  height: 50px;
-  justify-content: center;
-  
-  }
-  
-  .EditButton {
-  position: relative;
-  height: 50px;
-  width: 150px;
-  top: -75px;
-  float: right;
-  flex-direction: row; 
-  }
-  
-  .PadInput {
-  position: relative;
-  height: 300px;
-  top: 20px;
-  width: 150px;
-  flex-direction: row; 
-  }
-  
-  .DesignBoard{
-   display: flex;
-   width: 150px;
-   float: left;
-   top: -999px;
-   height: 300px;
-   flex-direction: row;
-   padding: 1px;
-   margin: 700px;
-  }
-  
-  .DesignBoard div {
-  display: flex;
-  line-height: 30px;
-  flex-direction: row;
-  justify-content: center;
-  border: 2px #ccc solid;
-  padding: 10px;
-  background-color: grey;
-  box-shadow: 0 10px 30px rgba(207, 207, 223, 0.22), 0 10px 35px   rgba(139, 151, 221, 0.22);
-  font-family: 'Avenir Next', sans-serif;
-  justify-content: space-around;
-  
-  }
-  
-  .padButton1 {
-    background-color: rgb(250, 4, 4);
-  }
-  .padButton2 {
-    background-color: rgb(248, 113, 2);
-  }
-  .padButton3 {
-    background-color: rgb(253, 249, 5);
-  }
-  .padButton4 {
-    background-color: rgb(72, 243, 4);
-  }
-  .padButton5 {
-    background-color: rgb(3, 175, 243);
-  }
-  .padButton6 {
-    background-color: rgb(67, 2, 247);
-  }
-  .padButton7 {
-    background-color: rgb(199, 2, 248);
-  }
-  .padButton8 {
-    background-color: rgb(87, 2, 61);
-  }
+
+.siteTitle {
+width: 650px;
+height: 50px;
+background-color: white;
+justify-content: center;
+
+}
+
+.editButton {
+position: relative;
+height: 50px;
+width: 150px;
+top: -540px;
+float: right;
+flex-direction: row; 
+margin: 465px;
+}
+
+.padInput {
+position: relative;
+height: 300px;
+top: 20px;
+width: 150px;
+background-color: rgb(211, 212, 191);
+flex-direction: row; 
+border-radius: 25px
+}
+
+.designBoard{
+ position: relative;
+ background-color: rgb(211, 212, 191);
+ display: flex;
+ width: 600px;
+ float: left;
+ top: -1285px;
+ height: 300px;
+ flex-direction: row;
+ padding: 1px;
+ margin: 300px;
+}
+
+.designBoard div {
+display: flex;
+flex-direction: row;
+justify-content: center;
+border: 2px #ccc solid;
+box-shadow: 0 10px 30px rgba(207, 207, 223, 0.22), 0 10px 35px   rgba(139, 151, 221, 0.22);
+font-family: 'Avenir Next', sans-serif;
+justify-content: space-around;
+}
+
+.designPad {
+background-color: white;
+height: 212px;
+width: 212px;
+border-radius: 25px;
+
+}
+
+.padButton1 {
+  background-color: rgb(250, 4, 4);
+}
+.padButton2 {
+  background-color: rgb(248, 113, 2);
+}
+.padButton3 {
+  background-color: rgb(253, 249, 5);
+}
+.padButton4 {
+  background-color: rgb(72, 243, 4);
+}
+.padButton5 {
+  background-color: rgb(3, 175, 243);
+}
+.padButton6 {
+  background-color: rgb(67, 2, 247);
+}
+.padButton7 {
+  background-color: rgb(199, 2, 248);
+}
+.padButton8 {
+  background-color: rgb(87, 2, 61);
+}
