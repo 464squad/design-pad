@@ -8,16 +8,21 @@ class DesignContainer extends React.Component{
         super(props)
 
         this.state = {
-            color: 'orange'
+            //color: 'orange'
+            currentInput: {}
         }
     }
+
+    updateCurrentInput= (squares) =>(
+        this.setState({currentInput: squares})
+    )
     render() {
 
         return(
             <div className = "masterContainer">
                 <h1>Design Pad</h1>
-                    <PadInput />
-                    <DesignBoard />
+                    <PadInput onDrag={this.updateCurrentInput}/>
+                    <DesignBoard currentInput={this.state.currentInput}/>
 			<EditBttn />
             </div>
         );
