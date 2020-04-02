@@ -1,5 +1,5 @@
 import React from 'react';
-import '../designpad.css';
+import '../design.css'
 
 class PadInput extends React.Component {
      constructor(props) {
@@ -15,9 +15,7 @@ class PadInput extends React.Component {
             {id: 6, color: "rgb(67, 2, 247)"}, 
             {id: 7, color: "rgb(199, 2, 248)"}, 
             {id: 8, color: "rgb(87, 2, 61)"}
-        ],
-
-         draggedInput: {}
+        ]
      }
 
 
@@ -31,7 +29,7 @@ class PadInput extends React.Component {
     render(){
         const {padButtons} = this.state;
         return(
-            <div>
+            <div className= 'padInput'>
                 {
                     padButtons.map((padButton)=>{
                         return(
