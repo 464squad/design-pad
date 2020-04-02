@@ -9,7 +9,7 @@ class ShowAlert extends Component {
   }
 
   render() {
-    return <button className= "enablebutton" onClick={this.showAlert}>Edit</button>;
+    return <button className= "editButton" onClick={this.showAlert}>Edit</button>;
   }
 }
 

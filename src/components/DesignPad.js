@@ -25,9 +25,10 @@ class DesignPad extends React.Component {
 
     render(){
         return(
-            <div>
-                <div className="testPad" style={{background: this.state.color}} onDragOver={this.onDragOver} onDrop={() => this.onDrop()}></div>
-            </div>
+                <div className="designPad" style={{background: this.state.color}} onDragOver={this.onDragOver} onDrop={() => this.onDrop()}>
+
+                </div>
+
         )
     }
 }
