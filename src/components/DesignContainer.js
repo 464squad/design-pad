@@ -30,7 +30,7 @@ class DesignContainer extends Component {
 
                 <div className="board"> 
                 <div className = "design-board">
-                <DesignBoard />
+                <DesignBoard  mode={this.state.mode}/>
                 </div>
                 </div>
 
@@ -52,6 +52,9 @@ class DesignContainer extends Component {
                 <div className="board"> 
                 <div className = "design-board">
                 <DesignBoard />
+                </div>
+                <div>
+                    
                 </div>
                 </div>
 
