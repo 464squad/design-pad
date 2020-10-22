@@ -1,0 +1,84 @@
+.board {
+  display: flex;
+  justify-content: center;
+  font-size: bold;
+  align-items: center;
+}
+.design-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.squareColorChanged {
+  background: grey;
+  border: 1px solid #999;
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 250px;
+  height: 250px;
+  margin-right: -5px;
+  margin-top: -2px;
+  padding: 0;
+  text-align: center;
+  width: 250px;
+}
+
+.square {
+  background: grey;
+  border: 1px solid #999;
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+  height: 250px;
+  margin-right: -5px;
+  margin-top: -2px;
+  padding: 0;
+  text-align: center;
+  width: 250px;
+  line-height: 250px;
+}
+.pad-box {
+  background: rgb(166, 238, 178);
+  border: 1px solid rgba(153, 153, 153, 0.363);
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 50px;
+  height: 500px;
+  margin-right: -5px;
+  margin-top: -2px;
+  padding: 0;
+  text-align: center;
+  width: 250px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  /* display: table;*/
+  /* align-items: center;
+  justify-content: center;*/
+}
+.button {
+  float: right;
+  background-color: #252d3bde;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.edit-active {
+  float: right;
+  background-color: #cc4915;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
