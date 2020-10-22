@@ -7,8 +7,7 @@ function App() {
     <div>
     <h1>Design Pad</h1>
     <DesignContainer/>
-
-    </div>
+     </div>
   );
 }
 

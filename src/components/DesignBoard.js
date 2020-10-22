@@ -5,9 +5,9 @@ class DesignPad extends Component{
   
     render(){
         return(
-        <button className="square">
+        <div className="square">
              design pads
-            </button>
+            </div>
         )
     }
 }
