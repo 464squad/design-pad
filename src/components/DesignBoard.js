@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import "./style.css"
 class DesignBoard extends Component {
-   
     
     constructor(props) {
         super(props)
         
        // let padInputColor= null;
         this.state = {
-             squares: Array(4).fill(null),
+            squares: Array(4).fill(null),
             
         }
     }
@@ -19,20 +18,16 @@ class DesignBoard extends Component {
         //console.log("in drop: "+data)
         //console.log(ev.target)
         //ev.target.appendChild(document.getElementById(data));
-       let padInputColor = document.getElementById(data).style.backgroundColor
-       console.log("final padInput--" +padInputColor)
-       ev.target.style.backgroundColor = padInputColor
-     
-    
-   
-    
+        let padInputColor = document.getElementById(data).style.backgroundColor
+        console.log("final padInput--" +padInputColor)
+        ev.target.style.backgroundColor = padInputColor
 }
 
 
-      allowDrop =(ev)=> {
+    allowDrop =(ev)=> {
         ev.preventDefault();
-      }
-   
+    }
+
     renderDesignPad(i)
     {
         const mode = this.props.mode
@@ -46,8 +41,8 @@ class DesignBoard extends Component {
             return (           /*in edit mode*/
                 <div className="square"
                 onDrop= {this.drop}  onDragOver={this.allowDrop}>
-                 design pad
-               </div> 
+                design pad
+                </div> 
             )
     }
     render() {
@@ -60,11 +55,9 @@ class DesignBoard extends Component {
                 </div>
 
                 <div className="board-row">
-                 {this.renderDesignPad(2)}
-                 {this.renderDesignPad(3)}
-               </div>
-              
-                
+                {this.renderDesignPad(2)}
+                {this.renderDesignPad(3)}
+                </div>
             </div>
         )
     }

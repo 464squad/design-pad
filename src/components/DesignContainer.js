@@ -7,13 +7,13 @@ class DesignContainer extends Component {
         super(props)
     
         this.state = {
-             mode: false    /*not in edit mode*/ 
+            mode: false    /*not in edit mode*/ 
         }
     }
     handleEdit=()=>{
-       this.setState(prevState =>({
-           mode: !prevState.mode
-       }))
+    this.setState(prevState =>({
+        mode: !prevState.mode
+        }))
     }
     render() {
         console.log("in design container")
