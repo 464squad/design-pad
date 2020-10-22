@@ -22,7 +22,7 @@ function App() {
       </header>
 =======
     <div style={{ textAlign:"center", justifyContent:"center"}} >
-    <h1>Design Pad</h1>
+    <h1>DESIGN PAD</h1>
     <DesignContainer/>
 
 >>>>>>> 490eae8377d087911d76ab9549d2b0079f2eae9f
