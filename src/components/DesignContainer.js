@@ -9,12 +9,26 @@ class DesignContainer extends Component {
         super(props)
     
         this.state = {
-            mode: false    /*not in edit mode*/ 
+            mode: false ,   /*not in edit mode*/ 
+            reset: false
         }
     }
     handleEdit=()=>{
-    this.setState(prevState =>({
+        this.setState(prevState =>({
         mode: !prevState.mode
+        }))
+        if(this.state.mode === false)
+        {
+            this.setState({
+            reset: false
+            }) 
+        }
+    }
+    
+    handleReset=()=>{
+        //console.log("in handlereset")
+        this.setState(prevState =>({
+            reset: !prevState.reset
         }))
     }
     render() {
