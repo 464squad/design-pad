@@ -11,8 +11,7 @@ class DesignBoard extends Component {
     let padInputColor= null;
         this.state = {
             squares: Array(4).fill(null),
-            
-        }
+            }
     }
 
     drop=(ev)=>{
@@ -20,9 +19,22 @@ class DesignBoard extends Component {
         var data = ev.dataTransfer.getData("text");
         //console.log(ev.target)
         //ev.target.appendChild(document.getElementById(data));
-        let padInputColor = document.getElementById(data).style.backgroundColor
-        console.log("final padInput--" +padInputColor)
-        ev.target.style.backgroundColor = padInputColor
+
+        this.padInputColor = document.getElementById(data).style.backgroundColor
+        //console.log("final padInput--" +this.padInputColor)
+        // ev.target.style.backgroundColor = this.padInputColor
+    
+        const div_index = ev.target.id
+        const squareWithChange = this.state.squares.slice()
+        squareWithChange[div_index] = "changed"
+        //console.log(squareWithChange)
+
+    const squaresBackground = sqaures_background
+    squaresBackground[div_index] = this.padInputColor
+      //console.log(squaresBackground)
+    this.setState({
+        squares: squareWithChange,
+    })
 }
 
 
@@ -53,8 +65,7 @@ class DesignBoard extends Component {
             return (           /*in edit mode*/
             <div  id= {i}  className= "square" style={style}
                 onDrop= {this.drop}  onDragOver={this.allowDrop}>
-                design pad
-                </div> 
+            </div> 
             )
         }
         else if(mode === true && reset === true)
@@ -87,6 +98,7 @@ class DesignBoard extends Component {
                 {this.renderDesignPad(2)}
                 {this.renderDesignPad(3)}
                 </div>
+                
             </div>
         )
     }
