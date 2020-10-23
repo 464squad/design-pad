@@ -22,7 +22,7 @@ class DesignContainer extends Component {
             
             return (
             <div>
-                <h2>The App is in view mode</h2>
+               {/*<h2>IN VIEW MODE </h2>*/}
 
                 <div>
                 <button className= "button" onClick={this.handleEdit}>Edit</button>
@@ -39,7 +39,7 @@ class DesignContainer extends Component {
         return (
             
             <div>
-                <h2>The App is in edit mode</h2>
+               {/*<h2>IN EDIT MODE</h2>*/}
 
                 <div>
                 <button className="edit-active" onClick ={this.handleEdit}>Edit</button>
@@ -51,7 +51,7 @@ class DesignContainer extends Component {
                 
                 <div className="board"> 
                 <div className = "design-board">
-                <DesignBoard />
+                <DesignBoard mode ={this.state.mode}/>
                 </div>
                 <div>
                     
