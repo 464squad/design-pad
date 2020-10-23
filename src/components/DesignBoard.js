@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import "./style.css"
+
 const sqaures_background= ["DarkGray", "DarkGray", "DarkGray","DarkGray"]
+
 class DesignBoard extends Component {
    
     
@@ -10,40 +12,29 @@ class DesignBoard extends Component {
        let padInputColor= null;
         this.state = {
              squares: Array(4).fill(null),
-           
-            
-        }
+            }
     }
 
     drop=(ev)=>{
         ev.preventDefault();
         var data = ev.dataTransfer.getData("text");
-        //console.log("in drop: "+data)
-        console.log(ev.target)
+        //console.log(ev.target)
         //ev.target.appendChild(document.getElementById(data));
-       this.padInputColor = document.getElementById(data).style.backgroundColor
 
-       //console.log("final padInput--" +this.padInputColor)
-       ev.target.style.backgroundColor = this.padInputColor
+        this.padInputColor = document.getElementById(data).style.backgroundColor
+        //console.log("final padInput--" +this.padInputColor)
+        // ev.target.style.backgroundColor = this.padInputColor
        
     
-     const div_index = ev.target.id
-     //console.log("div id -"+div_index)
-    
-
-      const squareWithChange = this.state.squares.slice()
-      
-      squareWithChange[div_index] = "changed"
-      //console.log(squareWithChange)
+        const div_index = ev.target.id
+        const squareWithChange = this.state.squares.slice()
+        squareWithChange[div_index] = "changed"
+        //console.log(squareWithChange)
  
       const squaresBackground = sqaures_background
       squaresBackground[div_index] = this.padInputColor
-     
-      console.log(squaresBackground)
-
-
-
-      this.setState({
+      //console.log(squaresBackground)
+ this.setState({
           squares: squareWithChange,
       })
 }
@@ -54,28 +45,49 @@ class DesignBoard extends Component {
       }
    
     renderDesignPad(i)
-    {  
+    { 
         const bck_clr = sqaures_background[i]
    
-         const style = {
+        const style = {
              background: bck_clr,
-}
-         console.log(style)
+        }
+      
+        // console.log(style_restet)
 
         const mode = this.props.mode
+        const reset = this.props.reset
 
-        if(mode === false){ 
+        if(mode === false){  /*in view mode*/ 
             return(
             <div id= {i}  className= "square" style={style}>
             </div>
             )
      }
+       else if(mode === true && reset !== true) {
             return (           /*in edit mode*/
-                <div  id= {i}  className= "square" style={style}
+              <div  id= {i}  className= "square" style={style}
                 onDrop= {this.drop}  onDragOver={this.allowDrop}>
                </div> 
+              
             )
+        }
+       else if(mode === true && reset === true)
+        {
+            sqaures_background[i] = "DarkGray"
+            const style1={
+                background: sqaures_background[i]
+            }
+
+            return(
+                <div id= {i}  className= "square" style={style1} >
+                </div>
+                )
+        }
+
     }
+
+
+
     render() {
         
         return (

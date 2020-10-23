@@ -33,6 +33,7 @@ export class PadInput extends Component {
            <div id = "clr7" style={{border: "1px solid #9999", backgroundColor:"Violet"}} draggable={true} onDragStart={this.drag}>7</div>
            <div id = "clr8" style={{border: "1px solid #9999",backgroundColor:"yellowgreen"}}draggable={true} onDragStart={this.drag}>8</div>
            </div>
+           
            </div>
           
            
