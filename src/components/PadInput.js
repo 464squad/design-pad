@@ -6,9 +6,8 @@ export class PadInput extends Component {
     ev.dataTransfer.setData("text", ev.target.id);
     console.log(ev.target)
     const selectedcolor = ev.target.style.backgroundColor
-    console.log("color: "+selectedcolor)
+    console.log("color: "+ selectedcolor)
       // ev.dataTransfer.setData("text", selectedcolor);
-    
     }
     render() {
     return (
