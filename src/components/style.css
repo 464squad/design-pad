@@ -54,6 +54,7 @@
   background: rgb(252, 244, 244);
   border: 10px solid rgba(46, 47, 48, 0.35);
   float: left;
+  display: grid;
   font-size: 25px;
   font-weight: bold;
   line-height: 50px;
