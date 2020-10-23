@@ -9,37 +9,27 @@ class DesignContainer extends Component {
         super(props)
     
         this.state = {
-             mode: false ,   /*not in edit mode*/ 
-             reset: false
+            mode: false ,   /*not in edit mode*/ 
+            reset: false
         }
     }
     handleEdit=()=>{
-       this.setState(prevState =>({
-           mode: !prevState.mode
-       }))
-       if(this.state.mode === false)
-       {
-           this.setState({
-               reset: false
-           }) 
-       }
-      
-   
+        this.setState(prevState =>({
+        mode: !prevState.mode
+        }))
+        if(this.state.mode === false)
+        {
+            this.setState({
+            reset: false
+            }) 
+        }
     }
     
     handleReset=()=>{
-      
         //console.log("in handlereset")
-         this.setState(prevState =>({
+        this.setState(prevState =>({
             reset: !prevState.reset
         }))
-       
-     
-       
-       
-       
-        
-
     }
     render() {
         console.log("in design container")
@@ -48,7 +38,7 @@ class DesignContainer extends Component {
             
             return (
             <div>
-               {/*<h2>IN VIEW MODE </h2>*/}
+            {/*<h2>IN VIEW MODE </h2>*/}
 
                 <div>
                 <button className= "button" onClick={this.handleEdit}>Edit</button>
@@ -65,7 +55,7 @@ class DesignContainer extends Component {
         return (
             
             <div>
-               {/*<h2>IN EDIT MODE</h2>*/}
+            {/*<h2>IN EDIT MODE</h2>*/}
 
                 <div>
                 <button className="edit-active" onClick ={this.handleEdit}>Edit</button>

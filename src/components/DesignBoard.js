@@ -4,14 +4,13 @@ import "./style.css"
 const sqaures_background= ["DarkGray", "DarkGray", "DarkGray","DarkGray"]
 
 class DesignBoard extends Component {
-   
     
     constructor(props) {
         super(props)
         
-       let padInputColor= null;
+    let padInputColor= null;
         this.state = {
-             squares: Array(4).fill(null),
+            squares: Array(4).fill(null),
             }
     }
 
@@ -24,34 +23,33 @@ class DesignBoard extends Component {
         this.padInputColor = document.getElementById(data).style.backgroundColor
         //console.log("final padInput--" +this.padInputColor)
         // ev.target.style.backgroundColor = this.padInputColor
-       
     
         const div_index = ev.target.id
         const squareWithChange = this.state.squares.slice()
         squareWithChange[div_index] = "changed"
         //console.log(squareWithChange)
- 
-      const squaresBackground = sqaures_background
-      squaresBackground[div_index] = this.padInputColor
+
+    const squaresBackground = sqaures_background
+    squaresBackground[div_index] = this.padInputColor
       //console.log(squaresBackground)
- this.setState({
-          squares: squareWithChange,
-      })
+    this.setState({
+        squares: squareWithChange,
+    })
 }
 
 
-      allowDrop =(ev)=> {
+    allowDrop =(ev)=> {
         ev.preventDefault();
-      }
-   
+    }
+
     renderDesignPad(i)
     { 
         const bck_clr = sqaures_background[i]
-   
+
         const style = {
-             background: bck_clr,
+            background: bck_clr,
         }
-      
+
         // console.log(style_restet)
 
         const mode = this.props.mode
@@ -62,16 +60,15 @@ class DesignBoard extends Component {
             <div id= {i}  className= "square" style={style}>
             </div>
             )
-     }
-       else if(mode === true && reset !== true) {
+    }
+        else if(mode === true && reset !== true) {
             return (           /*in edit mode*/
-              <div  id= {i}  className= "square" style={style}
+            <div  id= {i}  className= "square" style={style}
                 onDrop= {this.drop}  onDragOver={this.allowDrop}>
-               </div> 
-              
+            </div> 
             )
         }
-       else if(mode === true && reset === true)
+        else if(mode === true && reset === true)
         {
             sqaures_background[i] = "DarkGray"
             const style1={
@@ -98,10 +95,9 @@ class DesignBoard extends Component {
                 </div>
 
                 <div className="board-row">
-                 {this.renderDesignPad(2)}
-                 {this.renderDesignPad(3)}
-               </div>
-              
+                {this.renderDesignPad(2)}
+                {this.renderDesignPad(3)}
+                </div>
                 
             </div>
         )
