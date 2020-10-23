@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import DesignBoard from "./DesignBoard"
 import PadInput from "./PadInput"
 import "./style.css"
+
+
 class DesignContainer extends Component {
     constructor(props) {
         super(props)
@@ -22,7 +24,7 @@ class DesignContainer extends Component {
             
             return (
             <div>
-                <h2>The App is in view mode</h2>
+            {/*<h2>IN VIEW MODE </h2>*/}
 
                 <div>
                 <button className= "button" onClick={this.handleEdit}>Edit</button>
@@ -39,10 +41,15 @@ class DesignContainer extends Component {
         return (
             
             <div>
-                <h2>The App is in edit mode</h2>
+            {/*<h2>IN EDIT MODE</h2>*/}
 
                 <div>
                 <button className="edit-active" onClick ={this.handleEdit}>Edit</button>
+                </div>
+                <div>
+                    <button id="resbtn"  
+                    className={`${this.state.reset ? "edit-active" : "button"}`} 
+                    onClick={this.handleReset}>Reset</button>
                 </div>
 
                 <div>
@@ -51,7 +58,7 @@ class DesignContainer extends Component {
                 
                 <div className="board"> 
                 <div className = "design-board">
-                <DesignBoard />
+                <DesignBoard mode ={this.state.mode}  reset={this.state.reset}/>
                 </div>
                 <div>
                     

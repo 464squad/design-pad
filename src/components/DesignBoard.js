@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import "./style.css"
+
+const sqaures_background= ["DarkGray", "DarkGray", "DarkGray","DarkGray"]
+
 class DesignBoard extends Component {
     
     constructor(props) {
         super(props)
         
-       // let padInputColor= null;
+    let padInputColor= null;
         this.state = {
             squares: Array(4).fill(null),
             
@@ -15,7 +18,6 @@ class DesignBoard extends Component {
     drop=(ev)=>{
         ev.preventDefault();
         var data = ev.dataTransfer.getData("text");
-        //console.log("in drop: "+data)
         //console.log(ev.target)
         //ev.target.appendChild(document.getElementById(data));
         let padInputColor = document.getElementById(data).style.backgroundColor
@@ -29,22 +31,49 @@ class DesignBoard extends Component {
     }
 
     renderDesignPad(i)
-    {
+    { 
+        const bck_clr = sqaures_background[i]
+
+        const style = {
+            background: bck_clr,
+        }
+
+        // console.log(style_restet)
+
         const mode = this.props.mode
-        if(mode === false){
+        const reset = this.props.reset
+
+        if(mode === false){  /*in view mode*/ 
             return(
-            <div id= "this.props.value" className="square">
-                design pad
-                </div>
+            <div id= {i}  className= "square" style={style}>
+            </div>
             )
-            }
+    }
+        else if(mode === true && reset !== true) {
             return (           /*in edit mode*/
-                <div className="square"
+            <div  id= {i}  className= "square" style={style}
                 onDrop= {this.drop}  onDragOver={this.allowDrop}>
                 design pad
                 </div> 
             )
+        }
+        else if(mode === true && reset === true)
+        {
+            sqaures_background[i] = "DarkGray"
+            const style1={
+                background: sqaures_background[i]
+            }
+
+            return(
+                <div id= {i}  className= "square" style={style1} >
+                </div>
+                )
+        }
+
     }
+
+
+
     render() {
         
         return (

@@ -1,19 +1,14 @@
 import React from 'react';
-import './App.css';
 import DesignContainer from './components/DesignContainer';
-
+import "./components/style.css"
 function App() {
   return (
-
-
-
-    <div style={{ textAlign:"center", justifyContent:"center"}} >
-    <h1>DESIGN PAD</h1>
+    <div className="heading" >
+    <h1>D E S I G N P A D</h1>
     <DesignContainer/>
 
 
     </div>
   );
-}
-
+  }
 export default App;
