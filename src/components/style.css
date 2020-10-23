@@ -55,6 +55,7 @@
   border: 10px solid rgba(46, 47, 48, 0.35);
   float: left;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   font-size: 25px;
   font-weight: bold;
   line-height: 50px;
@@ -64,7 +65,11 @@
   padding: 0;
   text-align: center;
   width: 250px;
-  
+}
+
+.pad_Item{
+  text-align: center;
+  padding: 10px;
 }
 
 .board-row:after {
