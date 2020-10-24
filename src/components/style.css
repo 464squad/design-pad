@@ -1,4 +1,3 @@
-
 .heading{
   text-align: center;
   justify-content: center;
@@ -20,12 +19,8 @@
   align-items: center;
   padding-bottom: 3.5rem;
 }
-.top {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+.design-board {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   border: 20px solid rgba(46, 47, 48, 0.75);
@@ -57,7 +52,7 @@
   padding: 0;
   text-align: center;
   width: 250px;
-  border-radius: 20px;
+  line-height: 250px;
 }
 
 .pad-box {

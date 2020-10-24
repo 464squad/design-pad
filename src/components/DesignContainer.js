@@ -9,26 +9,6 @@ class DesignContainer extends Component {
         super(props)
     
         this.state = {
-<<<<<<< HEAD
-             mode: false,    /*not in edit mode*/ 
-             reset: false
-        }
-    }
-    handleEdit=()=>{
-       this.setState(prevState =>({
-           mode: !prevState.mode,
-           
-       }))
-    }
-
-    handleReset = () => {
-        this.setState(prevState => ({
-            reset: !prevState.reset
-        }))
-    }
-
-    
-=======
             mode: false ,   /*not in edit mode*/ 
             reset: false
         }
@@ -44,63 +24,38 @@ class DesignContainer extends Component {
             }) 
         }
     }
-   
+    
     handleReset=()=>{
         //console.log("in handlereset")
         this.setState(prevState =>({
             reset: !prevState.reset
         }))
-       
-    }
-   
-    handleToggle=(success)=>{
-        console.log("in handleToggle")
-        setTimeout(() => { 
-            if(success)
-          {
-              this.setState({
-                  reset: false
-              })
-          }
-         }, 500);
     }
 
->>>>>>> initial-setup
     render() {
-       // console.log("in design container")
-       
+        console.log("in design container")
         if(this.state.mode === false)
         {  
             
             return (
             <div>
-<<<<<<< HEAD
-                
-                <div className="top">
-                <h1>Design Pad</h1>
-=======
             {/*<h2>IN VIEW MODE </h2>*/}
 
                 <div>
->>>>>>> initial-setup
                 <button className= "button" onClick={this.handleEdit}>Edit</button>
                 </div>
-                <h2>The App is in view mode</h2>
+
                 <div className="board"> 
-               <PadInput />
-                <DesignBoard mode={this.state.mode} reset={this.state.reset}/>
+                <div className = "design-board">
+                <DesignBoard  mode={this.state.mode}/>
+                </div>
                 </div>
 
-            </div>)
-        }else{
+                </div>)
+        }
         return (
             
             <div>
-<<<<<<< HEAD
-                <div className="top">
-                <h1>Design Pad</h1>
-                <button className="edit-active" onClick ={this.handleEdit}>View</button>
-=======
             {/*<h2>IN EDIT MODE</h2>*/}
 
                 <div>
@@ -114,22 +69,12 @@ class DesignContainer extends Component {
 
                 <div>
                 <PadInput/>
->>>>>>> initial-setup
                 </div>
-                <h2>The App is in edit mode</h2>
-                
                 
                 <div className="board"> 
-<<<<<<< HEAD
-                <PadInput />
-                <DesignBoard mode={this.state.mode} reset={this.state.reset}/>
-=======
                 <div className = "design-board">
-                <DesignBoard mode ={this.state.mode}  reset={this.state.reset}
-                 handleToggle={this.handleToggle} 
-                 />
+                <DesignBoard mode ={this.state.mode}  reset={this.state.reset}/>
                 </div>
->>>>>>> initial-setup
                 <div>
                     
                 </div>
@@ -137,7 +82,6 @@ class DesignContainer extends Component {
 
             </div>
         )
-        }
     }
 }
 

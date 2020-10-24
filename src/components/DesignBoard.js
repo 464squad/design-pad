@@ -14,7 +14,6 @@ class DesignBoard extends Component {
             }
     }
 
-
     drop=(ev)=>{
         ev.preventDefault();
         var data = ev.dataTransfer.getData("text");
@@ -40,11 +39,7 @@ class DesignBoard extends Component {
     allowDrop =(ev)=> {
         ev.preventDefault();
     }
-    handleResetToggle = ()=>{
-        let isResetSuccess = true;
-       this.props.handleToggle(isResetSuccess)
 
-    }
     renderDesignPad(i)
     { 
         const bck_clr = sqaures_background[i]
@@ -57,8 +52,7 @@ class DesignBoard extends Component {
 
         const mode = this.props.mode
         const reset = this.props.reset
-        
-         
+
         if(mode === false){  /*in view mode*/ 
             return(
             <div id= {i}  className= "square" style={style}>
@@ -78,9 +72,6 @@ class DesignBoard extends Component {
             const style1={
                 background: sqaures_background[i]
             }
-           if(reset === true){
-            this.handleResetToggle()
-            }
 
             return(
                 <div id= {i}  className= "square" style={style1} 
@@ -94,7 +85,7 @@ class DesignBoard extends Component {
 
 
     render() {
-       
+        
         return (
             <div>
                 <div className="board-row">
@@ -108,7 +99,6 @@ class DesignBoard extends Component {
                 </div>
                 
             </div>
-            
         )
     }
 }
