@@ -1,25 +1,23 @@
 import React from 'react';
 import DesignBoard from './DesignBoard';
 // import DesignPad from './DesignPad';
-// import PadInput from './PadInput';
+import PadInput from './PadInput';
 
 class DesignContainer extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {}
-
-
+        this.state = false
     }
 
-    editButton = (event) => {
+    editButtonEvent = event => {
         // to prevent page reload on form submit
-        event.preventDefault();
-
+        // event.preventDefault();
         /*
             TODO - Logic for calling props to handle submission and setting state changes
         */
-        console.log(this.state)
-        this.props.onSubmit(this.state)
+        // this.setState(true)
+        console.log('current state in edit button event',this.state)
+        // console.log('Im the edit button event')
     }
 
     render() {
@@ -39,12 +37,11 @@ class DesignContainer extends React.Component {
                 <br/> 
 
                 { /*TODO - Add PadInput Component */ } 
-                {/* <PadInput/> */}
+                <PadInput handleEditChange={this.editButtonEvent} />
                 
                 <br/> 
                 
                 { /*TODO - Add editButton Component */ }
-                <button onClick = { this.editButton }> EDIT </button>
 
             </div>
         );
