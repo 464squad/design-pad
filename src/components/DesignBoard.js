@@ -12,42 +12,42 @@ const DesignBoardHeader = () => {
 }
 
 
-const TableBody = props => {
-    // boilerplate table body functional component 
-    // we use Array.map to create table rows from LinkData passed via props
-    const rows = props.linkData.map((row, index) => {
-        return ( 
-            <tr key={index}>
-                <td> {row.name} </td> 
+// const TableBody = props => {
+//     // boilerplate table body functional component 
+//     // we use Array.map to create table rows from LinkData passed via props
+//     const rows = props.linkData.map((row, index) => {
+//         return ( 
+//             <tr key={index}>
+//                 <td> {row.name} </td> 
                 
-                <td> 
-                    <a href={ row.URL }> {row.URL} </a> 
-                </td>
+//                 <td> 
+//                     <a href={ row.URL }> {row.URL} </a> 
+//                 </td>
 
-                <td > 
-                    < button onClick = { ()=>props.removeLink(index) }> 
-                        Delete 
-                    </button>
-                </td >
-            </tr>
-        );
-    });
+//                 <td > 
+//                     < button onClick = { ()=>props.removeLink(index) }> 
+//                         Delete 
+//                     </button>
+//                 </td >
+//             </tr>
+//         );
+//     });
 
-    return <tbody> { rows } </tbody>;
-}
+//     return <tbody> { rows } </tbody>;
+// }
 
-const Table = (props) => {
+const DesignBoard = (props) => {
     //const { linkData, removeLink } = props;
-    { /*TODO - return <table> component, TableHeader and TableBody  */ }
+    //{ /*TODO - return <table> component, TableHeader and TableBody  */ }
     return (
 
         <table>
             <DesignBoardHeader/>
-            <TableBody linkData  =  { props.linkData } 
-                       removeLink = { props.removeLink }/> 
+            {/* <TableBody linkData  =  { props.linkData } 
+                       removeLink = { props.removeLink }/>  */}
         </table>
         
     )
 }
 
-export default Table;
+export default DesignBoard;
