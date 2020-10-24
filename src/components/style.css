@@ -59,7 +59,7 @@
   row-gap: 15px;
   font-size: 25px;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 100px;
   height: 500px;
   margin-right: -5px;
   margin-top: -2px;
@@ -69,8 +69,10 @@
 }
 
 .pad_Item{
-  text-align: center;
   color: black;
+  text-transform: uppercase;
+  justify-content: center;
+  align-content: center;
 }
 
 .board-row:after {
