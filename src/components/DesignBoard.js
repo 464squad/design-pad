@@ -39,7 +39,11 @@ class DesignBoard extends Component {
     allowDrop =(ev)=> {
         ev.preventDefault();
     }
+    handleResetToggle = ()=>{
+        let isResetSuccess = true;
+       this.props.handleToggle(isResetSuccess)
 
+    }
     renderDesignPad(i)
     { 
         const bck_clr = sqaures_background[i]
@@ -73,8 +77,9 @@ class DesignBoard extends Component {
             const style1={
                 background: sqaures_background[i]
             }
-            let isResetSuccess = true;
-            this.props.handleToggle(isResetSuccess)
+           if(reset === true){
+            this.handleResetToggle()
+            }
 
             return(
                 <div id= {i}  className= "square" style={style1} 
