@@ -31,6 +31,7 @@ class DesignContainer extends Component {
             reset: !prevState.reset
         }))
     }
+
     render() {
         console.log("in design container")
         if(this.state.mode === false)

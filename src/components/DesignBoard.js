@@ -36,8 +36,6 @@ class DesignBoard extends Component {
         squares: squareWithChange,
     })
 }
-
-
     allowDrop =(ev)=> {
         ev.preventDefault();
     }
@@ -76,7 +74,8 @@ class DesignBoard extends Component {
             }
 
             return(
-                <div id= {i}  className= "square" style={style1} >
+                <div id= {i}  className= "square" style={style1} 
+                onDrop= {this.drop}  onDragOver={this.allowDrop} >
                 </div>
                 )
         }
