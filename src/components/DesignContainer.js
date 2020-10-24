@@ -23,26 +23,29 @@ class DesignContainer extends React.Component {
 
     render() {
 
-        return ( <
-            div className = "container" >
-            <
-            h1 > DESIGN PAD < /h1> { /*TODO - Add PadInput Component */ } <
-            PadInput / >
-            <
-            br / >
+        return ( 
+            <div className="container">
+                <h1> DESIGN PAD </h1> 
+                
+                { /*TODO - Add PadInput Component */ } 
+                <PadInput/>
 
-            { /*TODO - Add DesignBoard Component */ } <
-            DesignBoard / >
+                <br/>
 
-            <
-            br / > { /*TODO - Add DesignPad Component */ } <
-            DesignPad / >
-            <
-            br / > { /*TODO - Add editButton Component */ } <
-            button onClick = { this.editButton } > EDIT < /button>
+                { /*TODO - Add DesignBoard Component */ } 
+                <DesignBoard/>
 
-            <
-            /div>
+                <br/> 
+
+                { /*TODO - Add DesignPad Component */ } 
+                <DesignPad/>
+                
+                <br/> 
+                
+                { /*TODO - Add editButton Component */ }
+                <button onClick = { this.editButton } > EDIT </button>
+
+            </div>
         );
     }
 }
