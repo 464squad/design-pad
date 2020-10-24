@@ -10,17 +10,8 @@ class DesignBoard extends Component {
         
     let padInputColor= null;
         this.state = {
-<<<<<<< HEAD
-             //squares: Array(4).fill(null)
-            // mode: this.props.mode
-            filled: false,
-            squares: Array(4).fill(null)
-        }
-        
-=======
             squares: Array(4).fill(null),
             }
->>>>>>> initial-setup
     }
 
 
@@ -29,18 +20,6 @@ class DesignBoard extends Component {
         var data = ev.dataTransfer.getData("text");
         //console.log(ev.target)
         //ev.target.appendChild(document.getElementById(data));
-<<<<<<< HEAD
-        //console.log(data);
-       let padInputColor = document.getElementById(data).style.backgroundColor
-       console.log("final padInput--" +padInputColor);
-       ev.target.style.backgroundColor = padInputColor;
-    //    this.setState({
-    //     squares: this.props.mode
-    //     })
-        
-       
-    }
-=======
 
         this.padInputColor = document.getElementById(data).style.backgroundColor
         //console.log("final padInput--" +this.padInputColor)
@@ -50,7 +29,6 @@ class DesignBoard extends Component {
         const squareWithChange = this.state.squares.slice()
         squareWithChange[div_index] = "changed"
         //console.log(squareWithChange)
->>>>>>> initial-setup
 
     const squaresBackground = sqaures_background
     squaresBackground[div_index] = this.padInputColor
@@ -61,31 +39,6 @@ class DesignBoard extends Component {
 }
     allowDrop =(ev)=> {
         ev.preventDefault();
-<<<<<<< HEAD
-      }
-   
-    renderDesignPad()
-    {
-        console.log(this.props.mode);
-        
-        const mode = 
-                    (this.props.mode)? 
-                    <div className="square"
-                    onDrop= {this.drop}  onDragOver={this.allowDrop}>
-                    design pad
-                    </div> : 
-                     <div className="square">
-                     design pad
-                     </div> 
-        
-        return(mode);
-        
-    }
-    
-    
-    render() {
-      
-=======
     }
     handleResetToggle = ()=>{
         let isResetSuccess = true;
@@ -142,7 +95,6 @@ class DesignBoard extends Component {
 
     render() {
        
->>>>>>> initial-setup
         return (
             <div>
                 <div className="board-row">
@@ -151,16 +103,9 @@ class DesignBoard extends Component {
                 </div>
 
                 <div className="board-row">
-<<<<<<< HEAD
-                 {this.renderDesignPad(2)}
-                 {this.renderDesignPad(3)}
-               </div> 
-              
-=======
                 {this.renderDesignPad(2)}
                 {this.renderDesignPad(3)}
                 </div>
->>>>>>> initial-setup
                 
             </div>
             
