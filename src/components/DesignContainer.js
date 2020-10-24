@@ -32,7 +32,14 @@ class DesignContainer extends Component {
         }))
        
     }
-   
+    handleToggle=(success)=>{
+          if(success)
+          {
+              this.setState({
+                  reset: false
+              })
+          }
+    }
 
     render() {
         console.log("in design container")
@@ -75,7 +82,7 @@ class DesignContainer extends Component {
                 
                 <div className="board"> 
                 <div className = "design-board">
-                <DesignBoard mode ={this.state.mode}  reset={this.state.reset} />
+                <DesignBoard mode ={this.state.mode}  reset={this.state.reset} handleToggle={this.handleToggle} />
                 </div>
                 <div>
                     

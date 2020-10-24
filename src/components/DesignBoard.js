@@ -73,7 +73,9 @@ class DesignBoard extends Component {
             const style1={
                 background: sqaures_background[i]
             }
-         
+            let isResetSuccess = true;
+            this.props.handleToggle(isResetSuccess)
+
             return(
                 <div id= {i}  className= "square" style={style1} 
                 onDrop= {this.drop}  onDragOver={this.allowDrop} >
