@@ -55,6 +55,18 @@
   line-height: 250px;
 }
 
+span{
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateY(50px);
+  display: inline-block;
+}
+
+span.fade{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 .pad-box {
   background: rgb(252, 244, 244);
   border: 10px solid rgba(46, 47, 48, 0.35);
