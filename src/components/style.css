@@ -1,8 +1,28 @@
+
+.heading{
+  text-align: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(81, 18, 100, .75);
+  font-size: 40px;
+  height: 100%;
+  margin: auto 3rem;
+}
+
+.padTitle{
+  color: black;
+}
+
 .board {
   display: flex;
   justify-content: center;
   font-size: bold;
+<<<<<<< HEAD
   align-items: initial;
+=======
+  align-items: center;
+  padding-bottom: 3.5rem;
+>>>>>>> initial-setup
 }
 .top {
   /* display: flex;
@@ -11,6 +31,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+<<<<<<< HEAD
+=======
+  align-items: center;
+  border: 20px solid rgba(46, 47, 48, 0.75);
+>>>>>>> initial-setup
 }
 .squareColorChanged {
   background: grey;
@@ -20,7 +45,7 @@
   font-weight: bold;
   line-height: 250px;
   height: 250px;
-  margin-right: -5px;
+  margin-left: -45px;
   margin-top: -2px;
   padding: 0;
   text-align: center;
@@ -28,7 +53,7 @@
 }
 
 .square {
-  background: grey;
+  /*background: grey;*/
   border: 1px solid #999;
   float: left;
   font-size: 25px;
@@ -41,18 +66,42 @@
   width: 250px;
   border-radius: 20px;
 }
+
 .pad-box {
+<<<<<<< HEAD
   position: absolute;
   left: 60px;
   background: #c060a1;
   border: 1px solid rgba(153, 153, 153, 0.363);
+=======
+  background: rgb(252, 244, 244);
+  border: 10px solid rgba(46, 47, 48, 0.35);
+>>>>>>> initial-setup
   float: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto; 
+  column-gap: 15px;
+  row-gap: 15px;
   font-size: 25px;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 100px;
   height: 500px;
+<<<<<<< HEAD
+=======
+  margin-right: -5px;
+  margin-top: -2px;
+  padding: 10px;
+>>>>>>> initial-setup
   text-align: center;
   width: 250px;
+}
+
+.pad_Item{
+  color: black;
+  text-transform: uppercase;
+  justify-content: center;
+  align-content: center;
 }
 
 .board-row:after {
@@ -63,13 +112,23 @@
   justify-content: center;*/
 }
 .button {
+<<<<<<< HEAD
   background-color: #252d3bde;
+=======
+  float: right;
+  text-transform: uppercase;
+  background-color: #585858de;
+  border: none;
+  border-radius: 100px;
+  color: white;
+>>>>>>> initial-setup
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+<<<<<<< HEAD
   position: absolute;
   right: 5%;
   top: 4%;
@@ -91,10 +150,26 @@
   top: 13.5%;
   box-sizing: border-box;
   width: 100px;
+=======
+  transition: all .05s ease-in-out;
 }
+
+.button:hover{
+  background-color: #d8cecede;
+  color: black;
+>>>>>>> initial-setup
+}
+
 .edit-active {
+<<<<<<< HEAD
   background-color: #cc4915;
+=======
+  float: right;
+  text-transform: uppercase;
+  background-color: #f529ebfb;
+>>>>>>> initial-setup
   border: none;
+  border-radius: 100px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -102,6 +177,7 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+<<<<<<< HEAD
   position: absolute;
   right: 5%;
   top: 4%;
@@ -119,4 +195,11 @@
 .drag-btn{
   flex: 1;
   margin: 5px 5px;
+=======
+  transition: all .05s ease-in-out;
+}
+
+.edit-active:hover{
+  background-color:#f397eefb;
+>>>>>>> initial-setup
 }
