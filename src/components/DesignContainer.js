@@ -24,13 +24,15 @@ class DesignContainer extends Component {
             }) 
         }
     }
-    
+   
     handleReset=()=>{
         //console.log("in handlereset")
         this.setState(prevState =>({
             reset: !prevState.reset
         }))
+       
     }
+   
 
     render() {
         console.log("in design container")
@@ -73,7 +75,7 @@ class DesignContainer extends Component {
                 
                 <div className="board"> 
                 <div className = "design-board">
-                <DesignBoard mode ={this.state.mode}  reset={this.state.reset}/>
+                <DesignBoard mode ={this.state.mode}  reset={this.state.reset} />
                 </div>
                 <div>
                     

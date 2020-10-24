@@ -52,7 +52,8 @@ class DesignBoard extends Component {
 
         const mode = this.props.mode
         const reset = this.props.reset
-
+        
+         
         if(mode === false){  /*in view mode*/ 
             return(
             <div id= {i}  className= "square" style={style}>
@@ -72,7 +73,7 @@ class DesignBoard extends Component {
             const style1={
                 background: sqaures_background[i]
             }
-
+         
             return(
                 <div id= {i}  className= "square" style={style1} 
                 onDrop= {this.drop}  onDragOver={this.allowDrop} >
@@ -85,7 +86,7 @@ class DesignBoard extends Component {
 
 
     render() {
-        
+       
         return (
             <div>
                 <div className="board-row">
