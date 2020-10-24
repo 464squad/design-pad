@@ -7,52 +7,58 @@ class DesignContainer extends Component {
         super(props)
     
         this.state = {
-             mode: false    /*not in edit mode*/ 
+             mode: false,    /*not in edit mode*/ 
+             reset: false
         }
     }
     handleEdit=()=>{
        this.setState(prevState =>({
-           mode: !prevState.mode
+           mode: !prevState.mode,
+           
        }))
     }
+
+    handleReset = () => {
+        this.setState(prevState => ({
+            reset: !prevState.reset
+        }))
+    }
+
+    
     render() {
-        console.log("in design container")
+       // console.log("in design container")
+       
         if(this.state.mode === false)
         {  
             
             return (
             <div>
-                <h2>The App is in view mode</h2>
-
-                <div>
+                
+                <div className="top">
+                <h1>Design Pad</h1>
                 <button className= "button" onClick={this.handleEdit}>Edit</button>
                 </div>
-
+                <h2>The App is in view mode</h2>
                 <div className="board"> 
-                <div className = "design-board">
-                <DesignBoard  mode={this.state.mode}/>
-                </div>
+               <PadInput />
+                <DesignBoard mode={this.state.mode} reset={this.state.reset}/>
                 </div>
 
-                </div>)
-        }
+            </div>)
+        }else{
         return (
             
             <div>
+                <div className="top">
+                <h1>Design Pad</h1>
+                <button className="edit-active" onClick ={this.handleEdit}>View</button>
+                </div>
                 <h2>The App is in edit mode</h2>
-
-                <div>
-                <button className="edit-active" onClick ={this.handleEdit}>Edit</button>
-                </div>
-
-                <div>
-                <PadInput/>
-                </div>
+                
                 
                 <div className="board"> 
-                <div className = "design-board">
-                <DesignBoard />
-                </div>
+                <PadInput />
+                <DesignBoard mode={this.state.mode} reset={this.state.reset}/>
                 <div>
                     
                 </div>
@@ -60,6 +66,7 @@ class DesignContainer extends Component {
 
             </div>
         )
+        }
     }
 }
 

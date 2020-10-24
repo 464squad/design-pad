@@ -8,10 +8,14 @@ class DesignBoard extends Component {
         
        // let padInputColor= null;
         this.state = {
-             squares: Array(4).fill(null),
-            
+             //squares: Array(4).fill(null)
+            // mode: this.props.mode
+            filled: false,
+            squares: Array(4).fill(null)
         }
+        
     }
+
 
     drop=(ev)=>{
         ev.preventDefault();
@@ -19,39 +23,42 @@ class DesignBoard extends Component {
         //console.log("in drop: "+data)
         //console.log(ev.target)
         //ev.target.appendChild(document.getElementById(data));
+        //console.log(data);
        let padInputColor = document.getElementById(data).style.backgroundColor
-       console.log("final padInput--" +padInputColor)
-       ev.target.style.backgroundColor = padInputColor
-     
-    
-   
-    
-}
-
+       console.log("final padInput--" +padInputColor);
+       ev.target.style.backgroundColor = padInputColor;
+    //    this.setState({
+    //     squares: this.props.mode
+    //     })
+        
+       
+    }
 
       allowDrop =(ev)=> {
         ev.preventDefault();
       }
    
-    renderDesignPad(i)
+    renderDesignPad()
     {
-        const mode = this.props.mode
-        if(mode === false){
-            return(
-            <div id= "this.props.value" className="square">
-                design pad
-                </div>
-            )
-            }
-            return (           /*in edit mode*/
-                <div className="square"
-                onDrop= {this.drop}  onDragOver={this.allowDrop}>
-                 design pad
-               </div> 
-            )
-    }
-    render() {
+        console.log(this.props.mode);
         
+        const mode = 
+                    (this.props.mode)? 
+                    <div className="square"
+                    onDrop= {this.drop}  onDragOver={this.allowDrop}>
+                    design pad
+                    </div> : 
+                     <div className="square">
+                     design pad
+                     </div> 
+        
+        return(mode);
+        
+    }
+    
+    
+    render() {
+      
         return (
             <div>
                 <div className="board-row">
@@ -62,10 +69,11 @@ class DesignBoard extends Component {
                 <div className="board-row">
                  {this.renderDesignPad(2)}
                  {this.renderDesignPad(3)}
-               </div>
+               </div> 
               
                 
             </div>
+            
         )
     }
 }
