@@ -5,6 +5,8 @@
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(81, 18, 100, .75);
   font-size: 40px;
+  height: 100%;
+  margin: auto 3rem;
 }
 
 .board {
@@ -84,8 +86,10 @@
 }
 .button {
   float: right;
+  text-transform: uppercase;
   background-color: #585858de;
   border: none;
+  border-radius: 100px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -93,11 +97,20 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  transition: all .05s ease-in-out;
 }
+
+.button:hover{
+  background-color: #d8cecede;
+  color: black;
+}
+
 .edit-active {
   float: right;
+  text-transform: uppercase;
   background-color: #f529ebfb;
   border: none;
+  border-radius: 100px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -105,4 +118,9 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  transition: all .05s ease-in-out;
+}
+
+.edit-active:hover{
+  background-color:#f397eefb;
 }
