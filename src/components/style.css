@@ -13,15 +13,15 @@
 }
 
 .board {
-  display: flex;
-  justify-content: center;
+  /*display: flex;*/
+  /*justify-content: center;*/
   font-size: bold;
   align-items: center;
   padding-bottom: 3.5rem;
 }
 .design-board {
-  display: flex;
-  justify-content: center;
+  position: fixed;
+  margin-left: 28%;
   align-items: center;
   border: 20px solid rgba(46, 47, 48, 0.75);
 }
