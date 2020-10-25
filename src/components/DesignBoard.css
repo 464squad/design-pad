@@ -1,0 +1,17 @@
+.padsContainer{
+    position: relative;
+    display: grid;
+    flex-wrap: wrap;
+    width: 500px;
+    left: 550px;
+    top: 250px;
+    grid-row-gap: 5px;
+    grid-template-columns: repeat(2, 405px);
+}
+
+.rectangle{
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #555;
+}
