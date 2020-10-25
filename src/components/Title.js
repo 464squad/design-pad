@@ -34,7 +34,7 @@ export default class Title extends Component {
             timer = null;
         }
 
-        let timer = setInterval(onTick, 50);
+        let timer = setInterval(onTick, 260);
                 
     }
 

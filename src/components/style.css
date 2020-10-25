@@ -60,11 +60,16 @@ span{
   transition: all 1s ease;
   transform: translateY(50px);
   display: inline-block;
+  
 }
 
 span.fade{
   opacity: 1;
   transform: translateY(0px);
+  background: linear-gradient(#333333, #dd1818);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; 
+  
 }
 
 .pad-box {
