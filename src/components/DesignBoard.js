@@ -8,7 +8,7 @@ class DesignBoard extends Component {
     constructor(props) {
         super(props)
         
-    let padInputColor= null;
+   
         this.state = {
             squares: Array(4).fill(null),
             }
@@ -17,21 +17,16 @@ class DesignBoard extends Component {
     drop=(ev)=>{
         ev.preventDefault();
         var data = ev.dataTransfer.getData("text");
-        //console.log(ev.target)
-        //ev.target.appendChild(document.getElementById(data));
+        let padInputColor = document.getElementById(data).style.backgroundColor
 
-        this.padInputColor = document.getElementById(data).style.backgroundColor
-        //console.log("final padInput--" +this.padInputColor)
-        // ev.target.style.backgroundColor = this.padInputColor
-    
         const div_index = ev.target.id
         const squareWithChange = this.state.squares.slice()
         squareWithChange[div_index] = "changed"
-        //console.log(squareWithChange)
 
-    const squaresBackground = sqaures_background
-    squaresBackground[div_index] = this.padInputColor
-      //console.log(squaresBackground)
+        const squaresBackground = sqaures_background
+       squaresBackground[div_index] = padInputColor
+       //console.log(squaresBackground)
+
     this.setState({
         squares: squareWithChange,
     })
@@ -54,8 +49,6 @@ class DesignBoard extends Component {
             background: bck_clr,
         }
 
-        // console.log(style_restet)
-
         const mode = this.props.mode
         const reset = this.props.reset
 
@@ -65,20 +58,20 @@ class DesignBoard extends Component {
             </div>
             )
     }
-        else if(mode === true && reset !== true) {
-            return (           /*in edit mode*/
+        else if(mode === true && reset !== true) {  /*in edit mode, reset not active*/
+            return (          
             <div  id= {i}  className= "square" style={style}
                 onDrop= {this.drop}  onDragOver={this.allowDrop}>
             </div> 
             )
         }
-        else if(mode === true && reset === true)
+        else if(mode === true && reset === true)  /*in edit mode, reset active*/
         {
             sqaures_background[i] = "DarkGray"
             const style1={
                 background: sqaures_background[i]
             }
-            if(reset === true){
+            if(reset === true){       /*once reset is activated, toggle it */
                this.handleResetToggle()
                 }
 
@@ -95,7 +88,7 @@ class DesignBoard extends Component {
 
     render() {
         
-        return (
+        return (  /*render divs from the design board */
             <div>
                 <div className="board-row">
                     {this.renderDesignPad(0)}
