@@ -1,0 +1,9 @@
+.inputs{
+    position: relative;
+    height: 50px;
+    width: 75px;
+    top: -150px;
+    left: 275px;
+    display: grid;
+    flex-wrap: wrap;
+}
