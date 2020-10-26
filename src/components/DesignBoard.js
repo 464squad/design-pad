@@ -12,7 +12,8 @@ class DesignBoard extends Component {
         return (
             <div className='padsContainer'>
                 {arr.map((value, index) => {
-                    return <div className="rectangle" key={index}></div>
+                    return <div className="rectangle" id={`rect${value}`} key={index} 
+                    onDrop={this.props.handleDrop} onDragOver={this.props.allowDrop}></div>
                 })
                 }
             </div>
