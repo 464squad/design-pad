@@ -26,6 +26,11 @@ class DesignContainer extends React.Component {
             <div className="container">
                 <h1> DESIGN PAD </h1> 
                 
+                { /*TODO - Add PadInput Component */ } 
+                <PadInput handleEditChange={this.editButtonEvent} />
+
+                <br/> 
+
                 { /*TODO - Add DesignBoard Component */ } 
                 <DesignBoard/>
 
@@ -34,11 +39,6 @@ class DesignContainer extends React.Component {
                 { /*TODO - Add DesignPad Component */ } 
                 {/* <DesignPad/> */}
 
-                <br/> 
-
-                { /*TODO - Add PadInput Component */ } 
-                <PadInput handleEditChange={this.editButtonEvent} />
-                
                 <br/> 
                 
                 { /*TODO - Add editButton Component */ }
