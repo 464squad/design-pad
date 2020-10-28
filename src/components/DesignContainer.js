@@ -21,7 +21,7 @@ class DesignContainer extends React.Component {
                 <br/>
 
                 {/*TODO - Add DesignBoard Component */}
-                    <DesignBoard/>
+                    
 
                 <br/>
                 {/*TODO - Add DesignPad Component */}
