@@ -15,7 +15,7 @@ class DesignContainer extends React.Component {
 
         return (
             <div className="container">
-                <h1>DESIGN PAD</h1>
+                
                 {/*TODO - Add PadInput Component */}
                     <PadInput/>            
                 <br/>
