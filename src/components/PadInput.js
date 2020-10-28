@@ -40,7 +40,7 @@ class PadInput extends Component {
 
         return(
             <div class="button_container">
-                <button onClick={this.editButton}> Edit </button>
+                <button class="edit_button" onClick={this.editButton}> Edit </button>
             </div>
         )
     }

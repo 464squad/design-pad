@@ -32,7 +32,7 @@ th {
   /* width: 1000px; */
 }
 .board_container {
-  margin: 20px auto; 
+  /* margin: 20px auto;  */
   width: 400px;
   height: 400px;
   /* background-color: #21728f; */
@@ -57,12 +57,11 @@ th {
 .button_container {
   display: flex;
   flex-direction: row-reverse;
-  /* padding-right: 200px; */
   padding-right: 15%;
 
 }
 
-button {
+.edit_button {
   background-color: black;
   color:white;
   font-size: 25px;
