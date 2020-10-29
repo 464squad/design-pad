@@ -1,0 +1,28 @@
+.inputContainer {
+    background-color: blue;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.inputContainerWrap {
+    flex-wrap: wrap;
+    width: 200px;
+    height: 300px;
+}
+
+.inputs {
+    background-color: white;
+    border: 2px solid black;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-weight: bold;
+}
