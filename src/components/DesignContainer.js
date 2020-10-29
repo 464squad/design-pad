@@ -1,6 +1,6 @@
 import React from 'react';
 import DesignBoard from './DesignBoard';
-// import DesignPad from './DesignPad';
+import DesignPad from './DesignPad';
 import PadInput from './PadInput';
 
 class DesignContainer extends React.Component {
@@ -37,7 +37,7 @@ class DesignContainer extends React.Component {
                 <br/>
 
                 { /*TODO - Add DesignPad Component */ } 
-                {/* <DesignPad/> */}
+                <DesignPad/>
 
                 <br/> 
                 
