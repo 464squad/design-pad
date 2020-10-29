@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './DesignBoard.css';
-import DesignPad from './DesignPad';
 
 class DesignBoard extends Component {
     constructor(props){
