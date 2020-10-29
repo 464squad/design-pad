@@ -1,0 +1,27 @@
+.boardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 300px;
+    top: -250px;
+}
+
+.boardContainerWrap {
+    flex-wrap: wrap;
+    width: 550px;
+    height: 550px;
+}
+
+.boxes {
+    background-color: grey;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 1px;
+    padding: 11px;
+
+}

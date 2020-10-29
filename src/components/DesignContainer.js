@@ -10,6 +10,7 @@ class DesignContainer extends Component {
         return (
             <div>
                 <PadInput/>
+                <DesignBoard/>
             </div>
         );
     }
