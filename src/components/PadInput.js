@@ -10,12 +10,6 @@ class PadInput extends React.Component {
     }
 }
 
-render() {
-    return(
-        <table>
-            
-        </table>
-    );
-}
+
 
 export default PadInput;
