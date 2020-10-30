@@ -2,9 +2,9 @@ import React from 'react';
 import '../css/PadInput.css';
 
 const Table = (props) => {
-  //const { linkData, removeLink } = props;
+  const { linkData, removeLink } = props;
    return (
-       <table>
+       <table id="padInput">
          <tr>
            <td>1</td>
            <td>2</td>
