@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import DesignBoard from './DesignBoard';
-import EditButton from './EditButton';
 import PadInput from './PadInput';
 import './DesignContainer.css';
 
