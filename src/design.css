@@ -1,0 +1,106 @@
+
+.App {
+  text-align: center;
+  background-color: coral;
+}
+
+
+.designContainer {
+  padding: 20px; 
+}
+
+.designContainer div {
+  display: grid;
+  line-height: 10px; 
+  flex-direction: row; 
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+}
+
+.siteTitle {
+width: 650px;
+height: 50px;
+background-color: pink;
+justify-content: center;
+
+}
+
+/* .enablebutton {
+  width: 90px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 10%;
+  border-width: 5px;
+  border-style: groove;
+
+} */
+
+.padInput {
+  position: flex;
+  height: 500px;
+  top: 100px;
+  width: 150px;
+  left: 20px;
+  background-color: #08ee7f;
+  flex-direction: row; 
+  display: flex;
+  border-radius: 10px;
+}
+
+.padButton {
+  flex: 1 0 21%; 
+  margin: 5px;
+  height: 50px;
+  background-color: rgb(160, 167, 34);
+  
+  }
+
+.designBoard{
+  display: flex;
+  position: absolute;
+  left: 500px;
+  top: 150px;
+  right: 40px;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.designBoard div {
+  display: flex;
+  flex-direction: row;
+}
+
+.designPad {
+  background-color: rgb(189, 230, 94);;
+  height: 180px;
+  width: 180px;
+  border: 2px #ccc solid;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.padButton1 {
+  background-color: rgb(250, 4, 4);
+}
+.padButton2 {
+  background-color: rgb(248, 113, 2);
+}
+.padButton3 {
+  background-color: rgb(253, 249, 5);
+}
+.padButton4 {
+  background-color: rgb(72, 243, 4);
+}
+.padButton5 {
+  background-color: rgb(3, 175, 243);
+}
+.padButton6 {
+  background-color: rgb(67, 2, 247);
+}
+.padButton7 {
+  background-color: rgb(199, 2, 248);
+}
+.padButton8 {
+  background-color: rgb(87, 2, 61);
+}
