@@ -6,6 +6,10 @@ class PadInput extends Component {
         super(props)
     }
 
+    drag = event => {
+        event.dataTransfer.setData("text",event.target.id);
+    }
+
     render() {
         return (
             <div className="inputContainer inputContainerWrap">

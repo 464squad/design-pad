@@ -5,6 +5,15 @@ class DesignBoard extends Component {
     constructor(props){
         super(props)
     }
+    allowDrop = event => {
+        event.preventDefault();
+    }
+
+    drop = event => {
+        event.preventDefault();
+        var data = event.dataTransfer.getData("text");
+        event.target.style.backgroundColor = data;
+    }
 
     render() {
         return (
