@@ -1,0 +1,15 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-header #editBtn {
+  width: 7vw;
+  color: white;
+  background-color: black; 
+}
+
+.app-body {
+  display: flex;
+  justify-content: space-around; 
+}
