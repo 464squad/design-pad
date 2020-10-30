@@ -25,21 +25,21 @@ class DesignContainer extends React.Component {
         return ( 
             <div className="container">
                 <h1> DESIGN PAD </h1> 
-                
-                { /*TODO - Add PadInput Component */ } 
-                <PadInput handleEditChange={this.editButtonEvent} />
+
+                { /*TODO - Add DesignPad Component */ } 
+                <DesignPad/>
 
                 <br/> 
 
                 { /*TODO - Add DesignBoard Component */ } 
                 <DesignBoard/>
 
-                <br/>
-
-                { /*TODO - Add DesignPad Component */ } 
-                <DesignPad/>
-
                 <br/> 
+                
+                { /*TODO - Add PadInput Component */ } 
+                <PadInput handleEditChange={this.editButtonEvent} />
+                
+                <br/>
                 
                 { /*TODO - Add editButton Component */ }
 

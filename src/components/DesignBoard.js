@@ -20,16 +20,14 @@ const DesignBoardBody = () => {
         //         <th> DESIGN PAD </th> 
         //     </tr> 
         // </thead>
-        <div>
-            <div class="Pad">
-                <div class="board_container">
-                    <div class="box"> Pad 1 </div>
-                    <div class="box"> Pad 2 </div>
-                    <div class="box"> Pad 3 </div>
-                    <div class="box"> Pad 4 </div>
-                </div>
+        // <div class="Pad">
+            <div class="board_container">
+                <div class="box"> Pad 1 </div>
+                <div class="box"> Pad 2 </div>
+                <div class="box"> Pad 3 </div>
+                <div class="box"> Pad 4 </div>
             </div>
-        </div>
+        // </div>
     );
 }
 
