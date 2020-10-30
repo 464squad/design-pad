@@ -19,6 +19,10 @@ code {
   box-sizing: border-box;
 }
 
+.container {
+  margin-top: 10%;
+}
+
 .header {
   padding-left: 20%;
   font-size: 380%;
