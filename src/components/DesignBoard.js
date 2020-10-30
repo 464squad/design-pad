@@ -5,6 +5,7 @@ class DesignBoard extends Component {
     constructor(props){
         super(props)
     }
+    
     allowDrop = event => {
         event.preventDefault();
     }
