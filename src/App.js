@@ -1,13 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import DesignPad from './components/DesignPad';
 import './App.css';
 
 function App() {
+  const tryingHello = () => {
+    console.log("Hello");
+  }
   return (
     <div className="App">
       <h1> Design Pad </h1>
-      <button> Edit </button>
+      <button onClick={tryingHello}> Edit </button>
+      <div>
+        <DesignPad/>
+      </div>
     </div>
+
   );
 }
 
