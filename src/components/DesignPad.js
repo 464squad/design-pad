@@ -9,4 +9,4 @@ const PadInputContainer = () => {
 }
 
 
-export default DesignPad;
+export default PadInputContainer;
