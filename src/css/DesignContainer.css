@@ -1,0 +1,23 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editBtn {
+  width: 7vw;
+  color: white;
+  text-align: center;
+}
+
+.editBtnOn {
+  background-color: red;
+}
+
+.editBtnOff {
+  background-color: black; 
+}
+
+.app-body {
+  display: flex;
+  justify-content: space-around; 
+}

@@ -1,0 +1,24 @@
+.padOutput {
+    width: 60vw;
+    height: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.padOutput div {
+    width: 20vw;
+    height: 30vh;
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.designPadOn {
+    background-color: red;
+}
+
+.designPadOn {
+    background-color: blue;
+}
