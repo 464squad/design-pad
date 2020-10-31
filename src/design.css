@@ -18,10 +18,10 @@
 }
 
 .siteTitle {
-width: 650px;
-height: 50px;
-background-color: pink;
-justify-content: center;
+  width: 650px;
+  height: 50px;
+  background-color: pink;
+  justify-content: center;
 
 }
 
@@ -80,7 +80,7 @@ justify-content: center;
   margin: 5px;
 }
 
-.padButton1 {
+#padButton1 {
   background-color: rgb(250, 4, 4);
 }
 .padButton2 {
