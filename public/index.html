@@ -38,12 +38,63 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <style>
+        #div1 {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+        
+        #colorBox {
+            width: 150px;
+            height: 100px;
+            clear: both;
+            background-color: red;
+        }
+    </style>
 
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
 
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
 
-    <script src="App.js">
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            writeText();
+        }
+
+        // Make something happen after the drag-n-drop takes place:
+        function writeText() {
+            var newEl = document.createElement("p");
+            var newPara = document.createTextNode("The picture is in the box above and color of box below has changed.");
+            newEl.appendChild(newPara);
+            document.getElementById("textAppear").appendChild(newEl);
+            coloringBox();
+        }
+
+        function coloringBox() {
+            var orig = document.getElementById('colorBox');
+            orig.style.backgroundColor = 'green';
+        }
+
+        // Can also make add to cart visually. Dragging item deposits id, function pulls id from row and creates shopping list.
     </script>
+    </head>
 
-</body>
+    <body>
+
+
+
+        <script src="App.js">
+        </script>
+
+    </body>
 
 </html>
