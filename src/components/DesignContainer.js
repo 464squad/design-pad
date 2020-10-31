@@ -7,4 +7,14 @@ class DesignContainer extends React.Component {
             
         }
     }
+    render() {
+        return (
+        <div>
+            
+            <button className="btn">Edit</button>
+        </div>
+        );
+    }
 }
+
+export default DesignContainer;

@@ -1,5 +1,6 @@
 import React from 'react';
 import DesignPad from "./components/DesignPad";
+import DesignContainer from "./components/DesignContainer"
 import './App.css';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <h1> Design Pad </h1>
-      <button onClick={tryingHello}> Edit </button>
+  <span>{<DesignContainer />}</span>
       <div className="pads">
         <DesignPad/>
       </div>
