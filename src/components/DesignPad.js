@@ -1,16 +1,10 @@
 import React from 'react';
-import '../css/PadOutput.css';
-
-const overPad = (props) => {
-  props.togglePad()
-  props.allowDrop()
-}
-
+import '../css/DesignPad.css';
 
 const PadOutput = (props) => {
-  const { toggleDesignPad, togglePad, allowDrop, drag, drop } = props;
+  const { allowDrop, drop } = props;
   return (
-    <div className={`padOutput ${toggleDesignPad}`}>
+    <div className='padOutput'>
       <div id="tl" onDrop={drop} onDragOver={allowDrop}></div>
       <div id="tr" onDrop={drop} onDragOver={allowDrop}></div>
       <div id="bl" onDrop={drop} onDragOver={allowDrop}></div>
@@ -20,13 +14,10 @@ const PadOutput = (props) => {
 }
 
 function DesignPad(props){
-  const { toggleDesignPad, togglePad, allowDrop, drag, drop } = props;
+  const { allowDrop, drop } = props;
   return (
     <PadOutput
-      toggleDesignPad={toggleDesignPad}
-      togglePad={togglePad}
       allowDrop={allowDrop}
-      drag={drag}
       drop={drop}        
     />
   );

@@ -1,8 +1,8 @@
 import React from 'react';
 import '../css/PadInput.css';
 
-const Table = (props) => {
-  const { padInputTF, allowDrop, drag, drop } = props;
+const ControlPanel = (props) => {
+  const { padInputTF, drag } = props;
    return (
        <table className={`padInput ${padInputTF}`}>
          <tbody>
@@ -28,13 +28,11 @@ const Table = (props) => {
 }
 
 function PadInput(props){
-  const { padInputTF, allowDrop, drag, drop } = props;
+  const { padInputTF, drag } = props;
   return (
-    <Table 
+    <ControlPanel
       padInputTF={padInputTF}
-      allowDrop={allowDrop}
       drag={drag}
-      drop={drop}   
     />
   );
 }

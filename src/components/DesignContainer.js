@@ -8,19 +8,12 @@ class DesignContainer extends Component {
     super(props);
     this.state = {
       toggleEdit: false,
-      togglePad: false
     }
   }
   
   toggleEdit = () => {
     this.setState({
       toggleEdit: !this.state.toggleEdit
-    })
-  }
-
-  togglePad = () => {
-    this.setState({
-      togglePad: !this.state.togglePad
     })
   }
 
@@ -67,10 +60,9 @@ class DesignContainer extends Component {
   }
 
   render() {
-    const { toggleEdit, togglePad } = this.state;
+    const { toggleEdit } = this.state;
     const editBtnTF = toggleEdit ? 'editBtnOn' : 'editBtnOff';
     const padInputTF = toggleEdit ? 'padInputOn' : 'padInputOff';
-    const toggleDesignPad = togglePad ? 'designPadOn' : 'designPadOff';
     return (
       <div>
         <div className="app-header">
@@ -80,15 +72,10 @@ class DesignContainer extends Component {
         <div className="app-body">
           <PadInput 
             padInputTF={padInputTF}
-            allowDrop={this.allowDrop}
             drag={this.drag}
-            drop={this.drop}
           />
           <DesignBoard
-            toggleDesignPad={toggleDesignPad}
-            togglePad={this.togglePad}
             allowDrop={this.allowDrop}
-            drag={this.drag}
             drop={this.drop}          
           />
         </div>        
