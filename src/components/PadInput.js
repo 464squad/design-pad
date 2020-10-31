@@ -1,53 +1,50 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
-class Form extends Component {
+class PadInput extends Component {
     constructor(props) {
         super(props);
-
         /*
-            TODO - set initial state for editButton
-
+            TODO - set initial state for edit button
         */
-
+       this.state = {
+           editButton: false
+       }
     }
-
 
     handleEditChange = event => {
         /*
-            TODO - Logic for changing state based on Edit button click changes
+            TODO - Logic for changing state based on form changes
         */
-        console.log("EDIT BUTTON CLICKED")
+        console.log("edit button updated")
         console.log(event.target)
 
-        //changing the state
+       // change the state
         this.setState({
             [event.target.editButton]: event.target.value
         })
-
     }
 
-
-    editButton = (event) => {
+    editButton = event => {
         // to prevent page reload on form submit
         event.preventDefault();
-
         /*
             TODO - Logic for calling props to handle submission and setting state changes
         */
-        console.log(this.state)
-        this.props.handleEditChange(this.state)
+       console.log(this.state)
+       console.log('Was I clicked?')
+       this.props.handleEditChange(this.state) 
+       console.log('Was I clicked again?')
     }
-
 
     render() {
 
-        return (null
-
-            //<button onClick={this.editButton}> EDIT </button>
-
+        return(
+            <div class="button_container">
+                <button class="edit_button" onClick={this.editButton}> Edit </button>
+            </div>
         )
-
     }
 }
 
-export default Form;
+
+export default PadInput;
