@@ -1,0 +1,26 @@
+.PadInput{
+    display: flex;
+    flex-wrap: wrap;   
+    width: 150px;
+    height: 350px;
+    border: black solid;
+    background-color: indianred;
+    border-radius: 20px;
+    margin-left: 75px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.PadItem{
+    display: flex;    
+    width: 65px;
+    height: 40px;
+    border: black solid;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+
+

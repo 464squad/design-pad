@@ -1,0 +1,13 @@
+.DesignBoard{
+    display: flex;
+    width: 385px;
+    height: 265px;
+    float: right; 
+    border: black solid;
+    border-radius: 20px;
+    background-color: indianred;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-content: center; 
+    margin-right: 75px;
+}

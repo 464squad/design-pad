@@ -1,0 +1,10 @@
+.Pad {
+    display: flex;    
+    width: 185px;
+    height: 125px;
+    border: black solid;
+    border-radius: 20px;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+} 
