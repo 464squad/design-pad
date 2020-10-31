@@ -5,7 +5,7 @@ export default function PadInput() {
 
     return (
         <div className = "PadInput-container">
-            <div draggable={true} onDragStart={true}className = "PadInput-box1">1</div>
+            <div className = "PadInput-box1">1</div>
             <div className = "PadInput-box2">2</div>
             <div className = "PadInput-box3">3</div>
             <div className = "PadInput-box4">4</div>
