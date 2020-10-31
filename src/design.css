@@ -36,6 +36,7 @@ justify-content: center;
 } */
 
 .padInput {
+  display: flex;
   position: flex;
   height: 500px;
   top: 100px;
@@ -43,7 +44,6 @@ justify-content: center;
   left: 20px;
   background-color: #08ee7f;
   flex-direction: row; 
-  display: flex;
   border-radius: 10px;
 }
 
