@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.css';
+import './index.css';
+import DesignContainer from './components/DesignContainer';
 
 function App() {
+
   return (
     <div className="app-title">
       
-      <designContainer />
+      <DesignContainer />
+
     </div>
   );
 }

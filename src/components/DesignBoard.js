@@ -8,7 +8,11 @@ class DesignBoard extends Component {
     }
 
     render() {
-        
+        return (
+            <div>
+
+            </div>
+        );
     }
 }
 

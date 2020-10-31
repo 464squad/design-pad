@@ -1,12 +1,16 @@
 import React, {Component} from 'react'
 
-import "./index.css"
+import './index.css'
 
 class PadInput extends Component {
 
-    render() {
-        
+    render () {
+        return (
+            <div>
+
+            </div>
+        );
     }
 }
 
-export default PadInput
+export default PadInput;
