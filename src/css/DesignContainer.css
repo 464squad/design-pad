@@ -1,0 +1,11 @@
+.editButton {
+    background-color: orange;
+    color:black;
+    font-size: x-large;
+  }
+  
+  .editButtonActive {
+    background-color: red;
+    color: white;
+    font-size: x-large;
+  }
