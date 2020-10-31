@@ -14,14 +14,14 @@ class DesignPad extends React.Component {
       
       return (
           <div className="container">
-              <div style={{color:"white"}}> <PadInput /> </div>
-              <div style={{color:"white"}}> <PadInput />  </div>
-              <div style={{color:"white"}}> <PadInput />  </div>
-              <div style={{color:"white"}}> <PadInput />  </div>
-              <div style={{color:"white"}}> <PadInput />  </div>
-              <div style={{color:"white"}}> <PadInput />  </div>
-              <div style={{color:"white"}}> <PadInput />  </div>
-              <div style={{color:"white"}}> <PadInput />  </div>
+              <div style={{color:"white"}}> <PadInput num="1"/> </div>
+              <div style={{color:"white"}}> <PadInput num="2"/>  </div>
+              <div style={{color:"white"}}> <PadInput num="3"/>  </div>
+              <div style={{color:"white"}}> <PadInput num="4"/>  </div>
+              <div style={{color:"white"}}> <PadInput num="5"/>  </div>
+              <div style={{color:"white"}}> <PadInput num="6"/>  </div>
+              <div style={{color:"white"}}> <PadInput num="7"/>  </div>
+              <div style={{color:"white"}}> <PadInput num="8"/>  </div>
           </div>
       );
   }
