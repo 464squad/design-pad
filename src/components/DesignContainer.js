@@ -1,4 +1,5 @@
 import React from 'react';
+import DesignPad from "./DesignPad";
 
 class DesignContainer extends React.Component {
     constructor(props) {
@@ -10,8 +11,9 @@ class DesignContainer extends React.Component {
     render() {
         return (
         <div>
-            
+
             <button className="btn">Edit</button>
+        <DesignPad />
         </div>
         );
     }

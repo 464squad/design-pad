@@ -5,7 +5,7 @@ class PadInput extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value : null,
+            value : Array(9).fill(null),
         }
     }
 }

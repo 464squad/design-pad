@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <h1> Design Pad </h1>
-  <span>{<DesignContainer />}</span>
+  
       <div className="pads">
-        <DesignPad/>
+      <span>{<DesignContainer />}</span>
       </div>
     </div>
 
