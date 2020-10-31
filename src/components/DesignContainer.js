@@ -17,6 +17,9 @@ class DesignContainer extends Component {
     }
 
     handleEdit = event => {
+        this.setState({
+            edit: !event.target.value
+        });
         console.log(event.target)
     }
 
