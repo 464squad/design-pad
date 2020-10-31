@@ -1,5 +1,5 @@
-import React from 'react'
-import DesignPad from './DesignPad'
+import React from 'react';
+import DesignPad from './DesignPad';
 import './DesignBoard.css';
 
 class DesignBoard extends React.Component{
