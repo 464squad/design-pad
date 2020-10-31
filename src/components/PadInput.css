@@ -1,0 +1,41 @@
+.inputContainer {
+    background-color: blue;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 90px;
+    left: 190px;
+}
+
+.inputContainerWrap {
+    flex-wrap: wrap;
+    width: 200px;
+    height: 300px;
+}
+
+.inputs {
+    background-color: white;
+    border: 2px solid black;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.editButton {
+    color: white;
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    left: 1000px;
+}
