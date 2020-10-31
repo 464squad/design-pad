@@ -1,0 +1,17 @@
+.editButton {
+  background-color: black;
+  color: white;
+  font-size: x-large;
+  position:absolute; 
+  top:50px;
+  right: 10px;
+}
+
+.editButtonActive {
+  background-color: red;
+  color: white;
+  font-size: x-large;
+  position:absolute; 
+  top:50px;
+  right: 10px;
+}

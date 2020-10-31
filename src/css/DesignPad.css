@@ -1,0 +1,23 @@
+  h1 {
+      color: black;
+      font-family: Helvetica;
+      font-weight: 500;
+      font-size: 55px;
+  }
+  .designpad {
+    display: inline-block;
+    width: 420px;
+    height: 300px;
+    background-color: darkgray;
+    border-radius: 25px;
+    top: -260px;
+    left: 70px;
+    position: relative;
+  }
+  @media screen  {
+    .designpad {
+        width: 35%;
+    }
+  }
+
+ 

@@ -1,0 +1,29 @@
+.main-container {
+  border: 4px solid #9A9999;
+  padding: 20px;
+  margin: 20px;
+  width: 150px;
+  background-color: #9B97FF;
+}
+
+.row {
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.row > div {
+  padding: 5px;
+  width: 50px;
+  border: 2px solid #A09EDF;
+  background-color:#A29EDC ;
+  margin: 2px
+}
+@media screen  {
+  .main-container {
+      width: 13%;
+  }
+  .row{
+    padding: 4%;
+  }
+}
