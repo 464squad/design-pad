@@ -1,0 +1,32 @@
+.DesignPad-container {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    border: 1px solid;
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    right: 40px;
+    width: 400px;
+    height: 400px;
+ }
+
+.DesignPad-box1 {
+    background: grey;
+    border: 1px solid;
+}
+
+.DesignPad-box2 {
+    background: grey;
+    border: 1px solid;
+}
+
+.DesignPad-box3 {
+    background: grey;
+    border: 1px solid;
+}
+
+.DesignPad-box4 {
+    background: grey;
+    border: 1px solid;
+}
