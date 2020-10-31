@@ -17,7 +17,90 @@
     width: 65px;
     height: 40px;
     border: black solid;
-    background-color: indianred;
+    background-color: white;
     align-items: center;
     justify-content: center;
 } 
+
+.PadItem1{
+    display: flex;    
+    width: 65px;
+    height: 40px;
+    border: black solid;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+}
+
+.PadItem2{
+    display: flex;    
+    width: 65px;
+    height: 40px;
+    border: black solid;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+}
+
+.PadItem3{
+    display: flex;    
+    width: 65px;
+    height: 40px;
+    border: black solid;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+}
+
+.PadItem4{
+    display: flex;    
+    width: 65px;
+    height: 40px;
+    border: black solid;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+}
+
+.PadItem5{
+    display: flex;    
+    width: 65px;
+    height: 40px;
+    border: black solid;
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+}
+
+.PadItem6{
+    display: flex;    
+    width: 65px;
+    height: 40px;
+    border: black solid;
+    background-color: brown;
+    align-items: center;
+    justify-content: center;
+}
+
+.PadItem7{
+    display: flex;    
+    width: 65px;
+    height: 40px;
+    border: black solid;
+    background-color: pink;
+    align-items: center;
+    justify-content: center;
+}
+
+.PadItem8{
+    display: flex;    
+    width: 65px;
+    height: 40px;
+    border: black solid;
+    background-color: purple;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
