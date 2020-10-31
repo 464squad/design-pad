@@ -3,9 +3,17 @@
   justify-content: space-between;
 }
 
-.app-header #editBtn {
+.editBtn {
   width: 7vw;
   color: white;
+  text-align: center;
+}
+
+.editBtnOn {
+  background-color: red;
+}
+
+.editBtnOff {
   background-color: black; 
 }
 

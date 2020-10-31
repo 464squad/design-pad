@@ -2,11 +2,11 @@ import React from 'react';
 import '../css/PadInput.css';
 
 const Table = (props) => {
-  const { linkData, removeLink } = props;
+  const { padInputTF } = props;
    return (
-       <table id="padInput">
+       <table className={`padInput ${padInputTF}`}>
          <tr>
-           <td>1</td>
+           <td >1</td>
            <td>2</td>
          </tr>
          <tr>
@@ -26,8 +26,9 @@ const Table = (props) => {
 }
 
 function PadInput(props){
+  const { padInputTF } = props;
   return (
-    <Table/>
+    <Table padInputTF={padInputTF}/>
   );
 }
 

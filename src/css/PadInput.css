@@ -1,4 +1,4 @@
-table {
+.padInput {
     width: 10vw;
     height: 30vh;
     display: flex;
@@ -7,16 +7,23 @@ table {
     border: 5px solid grey;
 }
 
-table tr {
+.padInput tr {
     margin-top: 3vh;
     display: flex;
     justify-content: space-around;
 }
 
-table tr td {
+.padInput tr td {
     width: 4vw;
     height: 2vh;
     text-align: center;
-    background-color: aqua;
     border: 1px solid grey;
+}
+
+.padInputTFOn {
+    background-color: black;
+}
+
+.padInputTFOff {
+    background-color: aqua;
 }
