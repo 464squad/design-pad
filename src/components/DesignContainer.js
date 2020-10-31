@@ -1,5 +1,6 @@
 import React from 'react';
 import DesignBoard from "./DesignBoard";
+import DesignPad from './DesignPad';
 
 class DesignContainer extends React.Component {
     constructor(props) {
@@ -14,6 +15,7 @@ class DesignContainer extends React.Component {
             <h1 className="size"> Design Pad </h1>
             <button className="btn">Edit</button>
         <span>{<DesignBoard />}</span>
+        <span className="inputs">{<DesignPad />}</span>
         </div>
         );
     }

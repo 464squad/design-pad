@@ -14,7 +14,7 @@ function App() {
       
       <div className="pads">
       <span >{<DesignContainer />}</span>
-      <span className="inputs">{<DesignPad />}</span>
+     
       </div>
     </div>
 
