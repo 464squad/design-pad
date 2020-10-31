@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 import './index.css'
 
-class PadInput extends Component {
+class padInput extends Component {
 
     render () {
         return (
@@ -13,4 +13,4 @@ class PadInput extends Component {
     }
 }
 
-export default PadInput;
+export default padInput;

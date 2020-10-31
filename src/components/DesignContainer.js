@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import PadInput from "./PadInput"
+import padInput from "./padInput"
 import DesignBoard from "./DesignBoard"
 import "./index.css"
 
