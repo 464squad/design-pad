@@ -1,20 +1,34 @@
 import React from 'react';
 import '../css/PadOutput.css';
 
+const overPad = (props) => {
+  props.togglePad()
+  props.allowDrop()
+}
+
+
 const PadOutput = (props) => {
+  const { toggleDesignPad, togglePad, allowDrop, drag, drop } = props;
   return (
-    <div class="padOutput">
-      <div id="tl"></div>
-      <div id="tr"></div>
-      <div id="bl"></div>
-      <div id="br"></div>
+    <div className={`padOutput ${toggleDesignPad}`}>
+      <div id="tl" onDrop={drop} onDragOver={allowDrop}></div>
+      <div id="tr" onDrop={drop} onDragOver={allowDrop}></div>
+      <div id="bl" onDrop={drop} onDragOver={allowDrop}></div>
+      <div id="br" onDrop={drop} onDragOver={allowDrop}></div>
     </div>
   )
 }
 
 function DesignPad(props){
+  const { toggleDesignPad, togglePad, allowDrop, drag, drop } = props;
   return (
-    <PadOutput/>
+    <PadOutput
+      toggleDesignPad={toggleDesignPad}
+      togglePad={togglePad}
+      allowDrop={allowDrop}
+      drag={drag}
+      drop={drop}        
+    />
   );
 }
 

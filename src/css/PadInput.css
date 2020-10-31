@@ -7,23 +7,28 @@
     border: 5px solid grey;
 }
 
-.padInput tr {
+.padInput tbody tr {
     margin-top: 3vh;
     display: flex;
     justify-content: space-around;
 }
 
-.padInput tr td {
+.padInput tbody tr td {
     width: 4vw;
     height: 2vh;
     text-align: center;
     border: 1px solid grey;
 }
 
-.padInputTFOn {
-    background-color: black;
+.padInputOn {
+    pointer-events: click;
+    background-color: blue;
 }
 
-.padInputTFOff {
-    background-color: aqua;
+.padInputOn tr td {
+    background-color: white;
+}
+
+.padInputOff {
+    pointer-events: none;
 }

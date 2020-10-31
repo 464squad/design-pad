@@ -2,33 +2,40 @@ import React from 'react';
 import '../css/PadInput.css';
 
 const Table = (props) => {
-  const { padInputTF } = props;
+  const { padInputTF, allowDrop, drag, drop } = props;
    return (
        <table className={`padInput ${padInputTF}`}>
-         <tr>
-           <td >1</td>
-           <td>2</td>
-         </tr>
-         <tr>
-           <td>3</td>
-           <td>4</td>
-         </tr>
-         <tr>
-           <td>5</td>
-           <td>6</td>
-         </tr>
-         <tr>
-           <td>7</td>
-           <td>8</td>
-         </tr>
+         <tbody>
+          <tr>
+            <td id="1" draggable="true" onDragStart={drag}>1</td>
+            <td id="2" draggable="true" onDragStart={drag}>2</td>
+          </tr>
+          <tr>
+            <td id="3" draggable="true" onDragStart={drag}>3</td>
+            <td id="4" draggable="true" onDragStart={drag}>4</td>
+          </tr> 
+          <tr>
+            <td id="5" draggable="true" onDragStart={drag}>5</td>
+            <td id="6" draggable="true" onDragStart={drag}>6</td>
+          </tr>
+          <tr>
+            <td id="7" draggable="true" onDragStart={drag}>7</td>
+            <td id="8" draggable="true" onDragStart={drag}>8</td>
+          </tr>           
+         </tbody>
        </table>
    )
 }
 
 function PadInput(props){
-  const { padInputTF } = props;
+  const { padInputTF, allowDrop, drag, drop } = props;
   return (
-    <Table padInputTF={padInputTF}/>
+    <Table 
+      padInputTF={padInputTF}
+      allowDrop={allowDrop}
+      drag={drag}
+      drop={drop}   
+    />
   );
 }
 
