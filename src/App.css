@@ -42,3 +42,15 @@
   align-content: center;
   align-items: center;
 }
+
+.inputs {
+  position: absolute;
+  left : 525px;
+  top : 260px;
+  
+}
+
+.size {
+  font-family : Arial, Helvetica;
+  font-size: 70px;
+}
