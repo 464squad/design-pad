@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles.css'
 
-export default function DesignPad(props) {
+export default function DesignPad() {
     
     return (
         <div className ="DesignPad-container">

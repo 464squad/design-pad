@@ -1,7 +1,7 @@
 .DesignPad-container {
     display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 250px 250px;
     border: 1px solid;
     position: absolute;
     left: 500px;
@@ -29,4 +29,110 @@
 .DesignPad-box4 {
     background: grey;
     border: 1px solid;
+}
+
+
+.PadInput-container{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 75px 75px 75px 75px;
+    border: 1px solid;
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    right: 40px;
+    width: 200px;
+    height: 340px;
+    background: blue;
+}
+
+.PadInput-box1 {
+    background: white;
+    border: 1px solid;
+    width:80px;
+    height:40px;
+    text-align:center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 35px;
+    line-height: 40px;
+}
+.PadInput-box2 {
+    background: white;
+    border: 1px solid;
+    width:80px;
+    height:40px;
+    text-align:center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 35px;
+    line-height: 40px;
+}
+.PadInput-box3 {
+    background: white;
+    border: 1px solid;
+    width:80px;
+    height:40px;
+    text-align:center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 35px;
+    line-height: 40px;
+}
+.PadInput-box4 {
+    background: white;
+    border: 1px solid;
+    width:80px;
+    height:40px;
+    text-align:center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 35px;
+    line-height: 40px;
+}
+.PadInput-box5 {
+    background: white;
+    border: 1px solid;
+    width:80px;
+    height:40px;
+    text-align:center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 35px;
+    line-height: 40px;
+}
+.PadInput-box6 {
+    background: white;
+    border: 1px solid;
+    width:80px;
+    height:40px;
+    text-align:center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 35px;
+    line-height: 40px;
+}
+
+.PadInput-box7 {
+    background: white;
+    border: 1px solid;
+    width:80px;
+    height:40px;
+    text-align:center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 35px;
+    line-height: 40px;
+}
+
+.PadInput-box8 {
+    background: white;
+    border: 1px solid;
+    width:80px;
+    height:40px;
+    text-align:center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 35px;
+    line-height: 40px;
 }

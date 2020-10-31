@@ -1,10 +1,10 @@
 import React from 'react';
-import DesignBoard from './components/DesignBoard';
+import DesignContainer from './components/DesignContainer';
 
 function App() {
   return (
-    <div className="App">
-      <DesignBoard />
+    <div>
+      <DesignContainer />
     </div>
   );
 }
