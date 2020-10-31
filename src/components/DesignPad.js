@@ -2,7 +2,7 @@ import React from 'react';
 
 const PadInputContainer = () => {
     return (
-        <div>
+        <div className="padLook">
           <div className="square">square1</div>
           <div className="square">square2</div>
           <div className="square">square3</div>
@@ -10,6 +10,7 @@ const PadInputContainer = () => {
         </div>
     )
 }
+
 
 
 

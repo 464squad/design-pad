@@ -23,11 +23,23 @@ code {
   font-weight: bold;
 }
 
-.square {
-  display : flex;
-  height : 200px;
-  width : 200px;
-  background : darkgray;
+.padLook {
+  display : grid;
+  height : 500px;
+  width : 500px;
   justify-content: center;
   align-items: center;
+  border : 4px solid white;
+  border-radius: 12px;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.square {
+  height : 242px;
+  background : gray;
+  border : 8px solid white;
+  border-radius : 12px;
+  display : flex;
+  justify-content : center;
+  align-items : center;
 }
