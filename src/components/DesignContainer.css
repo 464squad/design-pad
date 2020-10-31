@@ -1,6 +1,7 @@
 .DesignContainer{
-    width: 850px;
+    width: 750px;
     height: 400px; 
+    background-color: dodgerblue;
     border: black solid;
     border-radius: 20px;
     margin: auto;

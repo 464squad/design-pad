@@ -5,9 +5,9 @@
     float: right; 
     border: black solid;
     border-radius: 20px;
-    background-color: DodgerBlue;
+    background-color: indianred;
     flex-wrap: wrap; 
     justify-content: center;
     align-content: center; 
-    margin-left: auto;
+    margin-right: 75px;
 }

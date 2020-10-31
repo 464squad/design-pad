@@ -7,6 +7,6 @@ export default function PadItem(props){
     };
 
     return(
-        <div draggable={props.edit} onDragStart={handleOnDragStart}>1{props.color}</div>
+        <div draggable={props.edit} onDragStart={handleOnDragStart}>{props.color}</div>
     );
 }
