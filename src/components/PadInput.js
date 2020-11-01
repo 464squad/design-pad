@@ -39,7 +39,7 @@ function PadInput(props) {
             </td>
           </tr>
           <tr>
-            <td class = "tablePink">
+            <td style={{ color: "black" }} class = "tablePink">
               <Pad editing={props.editing} color="pink" />
             </td>
             <td style={{color: "black"}} class = "tableYellow">
