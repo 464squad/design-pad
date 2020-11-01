@@ -4,14 +4,17 @@ import PadInput from "./PadInput";
 import "../css/DesignContainer.css";
 
 class DesignContainer extends React.Component {
-  state = { editing: false };
 
+  state = { editing: false };
   updateEditState = () => {
     this.setState(props => ({
       editing: !props.editing
     }));
   };
-
+  clearState = () => {
+    this.setState({ color: "light-grey" });
+    console.log("I have been dropped");
+  }
   render() {
     const btnClass = this.state.editing ? "editButtonActive" : "editButton";
     const editing = this.state.editing;
@@ -22,6 +25,7 @@ class DesignContainer extends React.Component {
           <button className={btnClass} onClick={this.updateEditState}>
             Edit
           </button>
+          <button onClick={{ backgroundColor: this.clearState }}> Clear </button>
         </div>
 
         <PadInput editing={editing} />
@@ -30,5 +34,6 @@ class DesignContainer extends React.Component {
     );
   }
 }
+
 
 export default DesignContainer;
