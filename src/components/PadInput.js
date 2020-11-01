@@ -21,7 +21,7 @@ function PadInput(props) {
   return (
     <div className="main-container">
       <table>
-        <tbody>
+        <tbody class= "table">
           <tr>
             <td class = "tableBlue">
               <Pad editing={props.editing} color="blue" />
@@ -42,7 +42,7 @@ function PadInput(props) {
             <td class = "tablePink">
               <Pad editing={props.editing} color="pink" />
             </td>
-            <td class = "tableYellow">
+            <td style={{color: "black"}} class = "tableYellow">
               <Pad editing={props.editing} color="yellow" />
             </td>
           </tr>

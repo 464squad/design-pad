@@ -19,7 +19,9 @@
     padding: 10px;
     background-color:gainsboro;
   } */
-
+  .table{
+    color: white; 
+  }
   .tableBlue{
     height: 40px;
     border: 2px lightgray solid;
