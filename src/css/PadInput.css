@@ -4,6 +4,7 @@
     padding: 20px;
     margin: 20px;
     width: 100px;
+    background-color: rgb(112, 11, 140);
   }
   
   .row {
@@ -15,4 +16,5 @@
   .row > div {
     border: 2px solid black;
     padding: 10px;
+    background-color:gainsboro;
   }
