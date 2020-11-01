@@ -1,10 +1,11 @@
 
 .main-container {
-    border: 2px solid black;
+    border: 2px solid purple;
     padding: 20px;
     margin: 20px;
     width: 100px;
     background-color: rgb(112, 11, 140);
+    border-radius: 15px;
   }
   
   .row {
@@ -14,7 +15,7 @@
   }
   
   .row > div {
-    border: 2px solid black;
+    border: 2px solid purple;
     padding: 10px;
     background-color:gainsboro;
   }

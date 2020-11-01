@@ -2,17 +2,27 @@
     padding: 30;
     margin: 0;
     display: inline-block;
-    width: 420px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
     justify-content: center;
     align-items: center;
     background-color: darkgray;
     border-radius: 25px;
     top: -250px;
-    left: 80px;
+    left: 250px;
     position: relative;
   }
   
   /* .wpad:hover {
     background-color: darkturquoise;
   } */
+
+  .pad-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 60vw;
+    height: 40vw;
+    grid-gap: 1em;
+    align-items: center;
+    justify-content: space-evenly;
+  }

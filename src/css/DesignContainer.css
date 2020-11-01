@@ -7,9 +7,8 @@
   .editButtonActive {
     position: absolute;
     top: 40px;
-  right: 10%;
-  padding: 10px 20px;
-
+    right: 10%;
+    padding: 10px 20px;
     background-color: red;
     color: white;
     font-size: x-large;
