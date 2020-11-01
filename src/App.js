@@ -1,14 +1,17 @@
 import React from 'react';
-import './App.css';
 import DesignContainer from './components/DesignContainer';
-
+import "./components/style.css"
+import Title from './components/Title'
 function App() {
+
   return (
-    <div>
-    <h1>Design Pad</h1>
+    <div className="heading" >
+    
+    <Title />
     <DesignContainer/>
 
-    </div>
 
+    </div>
   );
   }
+export default App;
