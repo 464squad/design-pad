@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./style.css"
-const sqaures_background= ["DarkGray", "DarkGray", "DarkGray","DarkGray"]
+const sqaures_background= ["White", "White", "White","White"]
 class DesignBoard extends Component {
     
     constructor(props) {

@@ -3,10 +3,7 @@ import "./style.css"
 
 
 export default class Title extends Component {
-    constructor(props){
-        super(props);
-    }
-
+    
     componentDidMount(){
         const title = document.querySelector('.padTitle');
         let titleTextContent = title.textContent;
@@ -22,7 +19,7 @@ export default class Title extends Component {
             span.classList.add('fade');
             console.log(span);
             char++;
-            if(char == splitTxt.length){
+            if(char === splitTxt.length){
                 //stop
                 complete();
                 return;

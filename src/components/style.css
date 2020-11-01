@@ -1,4 +1,4 @@
-.heading {
+.heading{
     text-align: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,18 +7,19 @@
     height: 100%;
     margin: auto 3rem;
   }
-  .padTitle {
-    color: purple;
+  .padTitle{
+    /*color: purple;*/
   }
   
-  .board {
+  .board {/*display: flex;*/
+    /*justify-content: center;*/
     font-size: bold;
     align-items: center;
     padding-bottom: 3.5rem;
   }
   .design-board {
     position: fixed;
-    margin-left: 28%;
+    margin-left: 23%;
     align-items: center;
     border: 20px solid rgba(46, 47, 48, 0.75);
   }
@@ -113,13 +114,13 @@
     transition: all 0.05s ease-in-out;
 }
 .button:hover {
-    background-color: #d8cecede;
+    background-color: #d8d1cede;
     color: black;
   }
   .edit-active {
     float: right;
     text-transform: uppercase;
-    background-color: #f529ebfb;
+    background-color: #5529f5fb;
     border: none;
     border-radius: 100px;
     color: white;
@@ -132,6 +133,6 @@
     transition: all 0.05s ease-in-out;
 }
 .edit-active:hover {
-    background-color: #f397eefb;
+    background-color: #ab97f3fb;
   }
   
