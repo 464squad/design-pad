@@ -1,8 +1,17 @@
-/* .editButton {
-  background-color: black;
-  color: white;
+.padsContainer{
+  position: relative;
+  display: grid;
+  flex-wrap: wrap;
+  width: 500px;
+  left: 550px;
+  top: 150px;
+  grid-row-gap: 5px;
+  grid-template-columns: repeat(2, 405px);
 }
-.editButtonActive {
-  background-color: red;
-  color: white;
-} */
+
+.rectangle{
+  height: 200px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #555;
+}

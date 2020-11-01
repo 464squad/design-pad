@@ -1,11 +1,14 @@
-.editButton {
-    background-color: orange;
-    color:black;
-    font-size: x-large;
-  }
-  
-  .editButtonActive {
-    background-color: red;
-    color: white;
-    font-size: x-large;
-  }
+.header{
+  position: relative;
+  top: 100px;
+}
+
+.editBtn{
+  position: relative;
+  top: 100px;
+  left: 500px;
+  height: 50px;
+  width: 100px;
+  background-color: black;
+  color: white;
+}

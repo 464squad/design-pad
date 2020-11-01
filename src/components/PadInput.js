@@ -2,7 +2,20 @@
 
 import React from "react";
 import "../css/PadInput.css";
-import Pad from "./Pad";
+//import Pad from "./Pad";
+
+function Pad(props) {
+  const handleOnDragStart = event => {
+    console.log("You are dragging me");
+    event.dataTransfer.setData("color", props.color);
+  };
+
+  return (
+    <div draggable={props.editing} onDragStart={handleOnDragStart}>
+      {props.color}
+    </div>
+  );
+}
 
 function PadInput(props) {
   return (
