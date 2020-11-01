@@ -11,13 +11,18 @@ class DesignContainer extends React.Component {
       editing: !props.editing
     }));
   };
-  clearState = () => {
-    this.setState({ color: "light-grey" });
+
+  clearState = () =>{
+    this.state = {backgroundColor: "light-grey"};
     console.log("reset the pad");
   }
+
+    
+  
   render() {
     const btnClass = this.state.editing ? "editButtonActive" : "editButton";
     const editing = this.state.editing;
+
     return (
       <div>
         <div>
@@ -25,7 +30,7 @@ class DesignContainer extends React.Component {
           <button className={btnClass} onClick={this.updateEditState}>
             Edit
           </button>
-          <button class="btnClear" onClick={{ backgroundColor: this.clearState }}> Clear </button>
+          <button class="btnClear" onClick= {this.clearState}> Clear </button>
         </div>
 
         <PadInput editing={editing} />
