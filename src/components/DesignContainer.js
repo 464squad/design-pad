@@ -25,7 +25,7 @@ class DesignContainer extends React.Component {
           <button className={btnClass} onClick={this.updateEditState}>
             Edit
           </button>
-          <button onClick={{ backgroundColor: this.clearState }}> Clear </button>
+          <button class="btnClear" onClick={{ backgroundColor: this.clearState }}> Clear </button>
         </div>
 
         <PadInput editing={editing} />
