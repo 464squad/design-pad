@@ -2,14 +2,14 @@
     padding: 30;
     margin: 0;
     display: inline-block;
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     justify-content: center;
     align-items: center;
     background-color: darkgray;
     border-radius: 25px;
     top: -250px;
-    left: 250px;
+    left: 350px;
     position: relative;
   }
   
@@ -20,9 +20,8 @@
   .pad-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 60vw;
-    height: 40vw;
-    grid-gap: 1em;
+    width: 45vw;
+    height: 30vw;
     align-items: center;
     justify-content: space-evenly;
   }
