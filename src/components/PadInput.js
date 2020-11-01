@@ -2,7 +2,7 @@
 import React from 'react';
 
 function PadInput(props) {
-
+    
     function allowDrop(ev) {
         ev.preventDefault();
     }
@@ -25,7 +25,6 @@ function PadInput(props) {
         </div>
 
   )
-  
 }
 
 
