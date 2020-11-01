@@ -21,7 +21,6 @@ function PadInput(props) {
   
   return (
     <div className="main-container">
-<<<<<<< Updated upstream
       <table>
         <tbody class= "table">
           <tr>
@@ -58,24 +57,6 @@ function PadInput(props) {
           </tr>
         </tbody>
       </table>
-=======
-      <div className="row">
-        <Pad style="color:blue;"> editing={props.editing} color="blue" />
-        <Pad editing={props.editing} color="red" />
-      </div>
-      <div className="row">
-        <Pad editing={props.editing} color="purple" />
-        <Pad editing={props.editing} color="green" />
-      </div>
-      <div className="row">
-        <Pad editing={props.editing} color="pink"  />
-        <Pad editing={props.editing} color="yellow" />
-      </div>
-      <div className="row">
-        <Pad editing={props.editing} color="black" />
-        <Pad editing={props.editing} color="orange" />
-      </div>
->>>>>>> Stashed changes
     </div>
   );
 }
