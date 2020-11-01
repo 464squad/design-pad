@@ -1,14 +1,29 @@
-
 .main-container {
-    border: 2px solid black;
+    border: 2px solid lightgray;
     padding: 20px;
     margin: 20px;
     width: 100px;
     background-color: chocolate;
+    border-radius: 15px;
+    margin-left: 100px;
   }
   
-
+  /* .row {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .row > div {
+    border: 2px solid purple;
+    padding: 10px;
+    background-color:gainsboro;
+  } */
+  .table{
+    flex-wrap: inherit;
+  }
   .tableBlue{
+    color: white;
      height: 40px;
      border: 2px lightgray solid;
      background-color: blue;
@@ -16,6 +31,7 @@
    }
 
     .tableRed{
+    color: white;
      height: 40px;
      border: 2px lightgray solid;
      background-color: red;
@@ -23,6 +39,7 @@
    }
 
     .tablePurple{
+      color: white;
      height: 40px;
      border: 2px lightgray solid;
      background-color: purple;
@@ -30,11 +47,12 @@
    }
 
     .tableGreen{
+      color: white;
      height: 40px;
      border: 2px lightgray solid;
      background-color: green;
      border-radius: 5px;
-   }	
+   }		  
 
     .tablePink{
      height: 40px;
@@ -51,6 +69,7 @@
    }
 
     .tableBrown{
+    color: white;
      height: 40px;
      border: 2px lightgray solid;
      background-color: brown;
@@ -58,6 +77,7 @@
    }
 
     .tableOrange{
+    color: white;
      height: 40px;
      border: 2px lightgray solid;
      background-color: orange;

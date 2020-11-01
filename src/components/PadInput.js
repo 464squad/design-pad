@@ -21,22 +21,42 @@ function PadInput(props) {
   
   return (
     <div className="main-container">
-      <div className="row">
-        <Pad editing={props.editing} color="blue" />
-        <Pad editing={props.editing} color="red" />
-      </div>
-      <div className="row">
-        <Pad editing={props.editing} color="purple" />
-        <Pad editing={props.editing} color="green" />
-      </div>
-      <div className="row">
-        <Pad editing={props.editing} color="pink"  />
-        <Pad editing={props.editing} color="yellow" />
-      </div>
-      <div className="row">
-        <Pad editing={props.editing} color="black" />
-        <Pad editing={props.editing} color="orange" />
-      </div>
+      <table>
+        <tbody class="table">
+          <tr>
+            <td class="tableBlue">
+              <Pad editing={props.editing} color="blue" />
+            </td>
+            <td class="tableRed">
+              <Pad editing={props.editing} color="red" />
+            </td>
+          </tr>
+          <tr>
+            <td class="tablePurple">
+              <Pad editing={props.editing} color="purple" />
+            </td>
+            <td class="tableGreen">
+              <Pad editing={props.editing} color="green" />
+            </td>
+          </tr>
+          <tr>
+            <td class="tablePink">
+              <Pad editing={props.editing} color="pink" />
+            </td>
+            <td class="tableYellow">
+              <Pad editing={props.editing} color="yellow" />
+            </td>
+          </tr>
+          <tr>
+            <td class="tableBrown">
+              <Pad editing={props.editing} color="brown" />
+            </td>
+            <td class="tableOrange">
+              <Pad editing={props.editing} color="orange" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }

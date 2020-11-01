@@ -13,7 +13,7 @@ class DesignContainer extends React.Component {
   };
 
   clearState = () =>{
-    this.state = {backgroundColor: "light-grey"};
+    this.setState = {color: "light-grey"};
     console.log("reset the pad");
   }
 
