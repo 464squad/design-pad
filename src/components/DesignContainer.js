@@ -13,7 +13,7 @@ class DesignContainer extends React.Component {
   };
   clearState = () => {
     this.setState({ color: "light-grey" });
-    console.log("I have been dropped");
+    console.log("reset the pad");
   }
   render() {
     const btnClass = this.state.editing ? "editButtonActive" : "editButton";
