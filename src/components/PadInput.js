@@ -1,19 +1,11 @@
 import React from 'react';
+import './design.css'
 
 
 function PadInput(){
     return(
-        <div>
-            <ul>
-                <li>red </li>
-                <li>blue </li>
-                <li>yellow </li>
-                <li>green</li>
-                <li>pink </li>
-                <li>orange</li>
-                <li>white </li>
-                <li>black </li>
-            </ul>
+        <div className="pad-input">
+           
         </div>
 
     );
