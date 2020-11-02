@@ -27,9 +27,9 @@ export default function DesignPad(props) {
         <h1 className = "DesignBoard-h1">DESIGN PAD</h1>
             <div className="DesignBoard-container">
                 <div id="designBoard_box1" className="DesignBoard-box1" style = {{backgroundColor:""}} onDrop={drop_handler} onDragOver={allowDrop}></div>
-                <div id="designBoard_box2" className="DesignBoard-box2"></div>
-                <div id="designBoard_box3" className="DesignBoard-box3"></div>
-                <div id="designBoard_box4" className="DesignBoard-box4"></div>
+                <div id="designBoard_box2" className="DesignBoard-box2" style = {{backgroundColor:""}} onDrop={drop_handler} onDragOver={allowDrop}></div>
+                <div id="designBoard_box3" className="DesignBoard-box3" style = {{backgroundColor:""}} onDrop={drop_handler} onDragOver={allowDrop}></div>
+                <div id="designBoard_box4" className="DesignBoard-box4" style = {{backgroundColor:""}} onDrop={drop_handler} onDragOver={allowDrop}></div>
             </div>
         </div>
     )
