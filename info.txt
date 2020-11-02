@@ -1,0 +1,4 @@
+ 
+https://reactjsexample.com/reactjs-drag-and-drop-functionality-for-mouse-and-touch-devices/
+https://www.smashingmagazine.com/2020/02/html-drag-drop-api-react/
+https://www.w3schools.com/html/html5_draganddrop.asp
