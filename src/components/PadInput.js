@@ -27,7 +27,7 @@ export default function PadInput(props) {
                 <div id = "pad_Box5" className = "PadInput-box5" style = {{backgroundColor: "pink"}} draggable={props.editMode} onDragStart={dragStartHandler}>5</div>
                 <div id = "pad_Box6" className = "PadInput-box6" style = {{backgroundColor: "indigo"}} draggable={props.editMode} onDragStart={dragStartHandler}>6</div>
                 <div id = "pad_Box7" className = "PadInput-box7" style = {{backgroundColor: "white"}} draggable={props.editMode} onDragStart={dragStartHandler}>7</div>
-                <div id = "pad_Box8" className = "PadInput-box8" style = {{backgroundColor: "black"}} draggable={props.editMode} onDragStart={dragStartHandler}>8</div>
+                <div id = "pad_Box8" className = "PadInput-box8" style = {{backgroundColor: "orange"}} draggable={props.editMode} onDragStart={dragStartHandler}>8</div>
             </div>
         </div>
     )
