@@ -6,10 +6,7 @@
     font-size: 40px;
     height: 100%;
     margin: auto 3rem;
-  }
-  .padTitle{
-    
-  }
+}
   
   .board {
     font-size: bold;
@@ -20,7 +17,7 @@
     position: fixed;
     margin-left: 23%;
     align-items: center;
-    border: 20px solid rgba(0, 0, 0, 0.75);
+    border: 20px solid rgba(7, 7, 7, 0.75);
   }
   .squareColorChanged {
     background: rgb(255, 255, 255);
@@ -67,7 +64,7 @@
 
 .pad-box {
   background: rgb(243, 243, 243);
-  border: 10px solid rgba(46, 47, 48, 0.35);
+  border: 10px solid rgba(240, 243, 247, 0.35);
   float: left;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -97,7 +94,7 @@
   .button {
     float: right;
     text-transform: uppercase;
-    background-color: #585858de;
+    background-color: #f5f0f0de;
     border: none;
     border-radius: 100px;
     color: white;
