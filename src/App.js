@@ -12,7 +12,7 @@ function App() {
       <PadInput />
       <DesignPad />
       </div>
-      
+      <EditBtn />
     </div>
   );
 }
