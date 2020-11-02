@@ -11,7 +11,7 @@ const DesignBoardBody = () => {
                 <div className="box" id="box3"> Pad 3 </div>
                 <div className="box" id="box4"> Pad 4 </div>
             </div>
-        // </div>
+        </div>
     );
 }
 
