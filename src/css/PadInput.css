@@ -8,20 +8,6 @@
     margin-left: 100px;
   }
   
-  /* .row {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-  }
-  
-  .row > div {
-    border: 2px solid purple;
-    padding: 10px;
-    background-color:gainsboro;
-  } */
-  .table{
-    flex-wrap: inherit;
-  }
   .tableBlue{
     color: white;
      height: 40px;
