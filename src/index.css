@@ -45,9 +45,18 @@ code {
   grid-column-gap: 0.3%;
   grid-row-gap: 0.3%; 
 }
+.show_button {
+  background-color: purple;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
 
-.box {
+}
+.box { 
     /* border: 0.9px solid black; */
+    transition: all 1.5s;
+    /* transition: color 1.0s; */
     background-color: #80abdf;
     padding: 50px;
     border-radius: 20px;
@@ -58,6 +67,15 @@ code {
     font-size: 20px;
     font-family: sans-serif;
 }
+
+.hidden {
+  transition: all 1.5s;
+  /* transition: color 1.0s; */
+  background-color: yellow;          
+  color: black;
+  letter-spacing: 1px;
+}
+
 
 .button_container {
   float: right;

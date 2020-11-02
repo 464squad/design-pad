@@ -6,8 +6,17 @@ import PadInput from './PadInput';
 class DesignContainer extends React.Component {
     constructor(props) {
         super(props)
-        this.state = false
+        this.state = {
+            isBoxVisible: true
+          };
     }
+    // state = {
+    //     isBoxVisible:false
+    //   };
+
+      toggleBox = () => {
+        this.setState(prevState => ({ isBoxVisible: !prevState.isBoxVisible }));
+      };
 
     editButtonEvent = event => {
         // to prevent page reload on form submit
@@ -21,9 +30,17 @@ class DesignContainer extends React.Component {
     }
 
     render() {
-
+        const { isBoxVisible } = this.state;
+        
         return ( 
             <div className="container">
+
+                <div className="show_box"> 
+                    <button className="show_button" onClick={this.toggleBox}>Show Box</button>
+                    <div className={`box ${isBoxVisible ? "" : "hidden"}`}>
+                        <p>{`${isBoxVisible ? "I'm the box" : "I'm the yellow box"}`}</p>
+                    </div>
+                </div>
 
                 { /*TODO - Add PadInput Component */ } 
                 <PadInput handleEditChange={this.editButtonEvent} />
