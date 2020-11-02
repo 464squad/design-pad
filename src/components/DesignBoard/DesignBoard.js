@@ -8,7 +8,7 @@ const DesingBoard=(props)=>{
 
 	return (
 <div style={{padding:'9px'}}>
-	DesingBoard
+
 
 	<Row>
 		<Col lg={4} md={4} sm={4} xs={4}  >
