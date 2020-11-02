@@ -10,15 +10,12 @@ class DesignContainer extends React.Component {
             isBoxVisible: true
           };
     }
-    // state = {
-    //     isBoxVisible:false
-    //   };
 
-      toggleBox = () => {
+    toggleBox = () => {
         this.setState(prevState => ({ isBoxVisible: !prevState.isBoxVisible }));
-      };
+    };
 
-    editButtonEvent = event => {
+    editButton = event => {
         // to prevent page reload on form submit
         // event.preventDefault();
         /*
@@ -35,15 +32,20 @@ class DesignContainer extends React.Component {
         return ( 
             <div className="container">
 
-                <div className="show_box"> 
-                    <button className="show_button" onClick={this.toggleBox}>Show Box</button>
-                    <div className={`box ${isBoxVisible ? "" : "hidden"}`}>
-                        <p>{`${isBoxVisible ? "I'm the box" : "I'm the yellow box"}`}</p>
-                    </div>
+                {/* Testing feature for edit button */}
+                <div className={`box ${isBoxVisible ? "" : "hidden"}`}>
+                    <p>{`${isBoxVisible ? "I'm the box" : "I'm the yellow box"}`}</p>
                 </div>
+                
+                { /*TODO - Add editButton Component */ }
+                <div className="button_container">
+                    <button className={`edit_button ${isBoxVisible ? "" : "hidden"}`} onClick={this.toggleBox}> Edit </button>
+                </div>
+                
+                <br/> 
 
                 { /*TODO - Add PadInput Component */ } 
-                <PadInput handleEditChange={this.editButtonEvent} />
+                <PadInput/>
 
                 <br/> 
                 
@@ -51,12 +53,9 @@ class DesignContainer extends React.Component {
                 <DesignPad/>
 
                 <br/> 
+
                 { /*TODO - Add DesignBoard Component */ } 
                 <DesignBoard/>
-
-                <br/>
-                
-                { /*TODO - Add editButton Component */ }
 
             </div>
         );

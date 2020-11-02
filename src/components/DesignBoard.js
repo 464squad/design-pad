@@ -4,12 +4,12 @@ const DesignBoardBody = () => {
     // boilerplate design board body functional component
     return ( 
         <div>
-            <h1 class="header"> DESIGN PAD </h1> 
-            <div class="board_container">
-                <div class="box"> Pad 1 </div>
-                <div class="box"> Pad 2 </div>
-                <div class="box"> Pad 3 </div>
-                <div class="box"> Pad 4 </div>
+            <h1 className="header"> DESIGN PAD </h1> 
+            <div className="board_container">
+                <div className="box" id="box1"> Pad 1 </div>
+                <div className="box" id="box2"> Pad 2 </div>
+                <div className="box" id="box3"> Pad 3 </div>
+                <div className="box" id="box4"> Pad 4 </div>
             </div>
         </div>
     );

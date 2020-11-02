@@ -6,14 +6,14 @@ const DesignPadBody = () => {
 
         <div>
             <div class="pad_container">
-                <div class="pads"> 1 </div>
-                <div class="pads"> 2 </div>
-                <div class="pads"> 3 </div>
-                <div class="pads"> 4 </div>
-                <div class="pads"> 5 </div>
-                <div class="pads"> 6 </div>
-                <div class="pads"> 7 </div>
-                <div class="pads"> 8 </div>
+                <div className="pads" id="pads1"> 1 </div>
+                <div className="pads" id="pads2"> 2 </div>
+                <div className="pads" id="pads3"> 3 </div>
+                <div className="pads" id="pads4"> 4 </div>
+                <div className="pads" id="pads5"> 5 </div>
+                <div className="pads" id="pads6"> 6 </div>
+                <div className="pads" id="pads7"> 7 </div>
+                <div className="pads" id="pads8"> 8 </div>
             </div>
         </div>
         
