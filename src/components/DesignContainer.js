@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DesignBoard from './DesignBoard'
 import PadInput from './PadInput'
 
 export default function DesignContainer() {
     
+    const [isEdittable, setIsEdittable] = useState(false);
 
     return (
         <div>
-        <button className ="EditButton" onClick={console.log("testing addition of edit button")} >EDIT</button>
+        <button className ={`EditButton${isEdittable ? "Active" : ""}`}
+         onClick = {() => {setIsEdittable(!isEdittable)}}>EDIT</button>
         <DesignBoard />
-        <PadInput />
+        <PadInput editMode = {isEdittable} />
         </div>
     )
 }
