@@ -6,10 +6,16 @@ import PadInput from './PadInput';
 class DesignContainer extends React.Component {
     constructor(props) {
         super(props)
-        this.state = false
+        this.state = {
+            isBoxVisible: true
+          };
     }
 
-    editButtonEvent = event => {
+    toggleBox = () => {
+        this.setState(prevState => ({ isBoxVisible: !prevState.isBoxVisible }));
+    };
+
+    editButton = event => {
         // to prevent page reload on form submit
         // event.preventDefault();
         /*
@@ -21,11 +27,28 @@ class DesignContainer extends React.Component {
     }
 
     render() {
-
+        const { isBoxVisible } = this.state;
+        
         return ( 
             <div className="container">
-                <h1> DESIGN PAD </h1> 
 
+                {/* Testing feature for edit button */}
+                <div className={`box ${isBoxVisible ? "" : "hidden"}`}>
+                    <p>{`${isBoxVisible ? "I'm the box" : "I'm the yellow box"}`}</p>
+                </div>
+                
+                { /*TODO - Add editButton Component */ }
+                <div className="button_container">
+                    <button className={`edit_button ${isBoxVisible ? "" : "hidden"}`} onClick={this.toggleBox}> Edit </button>
+                </div>
+                
+                <br/> 
+
+                { /*TODO - Add PadInput Component */ } 
+                <PadInput/>
+
+                <br/> 
+                
                 { /*TODO - Add DesignPad Component */ } 
                 <DesignPad/>
 
@@ -33,15 +56,6 @@ class DesignContainer extends React.Component {
 
                 { /*TODO - Add DesignBoard Component */ } 
                 <DesignBoard/>
-
-                <br/> 
-                
-                { /*TODO - Add PadInput Component */ } 
-                <PadInput handleEditChange={this.editButtonEvent} />
-                
-                <br/>
-                
-                { /*TODO - Add editButton Component */ }
 
             </div>
         );

@@ -24,23 +24,11 @@ class PadInput extends Component {
         })
     }
 
-    editButton = event => {
-        // to prevent page reload on form submit
-        event.preventDefault();
-        /*
-            TODO - Logic for calling props to handle submission and setting state changes
-        */
-       console.log(this.state)
-       console.log('Was I clicked?')
-       this.props.handleEditChange(this.state) 
-       console.log('Was I clicked again?')
-    }
-
     render() {
 
         return(
-            <div class="button_container">
-                <button class="edit_button" onClick={this.editButton}> Edit </button>
+            <div>
+                <handleEditChange/>
             </div>
         )
     }

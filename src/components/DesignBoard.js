@@ -1,31 +1,15 @@
 import React from 'react';
 
-const DesignBoardHeader = () => {
-    // boilerplate table header functional component
-    return ( 
-        
-        <thead>
-            <tr>
-                <th> DESIGN PAD TESTING</th> 
-            </tr> 
-        </thead>
-    );
-}
-
 const DesignBoardBody = () => {
     // boilerplate design board body functional component
     return ( 
-        // <thead>
-        //     <tr>
-        //         <th> DESIGN PAD </th> 
-        //     </tr> 
-        // </thead>
-        // <div class="Pad">
-            <div class="board_container">
-                <div class="box"> Pad 1 </div>
-                <div class="box"> Pad 2 </div>
-                <div class="box"> Pad 3 </div>
-                <div class="box"> Pad 4 </div>
+        <div>
+            <h1 className="header"> DESIGN PAD </h1> 
+            <div className="board_container">
+                <div className="box" id="box1"> Pad 1 </div>
+                <div className="box" id="box2"> Pad 2 </div>
+                <div className="box" id="box3"> Pad 3 </div>
+                <div className="box" id="box4"> Pad 4 </div>
             </div>
         // </div>
     );
@@ -38,11 +22,10 @@ const DesignBoard = (props) => {
     //{ /*TODO - return <table> component, TableHeader and TableBody  */ }
     return (
 
-        <table>
-            <DesignBoardHeader/>
+        <div>
             <DesignBoardBody/>
-        </table>
-        
+        </div> 
+
     )
 }
 
