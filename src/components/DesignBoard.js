@@ -90,6 +90,5 @@ class DesignBoard extends Component {
     }
 }
 
-
 export default DesignBoard
 
