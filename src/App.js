@@ -1,24 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import DesignContainer from './components/DesignContainer/DesignContainer'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+
+       <title>Design Pad</title>
       </header>
+
+
+    {/*
+
+      Design Container (includes DesignBoard,DesignPad,PadInput)
+    */}
+
+   <div className="_designContainer" >
+
+
+          <DesignContainer></DesignContainer>
+   </div>
+
     </div>
   );
 }

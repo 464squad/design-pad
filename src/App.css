@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+
+._designContainer{
+
+  max-width: 1010px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin:0 auto;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1200px){
+  ._designContainer{
+    max-width: 970px;
+  }
+}
