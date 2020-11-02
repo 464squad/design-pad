@@ -23,6 +23,8 @@ export default function PadInput(props) {
         <div>
         <h1 id = "PadInput-h1">Design Input</h1>
             <div className = "PadInput-container">
+                {/**These pad inputs are only draggable when edit mode is activated
+                The edit mode state is passed as props from the Design Container and then set to the draggable attribute of each pad input*/}
                 <div id = "pad_Box1" className = "PadInput-box1" style = {{backgroundColor: "yellow"}} draggable={props.editMode} onDragStart={dragStartHandler}>1 </div>
                 <div id = "pad_Box2" className = "PadInput-box2" style = {{backgroundColor: "blue"}} draggable={props.editMode} onDragStart={dragStartHandler}>2</div>
                 <div id = "pad_Box3" className = "PadInput-box3" style = {{backgroundColor: "green"}} draggable={props.editMode} onDragStart={dragStartHandler}>3</div>

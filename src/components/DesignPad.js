@@ -1,25 +1,24 @@
 import React from 'react'
 import '../styles.css'
 
-export default function DesignPad(props) {
+export default function DesignPad() {
 
-    function drop_handler(ev) {
+    function drop_handler(event) {
         console.log("Dropped");
-        ev.preventDefault();
 
-        // Get the data, which is the background color of the drop target
-        var data = ev.dataTransfer.getData("text");
+        // Get the data, which is the background color of any of the pad inputs that was dragged
+        const data = event.dataTransfer.getData("text");
         //console.log('data being received is --->'+ data);
 
-        //cset the drop target's background color to the color passed from the PadInput;
-        ev.target.style.backgroundColor = data;
+        //Set the drop target's background color to the color passed from the PadInput;
+        event.target.style.backgroundColor = data;
 
         // Clear the drag data cache (for all formats/types)
-        ev.dataTransfer.clearData();
+        event.dataTransfer.clearData();
        }
 
-       function allowDrop (ev) {
-        ev.preventDefault();
+       function allowDrop (event) {
+        event.preventDefault();
      }
 
     return (
