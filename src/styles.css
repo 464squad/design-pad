@@ -1,4 +1,4 @@
-.DesignPad-container {
+.DesignBoard-container {
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 250px 250px;
@@ -10,26 +10,26 @@
     height: 400px;
  }
 
-.DesignPad-box1 {
+.DesignBoard-box1 {
     background: grey;
     border: 1px solid;
 }
 
-.DesignPad-box2 {
+.DesignBoard-box2 {
     background: grey;
     border: 1px solid;
 }
 
-.DesignPad-box3 {
+.DesignBoard-box3 {
     background: grey;
     border: 1px solid;
 }
 
-.DesignPad-box4 {
+.DesignBoard-box4 {
     background: grey;
     border: 1px solid;
 }
-.DesignPad-h1{
+.DesignBoard-h1{
     text-align:"center";
     line-height:"250px";
     position: absolute;
@@ -55,6 +55,15 @@
 
 }
 
+#PadInput-h1{
+    text-align:"center";
+    line-height:"250px";
+    position: absolute;
+    left: 155px;
+    top: 220px;
+    font-size: 35px;
+    font-family: "Times New Roman", Times, serif;
+}
 .PadInput-box1 {
     background: white;
     border: 1px solid;
@@ -144,15 +153,6 @@
     margin-left: 5px;
     margin-top: 35px;
     line-height: 40px;
-}
-.PadInput-h1{
-    text-align:"center";
-    line-height:"250px";
-    position: absolute;
-    left: 155px;
-    top: 220px;
-    font-size: 35px;
-    font-family: "Times New Roman", Times, serif;
 }
 
 
