@@ -39,7 +39,7 @@ export default class Title extends Component {
     render() {
         return (
             <div>
-                <h1 className="padTitle" >D E S I G N P A D</h1>
+                <h1 className="padTitle" >Design Pad </h1>
             </div>
         )
     }

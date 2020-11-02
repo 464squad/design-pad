@@ -8,11 +8,10 @@
     margin: auto 3rem;
   }
   .padTitle{
-    /*color: purple;*/
+    
   }
   
-  .board {/*display: flex;*/
-    /*justify-content: center;*/
+  .board {
     font-size: bold;
     align-items: center;
     padding-bottom: 3.5rem;
@@ -21,11 +20,11 @@
     position: fixed;
     margin-left: 23%;
     align-items: center;
-    border: 20px solid rgba(46, 47, 48, 0.75);
+    border: 20px solid rgba(0, 0, 0, 0.75);
   }
   .squareColorChanged {
-    background: grey;
-    border: 1px solid #999;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     float: left;
     font-size: 25px;
     font-weight: bold;
@@ -38,8 +37,8 @@
     width: 250px;
   }
   .square {
-    /*background: grey;*/
-    border: 1px solid #999;
+    
+    border: 1px solid rgb(0, 0, 0);
     float: left;
     font-size: 25px;
     font-weight: bold;
@@ -61,13 +60,13 @@
   span.fade {
   opacity: 1;
   transform: translateY(0px);
-  background: linear-gradient(#2acfc7, #ffffff);
+  background: linear-gradient(#ffffff, #0263f5);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .pad-box {
-  background: rgb(252, 244, 244);
+  background: rgb(243, 243, 243);
   border: 10px solid rgba(46, 47, 48, 0.35);
   float: left;
   display: grid;
@@ -94,9 +93,6 @@
   .board-row:after {
     clear: both;
     content: "";
-    /* display: table;*/
-    /* align-items: center;
-    justify-content: center;*/
   }
   .button {
     float: right;

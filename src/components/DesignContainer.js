@@ -7,15 +7,15 @@ class DesignContainer extends Component {
         super(props)
 
         this.state = {
-            mode: false ,   /*not in edit mode*/
-            reset: false    /*reset is not active*/
+            mode: false ,   
+            reset: false    
         }
     }
     handleEdit=()=>{
         this.setState(prevState =>({
         mode: !prevState.mode
         }))
-        if(this.state.mode === false)  /*if edit is not activated, reset is also deactive*/
+        if(this.state.mode === false)  
         {
             this.setState({
             reset: false
@@ -30,7 +30,7 @@ class DesignContainer extends Component {
     }
     handleToggle=(success)=>{
         setTimeout(() => { 
-            if(success)	 {  /*once reset is done successfully, deactive reset in half a sec */
+            if(success)	 {  
                 this.setState({	          
                     reset: false	   
                 })	             
@@ -41,9 +41,9 @@ class DesignContainer extends Component {
       render() {
         if(this.state.mode === false)
         {   
-            return (    /**render edit button, design board in view mode */
+            return (    
             <div>
-            {/*<h2>IN VIEW MODE </h2>*/}
+            {}
             <div>
                 <button className= "button" onClick={this.handleEdit}>Edit</button>
                 </div> 
@@ -55,10 +55,10 @@ class DesignContainer extends Component {
                 </div>
                 </div>)
         }
-        return (     /**render edit button, padinput and design board in edit mode */
+        return (     
 
             <div>
-            {/*<h2>IN EDIT MODE</h2>*/} 
+            {} 
 
             <div>
                 <button className="edit-active" onClick ={this.handleEdit}>Edit</button>
