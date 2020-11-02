@@ -9,13 +9,23 @@ h1{
 .editing {
   background-color: red;
   color: white;
+
+  flex-wrap: wrap;
+  margin-left: 1300px;
+  right: 100px;
+
 }
 
 .no-editing {
   background-color: black;
   color: white;
-}
 
+
+  flex-wrap: wrap;
+  margin-left: 1300px;
+  right: 100px;
+  
+}
 .main-container {
   display: flex;
   justify-content: center;
