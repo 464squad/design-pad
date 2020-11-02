@@ -12,8 +12,11 @@ export default function PadInput(props) {
         //console.log("dragStart");
         //console.log(event.target);
 
-        // Setting the drag's format and data passing in the event target's background color as the data 
-        event.dataTransfer.setData("text", event.target.style.backgroundColor);
+        //Grab the color of the pad input being dragged
+        const padInputColor = event.target.style.backgroundColor;
+
+        // Set the drag's format and data. The data being passed is the Pad Input color. 
+        event.dataTransfer.setData("text", padInputColor);
     }
 
     return (
