@@ -102,3 +102,38 @@ code {
     justify-content: center;
     align-items: center;
 }
+
+.button_.board_container {
+    background-color: #d8cecede;
+    color: black;
+}
+
+.squareColorChanged {
+    background: grey;
+    border: 1px solid #999;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 250px;
+    height: 250px;
+    margin-left: -45px;
+    margin-top: -2px;
+    padding: 0;
+    text-align: center;
+    width: 250px;
+}
+
+.square {
+    /*background: grey;*/
+    border: 1px solid #999;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    height: 250px;
+    margin-right: -5px;
+    margin-top: -2px;
+    padding: 0;
+    text-align: center;
+    width: 250px;
+    line-height: 250px;
+}
