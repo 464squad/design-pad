@@ -40,7 +40,7 @@ class DesignContainer extends Component {
           >
             EDIT 
           </button>
-          <button onClick={refreshPage}>Reload</button>   
+          <button  className = 'reload' onClick={refreshPage}>Reload</button>   
         </header>
 
         <main className="main-container">
