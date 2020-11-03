@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class PadInput extends Component {
      constructor(props) {
      super(props);
-
+// PadInput idArray of 10 padButtons
      this.state = {
          padButtons: [
 
@@ -26,6 +26,7 @@ class PadInput extends Component {
         this.props.onDrag(padButton)
      }
  
+     // PadButtons  Retuned idArray state with map() function
     render(){
         const {padButtons} = this.state;
         return(
