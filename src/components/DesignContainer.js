@@ -10,7 +10,7 @@ export default function DesignContainer() {
         <div>
         <button className ={`EditButton${isEdittable ? "Active" : ""}`}
          onClick = {() => {setIsEdittable(!isEdittable)}}>EDIT</button>
-        <DesignBoard />
+        <DesignBoard edit = {isEdittable}  />
         <PadInput editMode = {isEdittable} />
         </div>
     )

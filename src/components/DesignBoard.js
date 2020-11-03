@@ -3,9 +3,11 @@ import DesignPad from './DesignPad'
 
 export default function DesignBoard(props) {
 
+    console.log(props.edit);
+
     return (
         <div>
-            <DesignPad />
+            <DesignPad editMode = {props.edit} />
         </div>
     )
 }

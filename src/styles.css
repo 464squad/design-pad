@@ -1,4 +1,15 @@
-.DesignBoard-container {
+/************* DESIGN PAD COMPONENT STYLING **********************/
+
+.DesignPad-h1{
+    text-align:"center";
+    line-height:"250px";
+    position: absolute;
+    left: 480px;
+    top: 75px;
+    font-size: 55px;
+    font-family: "Times New Roman", Times, serif;
+}
+.DesignPad-container {
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 250px 250px;
@@ -10,35 +21,27 @@
     height: 400px;
  }
 
-.DesignBoard-box1 {
+.DesignPad-box1 {
     background: grey;
     border: 1px solid;
 }
 
-.DesignBoard-box2 {
+.DesignPad-box2 {
     background: grey;
     border: 1px solid;
 }
 
-.DesignBoard-box3 {
+.DesignPad-box3 {
     background: grey;
     border: 1px solid;
 }
 
-.DesignBoard-box4 {
+.DesignPad-box4 {
     background: grey;
     border: 1px solid;
 }
-.DesignBoard-h1{
-    text-align:"center";
-    line-height:"250px";
-    position: absolute;
-    left: 620px;
-    top: 75px;
-    font-size: 55px;
-    font-family: "Times New Roman", Times, serif;
-}
 
+/************* PAD INPUT COMPONENT STYLING **********************/
 .PadInput-container{
     display: grid;
     grid-template-columns: 100px 100px;
@@ -170,6 +173,8 @@
     line-height: 40px;
 }
 
+
+/************* EDIT BUTTON STYLING **********************/
 
 .EditButton{
     background-color: black;
