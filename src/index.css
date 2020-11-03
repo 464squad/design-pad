@@ -99,7 +99,7 @@ code {
   margin-left: 6%;
   width: 13%; 
   height: 470px;
-  background-color: rgb(204, 1, 204); 
+  background-color: rgba(114, 114, 114, 0.829); 
   display: grid; 
   grid-template-columns: 35% 35%;  
   grid-row: auto auto auto auto;   
@@ -111,10 +111,31 @@ code {
 
 .pads {
   background-color: plum;
-  color: darkcyan;
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  color: black;
   margin: 1%;
   padding: 20%;
   display: flex;
   justify-content: center     ;
   align-items: center; 
+}
+
+.drag-drop-zone {
+  padding: 2rem;
+  text-align: center;
+  background: #07F;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px #C0C0C0;
+}
+.drag-drop-zone p {
+  color: #FFF;
+}
+.drag-drop-zone.inside-drag-area {
+  opacity: 0.7;
+}
+.dropped-files li {
+  color: #07F;
+  padding: 3px;
+  text-align: left;
+  font-weight: bold;
 }
