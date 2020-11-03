@@ -6,9 +6,9 @@ function PadInput(props) {
   const bgColor = isEditing ? 'bg-blue' : 'bg-gray';
 
   return (
-    <ul className={`pad-input  ${bgColor}`}>
+    <ul className= {`pad-input  ${bgColor}`}>
       {colors.map((color) => (
-        <li 
+        <li key = {color.id}
             draggable= { isEditing ? true : false}
             onDragStart={e => e.dataTransfer.setData('color', color)} className="pad-input-color">
           {color}
