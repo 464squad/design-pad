@@ -1,14 +1,19 @@
 
+
 import React, { Component, useState, useEffect } from "react";
 import "./App.css";
 
 
-import DesignContainer from "./components/DesignContainer";
 
+import React, { useState, useEffect } from "react";
+import "./App.css";
+
+import DesignContainer from "./components/DesignContainer";
 
 function useWindowSize(){
   const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
   useEffect(() => {
+
     const handleResize = () => {
       setSize([window.innerHeight, window.innerWidth]);
     };
