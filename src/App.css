@@ -9,22 +9,30 @@ h1{
 .editing {
   background-color: red;
   color: white;
-
   flex-wrap: wrap;
-  margin-left: 1300px;
-  right: 100px;
+  margin-left: 1100px;
+  padding: 10px;
+  
 
 }
 
 .no-editing {
   background-color: black;
   color: white;
-
-
+  padding: 10px;
   flex-wrap: wrap;
-  margin-left: 1300px;
-  right: 100px;
+  margin-left: 1100px;
   
+  
+}
+
+.reload{
+ 
+  padding: 10px;
+  width: 60px;
+  background-color:blue;
+  color: white;
+  text-align: center;
 }
 .main-container {
   display: flex;
