@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,9 +22,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
+    <title>DESIGN PAD</title>
+</head>
+
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +38,63 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+    <style>
+        #div1 {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+        
+        #colorBox {
+            width: 150px;
+            height: 100px;
+            clear: both;
+            background-color: red;
+        }
+    </style>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            writeText();
+        }
+
+        // Make something happen after the drag-n-drop takes place:
+        function writeText() {
+            var newEl = document.createElement("p");
+            var newPara = document.createTextNode("The picture is in the box above and color of box below has changed.");
+            newEl.appendChild(newPara);
+            document.getElementById("textAppear").appendChild(newEl);
+            coloringBox();
+        }
+
+        function coloringBox() {
+            var orig = document.getElementById('colorBox');
+            orig.style.backgroundColor = 'green';
+        }
+
+        // Can also make add to cart visually. Dragging item deposits id, function pulls id from row and creates shopping list.
+    </script>
+    </head>
+
+    <body>
+
+
+
+        <script src="App.js">
+        </script>
+
+    </body>
+
 </html>
