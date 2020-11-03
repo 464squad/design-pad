@@ -4,10 +4,15 @@ import "../App.css";
 import PadInput from "./PadInput";
 import DesignBoard from "./DesignBoard";
 
+
+function refreshPage() {//to refresh the page and is called to the button
+  window.location.reload(false);
+}
+
 class DesignContainer extends Component {
   constructor() {
     super();
-    this.state = {
+    this.state = { 
       isEditing: false,
       colorChoices: [
         "red",
@@ -30,11 +35,12 @@ class DesignContainer extends Component {
           <h1>Drag_And_Drop</h1>
 
           <button
-            class={isEditing ? "editing" : "no-editing"}
-            onClick={() => this.setState({ isEditing: !isEditing })}
+            class={isEditing ? "editing" : "no-editing"} 
+            onClick={() => this.setState({ isEditing: !isEditing })} //if statement one line to see when editing and not editing, when click on button
           >
-            EDIT
+            EDIT 
           </button>
+          <button onClick={refreshPage}>Reload</button>   
         </header>
 
         <main className="main-container">
