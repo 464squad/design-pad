@@ -12,13 +12,13 @@ class DesignContainer extends React.Component {
       editing: !props.editing
     }));
   };
-
+/*
   clearState = () =>{
     this.setState = {color: "light-grey"};
     console.log("reset the pad");
   }
 
-    
+    */
   
   render() {
     const btnClass = this.state.editing ? "editButtonActive" : "editButton";
