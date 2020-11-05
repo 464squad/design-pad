@@ -1,12 +1,11 @@
 import React from "react" ;
-import "./DesignPad";
 import DesignPad from "./DesignPad";
 
 class DesignBoard extends React.Component {
 
     render(){
         return (
-            <div className="pad-container">
+            <div className="design-board">
                 <DesignPad/>
                 <DesignPad/>
                 <DesignPad/>
