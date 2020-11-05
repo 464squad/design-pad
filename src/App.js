@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import DesignPad from "./components/DesignPad";
+import DesignContainer from "./components/DesignContainer"
 import './App.css';
+import PadInputContainer from './components/DesignPad';
+import PadInput from './components/PadInput';
 
 function App() {
+  const tryingHello = () => {
+    console.log("Hello");
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <div className="pads">
+      <span >{<DesignContainer />}</span>
+     
+      </div>
     </div>
+
   );
 }
 
