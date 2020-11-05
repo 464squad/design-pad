@@ -28,6 +28,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +36,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.background-gradient {
+  background: linear-gradient(rgba(245, 245, 245), rgba(245, 245, 245, 0));
+}
+
+.background-style {
+  background: linear-gradient(
+    136deg,
+    #008080,
+    #1ad7c0,
+    #808000,
+    #9b59b6,
+    #800000,
+    #ff00ff);
+
+    background-size: 1200% 1200%;
+    -webkit-animation: AnimationName 70s ease infinite;
+    -moz-animation: AnimationName 70s ease infinite;
+    -o-animation: AnimationName 70s ease infinite;
+    animation: AnimationName 70s ease infinite;
+    height: 100%;
+
 }

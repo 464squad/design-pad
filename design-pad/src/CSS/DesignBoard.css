@@ -1,0 +1,9 @@
+.editButton {
+    background-color: black;
+    color: white;
+}
+
+.editButtonInitiated {
+    background-color: green;
+    color: white;
+}
