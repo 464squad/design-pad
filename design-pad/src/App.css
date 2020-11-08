@@ -51,6 +51,7 @@ h1 {
   width: 200px;
   height: 200px;
   border-radius: 30px;
+  background-color: black;
 
 }
 
@@ -67,7 +68,7 @@ h1 {
   background-color:  white;
   padding: 10px 10px;
   text-align: center;
-  width: 40px;
+  width: 70px;
   max-height: 20px;
   color: black;
   border: 1px solid black;
