@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component, useState, useEffect} from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+import DesignContainer from "./Components/DesignContainer";
+
+function useWindowSize() {
+  const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
+  useEffect(() => {
+
+    const handleResize = () => {
+      setSize([window.innerHeight, window.innerWidth]);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+  return size;
+}
+
+function App(props) {
+  const [height, width] = useWindowSize();
+  return(
+    <>
+    height: {height}, width: {width}
+    <DesignContainer />;
+
+    </>
   );
 }
 
