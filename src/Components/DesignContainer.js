@@ -8,7 +8,7 @@ function refreshPage() {
     window.location.reload(false);
 }
 
-class DesignContainer extends Component {
+class DesignContainer extends React.Component {
     constructor() {
         super();
         this.state = {
