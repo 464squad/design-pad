@@ -1,3 +1,29 @@
+# Design Pad Project - *A React App*
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src="https://github.com/agyapongeli77/design-pad/blob/master/src/my_designpad_walkthrough.gif" width=450><br>
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Functionality
+
+- [x] Edit button clicked toggles the app between Edit Mode and View Mode.
+- [x] Design Input is grayed out when the app is view mode meaning the user cannot edit
+- [x] User can only drag and drop in edit mode. 
+- [x] Reset button resets the design board to it's original state.
+- [x] React concepts applied are React Hooks, Conditional Rendering, Passing State as a Prop, etc
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
