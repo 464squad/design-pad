@@ -12,7 +12,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 - [x] Design Input is grayed out when the app is view mode meaning the user cannot edit
 - [x] User can only drag and drop in edit mode. 
 - [x] Reset button resets the design board to it's original state.
-- [x] React concepts applied are React Hooks, Conditional Rendering, Passing State as a Prop, etc
+- [x] React concepts applied are React Hooks(useState), Conditional Rendering, Passing State as a Prop, React Events etc
 
 <br/>
 <br/>
