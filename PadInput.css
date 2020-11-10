@@ -1,0 +1,71 @@
+.main-container {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    background-color: navy;
+    border-radius: 15px;
+    margin-left: 100px;
+  }
+  
+  .tableBlue{
+    color: white;
+     height: 40px;
+     border: 2px lightgray solid;
+     background-color: blue;
+     border-radius: 5px;
+   }
+
+    .tableRed{
+    color: white;
+     height: 40px;
+     border: 2px lightgray solid;
+     background-color: red;
+     border-radius: 5px;
+   }
+
+    .tablePurple{
+      color: white;
+     height: 40px;
+     border: 2px lightgray solid;
+     background-color: purple;
+     border-radius: 5px;
+   }
+
+    .tableGreen{
+      color: white;
+     height: 40px;
+     border: 2px lightgray solid;
+     background-color: green;
+     border-radius: 5px;
+   }		  
+
+    .tablePink{
+     height: 40px;
+     border: 2px lightgray solid;
+     background-color: pink;
+     border-radius: 5px;
+   }
+
+    .tableYellow{
+     height: 40px;
+     border: 2px lightgray solid;
+     background-color: yellow;
+     border-radius: 5px;
+   }
+
+    .tableBrown{
+    color: white;
+     height: 40px;
+     border: 2px lightgray solid;
+     background-color: brown;
+     border-radius: 5px;
+   }
+
+    .tableOrange{
+    color: white;
+     height: 40px;
+     border: 2px lightgray solid;
+     background-color: orange;
+     border-radius: 5px;
+   } 

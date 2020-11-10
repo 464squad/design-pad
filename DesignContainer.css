@@ -1,0 +1,21 @@
+.editButton {
+    background-color:gray;
+    color:black;
+    font-size: x-large;
+  }
+  
+  .editButtonActive {
+    position: absolute;
+    top: 40px;
+    right: 10%;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-size: x-large;
+  }
+
+  .btnClear{
+    background-color: turquoise;
+    color:black;
+    font-size: x-large;
+  }
