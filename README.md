@@ -2,9 +2,7 @@
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
-<img src="https://github.com/agyapongeli77/design-pad/blob/master/src/my_designpad_walkthrough.gif" width=450><br>
+<img src="https://github.com/agyapongeli77/design-pad/blob/master/src/my_designpad_walkthrough.gif" width=900><br>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
