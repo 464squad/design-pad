@@ -1,38 +1,73 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-class PadInput extends Component {
-    constructor(props) {
-        super(props);
-        /*
-            TODO - set initial state for edit button
-        */
-       this.state = {
-           editButton: false
-       }
-    }
+const PadInput = (props) => {
 
-    handleEditChange = event => {
-        /*
-            TODO - Logic for changing state based on form changes
-        */
-        console.log("edit button updated")
-        console.log(event.target)
+  return (
 
-       // change the state
-        this.setState({
-            [event.target.editButton]: event.target.value
-        })
-    }
+    <div className="pad_container">
+      <div className="pads">
 
-    render() {
+        <Pad EDIT={props.EDIT} color="Yellow"/>
+      </div>
 
-        return(
-            <div>
-                <handleEditChange/>
-            </div>
-        )
-    }
+      <div className="pads">
+        <Pad EDIT={props.EDIT} color="Blue" />
+
+      </div>
+
+      <div className="pads">
+
+        <Pad EDIT={props.EDIT} color="Green" />
+      </div>
+
+      <div className="pads">
+        <Pad EDIT={props.EDIT} color="Brown" />
+      </div>
+
+      <div className="pads">
+        <Pad EDIT={props.EDIT} color="Red"/>
+      </div>
+
+      <div className="pads">
+        <Pad EDIT={props.EDIT} color="Pink" />
+      </div>
+
+      <div className="pads">
+        <Pad EDIT={props.EDIT} color="Black" />
+      </div>
+      <div className="pads">
+        <Pad EDIT={props.EDIT} color="Orange" />
+      </div>
+    </div>
+  );
+}
+
+const Pad = (props) => {
+
+  const handleDragOver = event => {
+
+    event.dataTransfer.setData("color", props.color);
+
+  };
+
+  return (
+    <div draggable={props.EDIT} onDragStart={handleDragOver}>
+      {props.color}
+    </div>
+  );
+}
+
+const InputPad = (props) => {
+    
+    return (
+
+        <div>
+            <PadInput/>
+            <Pad/>
+        </div> 
+
+    )
 }
 
 
-export default PadInput;
+export default InputPad;

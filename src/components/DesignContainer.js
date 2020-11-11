@@ -2,13 +2,14 @@ import React from 'react';
 import DesignBoard from './DesignBoard';
 import PadInput from './PadInput';
 
+
 class DesignContainer extends React.Component {
   state = { EDIT: false };
 
 
   Edit = () => {
     this.setState(props => ({
-      editing: !props.editing
+      EDIT: !props.EDIT 
     }));
   };
     
@@ -19,7 +20,6 @@ class DesignContainer extends React.Component {
         return (
             <div>
                 <div>
-                    <h3>DESIGN PAD</h3>
                     <button className={button} onClick={this.Edit}>
                     EDIT
                     </button>
