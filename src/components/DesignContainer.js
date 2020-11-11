@@ -1,64 +1,34 @@
 import React from 'react';
 import DesignBoard from './DesignBoard';
-import DesignPad from './DesignPad';
 import PadInput from './PadInput';
 
 class DesignContainer extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            isBoxVisible: true
-          };
-    }
+  state = { EDIT: false };
 
-    toggleBox = () => {
-        this.setState(prevState => ({ isBoxVisible: !prevState.isBoxVisible }));
-    };
 
-    editButton = event => {
-        // to prevent page reload on form submit
-        // event.preventDefault();
-        /*
-            TODO - Logic for calling props to handle submission and setting state changes
-        */
-        // this.setState(true)
-        console.log('current state in edit button event',this.state)
-        // console.log('Im the edit button event')
-    }
+  Edit = () => {
+    this.setState(props => ({
+      editing: !props.editing
+    }));
+  };
+    
 
     render() {
-        const { isBoxVisible } = this.state;
-        
-        return ( 
-            <div className="container">
-
-                {/* Testing feature for edit button */}
-                <div className={`box ${isBoxVisible ? "" : "hidden"}`}>
-                    <p>{`${isBoxVisible ? "I'm the box" : "I'm the yellow box"}`}</p>
+        const button = this.state.EDIT ? "edit_button" : "edit_button_after";
+        const EDIT = this.state.EDIT
+        return (
+            <div>
+                <div>
+                    <h3>DESIGN PAD</h3>
+                    <button className={button} onClick={this.Edit}>
+                    EDIT
+                    </button>
                 </div>
-                
-                { /*TODO - Add editButton Component */ }
-                <div className="button_container">
-                    <button className={`edit_button ${isBoxVisible ? "" : "hidden"}`} onClick={this.toggleBox}> Edit </button>
-                </div>
-                
-                <br/> 
 
-                { /*TODO - Add PadInput Component */ } 
-                <PadInput/>
-
-                <br/> 
-                
-                { /*TODO - Add DesignPad Component */ } 
-                <DesignPad/>
-
-                <br/> 
-
-                { /*TODO - Add DesignBoard Component */ } 
-                <DesignBoard/>
-
+                <PadInput EDIT={EDIT} />
+                <DesignBoard />
             </div>
-        );
+    );
     }
 }
 
