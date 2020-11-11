@@ -34,12 +34,12 @@ code {
 .board_container {
     margin-left: 28%;
     margin-top: 5px;
-    width: 23%;
+    width: 25%;
     height: 520px;
     display: grid;
     grid-template-columns: 100% 100%;
     grid-row: auto auto;
-    grid-column-gap: 0.3%;
+    grid-column-gap: 0.6%;
     grid-row-gap: 0.3%;
 }
 

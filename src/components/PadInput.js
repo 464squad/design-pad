@@ -1,4 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
+
+const Pad = (props) => {
+
+  const handleDragOver = event => {
+
+    event.dataTransfer.setData("color", props.color);
+
+  };
+
+  return (
+    <div draggable={props.EDIT} onDragStart={handleDragOver}>
+      {props.color}
+    </div>
+  );
+}
 
 const PadInput = (props) => {
 
@@ -38,21 +53,6 @@ const PadInput = (props) => {
       <div className="pads">
         <Pad EDIT={props.EDIT} color="Orange" />
       </div>
-    </div>
-  );
-}
-
-const Pad = (props) => {
-
-  const handleDragOver = event => {
-
-    event.dataTransfer.setData("color", props.color);
-
-  };
-
-  return (
-    <div draggable={props.EDIT} onDragStart={handleDragOver}>
-      {props.color}
     </div>
   );
 }

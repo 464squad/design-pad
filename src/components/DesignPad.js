@@ -1,51 +1,40 @@
 import React from 'react';
 
+
 class DesignPad extends React.Component {
 
       state = {
-        colortype: ""
+        color: ""
       };
 
-  const DragAndDrop = props => {
-    const handleDragEnter = e => {
-      e.preventDefault();
-      e.stopPropagation();
+     handleDragOver = event => {
+      event.preventDefault();
+      event.stopPropagation();
+    }
 
-    };
-
-    const handleDragLeave = e => {
-      e.preventDefault();
-      e.stopPropagation();
-    };
-
-    const handleDragOver = e => {
-      e.preventDefault();
-      e.stopPropagation();
+     handleDrop = event => {
+      event.preventDefault();
+      event.stopPropagation();
+      this.setState({color: event.dataTransfer.getData("color")})
     };
     
-    const handleDrop = e => {
-      e.preventDefault();
-      e.stopPropagation();
-    };
-    
+
+    render() {
+      return (
+        <div
+            className = "box"
+            handleDragOver = {this.handleDragOver}
+            handleDrop = {this.handleDrop}
+            style={{ backgroundColor: this.state.color }}
+
+        ></div>
+    );
+    }
+
   };
 
 
 
-}
 
-
-const DesignPad = (props) => {
-    //const { linkData, removeLink } = props;
-    //{ /*TODO - return <table> component, TableHeader and TableBody  */ }
-    return (
-
-        <div>
-            <DesignPadBody/>
-            <DragAndDrop/>
-        </div>
-        
-    )
-}
 
 export default DesignPad;

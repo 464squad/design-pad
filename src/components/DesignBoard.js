@@ -1,10 +1,11 @@
 import React from 'react';
+import DesignPad from "./DesignPad";
 
 const DesignBoardBody = () => {
     // boilerplate design board body functional component
     return ( 
         <div>
-            <h1 className="header"> DESIGN PAD </h1> 
+            <h2 className="header">DESIGN PAD </h2> 
             <div className="board_container">
                 <div className="box" id="box1"> Pad 1 </div>
                 <div className="box" id="box2"> Pad 2 </div>

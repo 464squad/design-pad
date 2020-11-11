@@ -15,8 +15,9 @@ class DesignContainer extends React.Component {
     
 
     render() {
-        const button = this.state.EDIT ? "edit_button" : "edit_button_after";
+        const button = this.state.EDIT ? "edit_button_after" : "edit_button";
         const EDIT = this.state.EDIT
+
         return (
             <div>
                 <div>
