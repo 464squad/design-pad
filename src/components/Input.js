@@ -13,7 +13,7 @@ class Input extends React.Component{
             style={{
                   width: "50px", height: "30px"
             }    }
-            draggable = {true}
+            draggable = {this.props.edit}
             onDragStart={this.drag}
             >
                {this.props.color}   
