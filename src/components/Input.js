@@ -3,8 +3,8 @@ import React from 'react'
 
 
 class Input extends React.Component{
-   drag(ev) {
-   // ev.dataTransfer.setData("text", ev.target.id);
+   drag = (ev) =>  {
+   ev.dataTransfer.setData("color", this.props.color);
     console.log("Drag")
   }
     render(){
