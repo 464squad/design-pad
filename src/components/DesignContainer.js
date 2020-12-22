@@ -13,8 +13,9 @@ function DesignContainer(){
             <button className="container-button">Edit</button>
         </div>
         <div className="designBoard" >
-            <DesignPad/>   
-            <PadInput/>
+          <PadInput/>
+          <DesignPad/>   
+            
         </div>   
         </div>
 

@@ -5,7 +5,8 @@ import React from 'react'
 class Input extends React.Component{
     render(){
         return(
-            <div style={{
+            <div className = {Input}
+            style={{
                   width: "50px", height: "30px"
             }    
             }>

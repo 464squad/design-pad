@@ -14,30 +14,25 @@ body{
     float: right;
 }
 
-/* PadInput Section */
-.pad-input{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  border: #8c8dca;
-  width: 100px;
-  height: 60px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 230px;
-  padding: 20px;
-    /* grid-template-columns: auto auto auto;
-    grid-template-rows: 80px 200px;
-    grid-gap: 10px;
-    background-color: #2196F3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 230px;
-    padding: 20px;
-    display: grid; */
-    
-   
+.designBoard{
+flex-direction: row;
+display: flex;
 }
+
+.pad-input{
+   
+ }
+     
+.pad-container{
+  
+
+}
+.Input{
+
+}
+
+
+
+
+   
+

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './design.css';
 
 class DesignPad extends React.Component{
     state = {
@@ -19,8 +19,8 @@ class DesignPad extends React.Component{
       render() {
         return (
           <div
-            className="pad"
-            style={{ backgroundColor: this.state.color , height:"300px", width: "300px"}}
+            className="pad-container"
+            style={{ backgroundColor: this.state.color , height:"200px", width: "200px", marginLeft: "100px" }}
             onDragOver={this.handleDragOver}
             onDrop={this.handleDrop}
           ></div>
