@@ -1,5 +1,4 @@
 import React from 'react';
-import DesignBoard from './DesignBoard';
 import DesignPad from './DesignPad';
 import PadInput from './PadInput';
 import './design.css'
@@ -9,9 +8,14 @@ import './design.css'
 function DesignContainer(){
     return(
         <div className="container">
-            <DesignBoard/>
-            <DesignPad/>
+        <div className= "header">
+            <h1 className="container-header">Design Pad</h1>
+            <button className="container-button">Edit</button>
+        </div>
+        <div className="designBoard" >
+            <DesignPad/>   
             <PadInput/>
+        </div>   
         </div>
 
     );

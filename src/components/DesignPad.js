@@ -20,7 +20,7 @@ class DesignPad extends React.Component{
         return (
           <div
             className="pad"
-            style={{ backgroundColor: this.state.color }}
+            style={{ backgroundColor: this.state.color , height:"300px", width: "300px"}}
             onDragOver={this.handleDragOver}
             onDrop={this.handleDrop}
           ></div>
