@@ -1,0 +1,93 @@
+  
+  .designContainer {
+    padding: 10px; 
+    }
+    
+    .designContainer div {
+    display: flex;
+    line-height: 30px;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px #ccc solid;
+    padding: 10px;
+    
+    box-shadow: 0 10px 30px rgba(207, 207, 223, 0.22), 0 10px 35px   rgba(139, 151, 221, 0.22);
+    font-family: 'Avenir Next', sans-serif;
+    justify-content: space-around;
+    
+    
+    }
+
+    h1 {
+        color: rgb(180, 216, 233);
+    }
+
+    
+    .siteTitle {
+    width: 650px;
+    height: 50px;
+    background-color: white;
+    justify-content: center;
+    
+    }
+    
+    .enablebutton {
+      width: 90px;
+      height: 40px;
+      background-color: blue;
+      border-radius: 10%;
+      border-width: 5px;
+      border-style: groove;
+  
+    }
+    
+    .padInput {
+    position: relative;
+    left: 500px;
+    height: 600px;
+    top: 50px;
+    width: 200px;
+    background-color: rgb(238, 231, 134);
+    flex-direction: row; 
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+  
+    .padButton {
+      flex: 1 0 41%; 
+      margin: 5px;
+      height: 25px;
+      background-color: rgb(180, 216, 233);
+      
+      }
+    /* This controls the design board we use to put down colors  */
+      .designBoard{
+        display:inline-block;
+        position: absolute;
+        left: 900px;
+        top: 300px;
+        right: 40px;
+        background-color: rgb(238, 231, 134);
+        width: 600px;
+        height: 300px;
+        padding: 20px;
+        
+    
+        }
+    
+    .designBoard div {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .designPad {
+    background-color: rgba(255, 13, 13, 0.74);
+    height: 250px;
+    width: 250px;
+    border: 2px rgb(235, 19, 19) solid;
+    border-radius: 10px;
+    flex: 0 0 30%; 
+    margin: 5px;
+    
+    }
