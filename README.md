@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Here is a recorded demo of our project : https://www.youtube.com/watch?v=zXBLjLrR-tg&ab_channel=DavidGe
 
+## Created by Joel Rosas, Nick Morales, Brendon Wright, Xinwei (David) Ge
+
 ## Available Scripts
 
 In the project directory, you can run:
