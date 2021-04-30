@@ -1,0 +1,45 @@
+.Black {
+    background-color: rgb(179, 27, 27);
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+.White {
+    background-color: rgb(32, 184, 45);
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#board_1 {
+    flex-wrap: wrap;
+}
+
+#cardInput_1 {
+    width: 7rem;
+}
+
+#cardInput_2 {
+    width: 7rem;
+}
+#cardInput_3 {
+    width: 7rem;
+}
+#cardInput_4 {
+    width: 7rem;
+}
+#cardInput_5 {
+    width: 7rem;
+}
+#cardInput_6 {
+    width: 7rem;
+}
+#cardInput_7 {
+    width: 7rem;
+}
+#cardInput_8 {
+    width: 7rem;
+}
