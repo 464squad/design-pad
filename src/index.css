@@ -19,21 +19,7 @@ body{
   padding: 15px;
 }
 
-.flexbox .board{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 300px;
-  background-color: #313131;
-  padding: 15px;
-}
 
-.flexbox .board .card{
-  padding: 15px 25px;
-  background-color: #F3F3F3;
-  cursor: pointer;
-  margin-bottom: 15px;
-}
 
 .edit_button {
   float: right;

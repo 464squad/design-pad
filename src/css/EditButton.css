@@ -14,32 +14,106 @@
     margin-top: 10px;
 }
 
-#board_1 {
+.row {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+  }
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+
+.flexbox .board .card{
+  padding: 15px 25px;
+  background-color: #F3F3F3;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.flexbox .board{
+    display: flex;
+    flex-direction: column;
+    background-color: #313131;
+    padding: 20px;
+  }
+
+#board_1 {
+    margin-top: 100px;
+    height: 45%;
+    width: fit-content;
+}
+
+#board_2 {
+    margin-top: 50px;
+    width: fit-content;
+    height: 70%
 }
 
 #cardInput_1 {
-    width: 7rem;
+    width: 6rem;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: red;
 }
 
 #cardInput_2 {
-    width: 7rem;
+    width: 6rem;
+    margin-bottom: 15px;
+    background-color: blue;
 }
 #cardInput_3 {
-    width: 7rem;
+    width: 6rem;
+    margin-bottom: 15px;
+    background-color: pink;
 }
 #cardInput_4 {
-    width: 7rem;
+    width: 6rem;
+    margin-bottom: 15px;
+    background-color: green;
 }
 #cardInput_5 {
-    width: 7rem;
+    width: 6rem;
+    margin-bottom: 15px;
+    background-color: black;
 }
 #cardInput_6 {
-    width: 7rem;
+    width: 6rem;
+    margin-bottom: 15px;
+    background-color: grey;
 }
 #cardInput_7 {
-    width: 7rem;
+    width: 6rem;
+    margin-bottom: 15px;
+    background-color: brown;
 }
 #cardInput_8 {
-    width: 7rem;
+    width: 6rem;
+    margin-bottom: 15px;
+    background-color: purple;
+}
+
+#cardPad_1 {
+    width: 12rem;
+    height: 12rem;
+    margin-right: 5px;
+}
+#cardPad_2 {
+    width: 12rem;
+    height: 12rem;
+    margin-right: 5px;
+}
+#cardPad_3 {
+    width: 12rem;
+    height: 12rem;
+}
+#cardPad_4 {
+    width: 12rem;
+    height: 12rem;
 }

@@ -42,68 +42,87 @@ export default class EditButton extends Component {
                 
                 <main className="flexbox"> 
                     <Board id = "board_1" className = "board">
-                        <Card id = "cardInput_1" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
-                            {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                            <p>1</p>
-                        </Card>
+                        <div class = "row">
+                            <div class = "column">
+                                <Card id = "cardInput_1" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
+                                    {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                    <p>red</p>
+                                </Card>
 
-                        <Card id = "cardInput_2" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
-                            {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                            <p>2</p>
-                        </Card>
+                                <Card id = "cardInput_2" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
+                                    {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                    <p>not red</p>
+                                </Card>
 
-                        <Card id = "cardInput_3" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
-                            {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                            <p>3</p>
-                        </Card>
+                                <Card id = "cardInput_3" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
+                                    {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                    <p>pink</p>
+                                </Card>
 
-                        <Card id = "cardInput_4" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
-                            {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                            <p>4</p>
-                        </Card>
+                                <Card id = "cardInput_4" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
+                                    {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                    <p>green</p>
+                                </Card>
+                            </div>
 
-                        <Card id = "cardInput_5" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
-                            {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                            <p>5</p>
-                        </Card>
+                        
+                            <div class = "column">
 
-                        <Card id = "cardInput_6" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
-                            {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                            <p>6</p>
-                        </Card>
+                                <Card id = "cardInput_5" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
+                                    {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                    <p>black</p>
+                                </Card>
 
-                        <Card id = "cardInput_7" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
-                            {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                            <p>7</p>
-                        </Card>
+                                <Card id = "cardInput_6" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
+                                    {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                    <p>grey</p>
+                                </Card>
 
-                        <Card id = "cardInput_8" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
-                            {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                            <p>8</p>
-                        </Card>
-                    </Board>
+                                <Card id = "cardInput_7" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
+                                    {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                    <p>brown</p>
+                                </Card>
+
+                                <Card id = "cardInput_8" className = "card" draggable = {this.state.draggable} editMode = {this.state.editMode}>
+                                    {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                    <p>purple</p>
+                                </Card>
+                            </div>
+                        </div>
+                        
+                    </Board>\
+
+                    
 
 
                     <Board id = "board_2" className = "board">
-                        <Card id = "cardPad_1" className = "card" editMode = {this.state.editMode}>
-                        {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                        <p>Pad 1</p> 
-                            
-                        </Card>
-                        <Card id = "cardPad_2" className = "card" editMode = {this.state.editMode}>
-                        {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                        <p>Pad 2</p> 
-                            
-                        </Card>
-                        <Card id = "cardPad_3" className = "card" editMode = {this.state.editMode}>
-                        {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                        <p>Pad 3</p> 
-                            
-                        </Card>
-                        <Card id = "cardPad_4" className = "card" editMode = {this.state.editMode}>
-                        {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                        <p>Pad 4</p>   
-                        </Card>
+                        <div class = "row">
+                            <div class = "column">
+                                <Card id = "cardPad_1" className = "card" editMode = {this.state.editMode}>
+                                {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                <p>Pad 1</p> 
+                                    
+                                </Card>
+                                <Card id = "cardPad_2" className = "card" editMode = {this.state.editMode}>
+                                {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                <p>Pad 2</p>
+                                </Card>
+                            </div>
+
+
+                            <div class = "column">
+                                <Card id = "cardPad_3" className = "card" editMode = {this.state.editMode}>
+                                {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                <p>Pad 3</p> 
+                                    
+                                </Card>
+                                <Card id = "cardPad_4" className = "card" editMode = {this.state.editMode}>
+                                {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
+                                <p>Pad 4</p>   
+                                </Card>
+                            </div>
+
+                        </div>
 
                     </Board>
                 </main>
