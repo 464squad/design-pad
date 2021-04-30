@@ -12,7 +12,7 @@ body{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 768px;
+  max-width: 1500px;
   height: 100vh;
   overflow: hidden;
   margin:0 auto;

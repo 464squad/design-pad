@@ -46,55 +46,57 @@
 
 #board_1 {
     margin-top: 100px;
-    height: 45%;
+    margin-left: 100px;
+    height: 40%;
     width: fit-content;
 }
 
 #board_2 {
     margin-top: 50px;
     width: fit-content;
-    height: 70%
+    margin-right: 200px;
+    height: 80%
 }
 
 #cardInput_1 {
-    width: 6rem;
+    width: 10rem;
     margin-right: 15px;
     margin-bottom: 15px;
     background-color: red;
 }
 
 #cardInput_2 {
-    width: 6rem;
+    width: 10rem;
     margin-bottom: 15px;
     background-color: blue;
 }
 #cardInput_3 {
-    width: 6rem;
+    width: 10rem;
     margin-bottom: 15px;
     background-color: pink;
 }
 #cardInput_4 {
-    width: 6rem;
+    width: 10rem;
     margin-bottom: 15px;
     background-color: green;
 }
 #cardInput_5 {
-    width: 6rem;
+    width: 10rem;
     margin-bottom: 15px;
     background-color: black;
 }
 #cardInput_6 {
-    width: 6rem;
+    width: 10rem;
     margin-bottom: 15px;
     background-color: grey;
 }
 #cardInput_7 {
-    width: 6rem;
+    width: 10rem;
     margin-bottom: 15px;
     background-color: brown;
 }
 #cardInput_8 {
-    width: 6rem;
+    width: 10rem;
     margin-bottom: 15px;
     background-color: purple;
 }

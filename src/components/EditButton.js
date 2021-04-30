@@ -100,12 +100,12 @@ export default class EditButton extends Component {
                             <div class = "column">
                                 <Card id = "cardPad_1" className = "card" editMode = {this.state.editMode}>
                                 {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                                <p>Pad 1</p> 
+                                <p></p> 
                                     
                                 </Card>
                                 <Card id = "cardPad_2" className = "card" editMode = {this.state.editMode}>
                                 {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                                <p>Pad 2</p>
+                                <p></p>
                                 </Card>
                             </div>
 
@@ -113,12 +113,12 @@ export default class EditButton extends Component {
                             <div class = "column">
                                 <Card id = "cardPad_3" className = "card" editMode = {this.state.editMode}>
                                 {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                                <p>Pad 3</p> 
+                                <p></p> 
                                     
                                 </Card>
                                 <Card id = "cardPad_4" className = "card" editMode = {this.state.editMode}>
                                 {console.log("Draggable is:" + this.state.draggable + ", while editMode is:" + this.state.editMode)}
-                                <p>Pad 4</p>   
+                                <p></p>   
                                 </Card>
                             </div>
 
