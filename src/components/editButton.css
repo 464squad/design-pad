@@ -1,0 +1,16 @@
+.editButton_enabled{
+  padding: 1rem 2rem;
+  min-width: 30px;
+  background: black;
+  color: #fff;
+  border-color: #000;
+}
+
+.editButton_disabled{
+  pointer-events: none;
+  padding: 1rem 2rem;
+  min-width: 30px;
+  background: red;
+  color: #000;
+  border-color: #000;
+}
