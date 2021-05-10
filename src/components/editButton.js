@@ -1,6 +1,8 @@
 import React from "react";
 import "./editButton.css";
 import CustomButton from "./customButton";
+import Pad from './pad.jsx';
+
 
 class EditButton extends React.Component {
   constructor(props) {
@@ -36,6 +38,12 @@ class EditButton extends React.Component {
             stateChanged={this.state.inEditMode}
           />
         </div>
+        <div style={{display: 'flex'}}>
+          <Pad buttonState = {this.state.inEditMode}/>
+          {/* designPad should be here */}
+        </div>
+        
+
       </div>
     );
   }
