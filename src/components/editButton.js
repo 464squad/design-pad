@@ -1,33 +1,41 @@
-import React from 'react';
-import './editButton.css';
+import React from "react";
+import "./editButton.css";
+import CustomButton from "./customButton";
 
-class EditButton extends React.Component{
-  constructor(props){
+class EditButton extends React.Component {
+  constructor(props) {
     super(props);
     this.state = {
-      inEditMode: false,
-      button_clickability: 'editButton_enabled'
-    }
+      inEditMode: true,
+      // button_clickability: 'editButton_enabled'
+    };
   }
 
-  changeEditMode = () => {
-    if (this.state.inEditMode === true){
-      // flip the states
-      this.setState({inEditMode: false, button_clickability:'editButton_enabled'})
-    }
-    else (
-      this.setState({inEditMode: true, button_clickability:'editButton_disabled'})
-    )
-    console.log(this.state.inEditMode);
-  }
+  changedEditMode = () => {
+    // change the state of the button
+    this.setState((state) => ({ inEditMode: !state.inEditMode }));
+  };
 
   render() {
-    return(
-      <div className = "editButtonDiv">
-        Currently, once you click this button, you cannot click it again unless you refresh the page (delete this message once this is changed)
-        <button type="button" className={this.state.button_clickability} onClick={this.changeEditMode}>
-          EDIT
-        </button>
+    // console.log(this.state.inEditMode);
+    let colorStyle = null;
+    // change to the css class based on the state on inEditMode
+    if (this.state.inEditMode) {
+      colorStyle = "editButton_enabled";
+    } else {
+      colorStyle = "editButton_disabled";
+    }
+
+    return (
+      <div className="editButtonDiv">
+        <p style={{ textAlign: "center" }}>Button is working fine now</p>
+        <div className="buttonStyle">
+          <CustomButton
+            styleName={colorStyle}
+            clicked={this.changedEditMode}
+            stateChanged={this.state.inEditMode}
+          />
+        </div>
       </div>
     );
   }
