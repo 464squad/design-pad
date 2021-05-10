@@ -1,0 +1,31 @@
+.padDesign{
+    width: 30%;
+    margin: 1vh;
+    padding: 2vh;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    border: 3px black solid;
+}
+
+.buttonsPads{
+    width: 5%;
+    height: 2vh;
+    padding: 4vh;
+    margin: 3vh;
+    border: 3px black solid;
+    cursor: pointer;
+
+}
+
+.designPad{
+    border: 3px black solid;
+    margin: 1vh;
+    padding: 2vh;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 40%;
+}

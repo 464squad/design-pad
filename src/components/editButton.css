@@ -1,0 +1,27 @@
+.editButton_enabled{
+  border-radius: 1vh;
+  border-style: none;
+  padding: 1rem 2rem;
+  min-width: 30px;
+  background: black;
+  color: #fff;
+  border-color: #000;
+  cursor: pointer;
+}
+
+.editButton_disabled{
+  border-radius: 1vh;
+  border-style: none;
+  padding: 1rem 2rem;
+  min-width: 30px;
+  background: red;
+  color: #fff;
+  border-color: #000;
+  cursor: pointer;
+}
+ .buttonStyle{
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 1vh;
+
+ }
