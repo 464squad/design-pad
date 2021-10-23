@@ -1,0 +1,26 @@
+.name {
+  font-weight: 200px;
+  font-size: 50px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 40px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.btn:hover {
+  background-color: red;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 700px;
+}
