@@ -1,0 +1,8 @@
+.pad {
+    display: block;
+    height: 14em;
+    width: 16em;
+    border-radius: 1em;
+    border: solid 2px black;
+    box-shadow: 5px #888888;
+}
