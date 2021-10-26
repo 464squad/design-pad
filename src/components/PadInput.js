@@ -15,14 +15,14 @@ function PadInput(props) {
     return (
         <div className='left-box'>
            <div className='inner-box'>
-            <button draggable='true' onDragStart={dragStart }onDragOver={dragOver}>1</button>
-            <button draggable='true'>2</button>
-            <button draggable='true'>3</button>
-            <button draggable='true'>4</button>
-            <button draggable='true'>5</button>
-            <button draggable='true'>6</button>
-            <button draggable='true'>7</button>
-            <button draggable='true'>8</button>
+            <button draggable={props.offNon} onDragStart={dragStart }onDragOver={dragOver}>1</button>
+            <button draggable={props.offNon}>2</button>
+            <button draggable={props.offNon}>3</button>
+            <button draggable={props.offNon}>4</button>
+            <button draggable={props.offNon}>5</button>
+            <button draggable={props.offNon}>6</button>
+            <button draggable={props.offNon}>7</button>
+            <button draggable={props.offNon}>8</button>
            </div>
                
         </div>
