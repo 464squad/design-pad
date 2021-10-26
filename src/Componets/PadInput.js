@@ -47,8 +47,8 @@ export class PadInput extends Component {
                     </div> 
                <div style={{width:'50px',
                borderRadius:'15px',
-               borderRadius:'15px',background
-               Color:'lightgray'
+               borderRadius:'15px',
+               backgroundColor:'lightgray'
                ,}
                }draggable='true'> 7</div> 
                <div style={{width:'50px',
