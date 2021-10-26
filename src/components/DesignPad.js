@@ -7,8 +7,8 @@ function DesignPad() {
     //need to create a drop to transferdata to the pad link if you need help https://www.pluralsight.com/guides/drag-and-drop-react-components  
     // https://www.youtube.com/watch?v=-MfTv5VRM0A https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
     return (
-        <div className='right-box'>
-            <div className='pad' 
+        <div className='row right-box'>
+            <div className='col pad' 
             style={{backgroundColor: colors}}
             onDragOver={event => {
                 event.preventDefault();
@@ -17,8 +17,13 @@ function DesignPad() {
                 const newColor = event.dataTransfer.getData("colors");
         
                 setColors(newColor);}}
+            
             >
+            <div id='footer'>
+
             </div>
+            </div>
+            
 
         </div>
 
@@ -28,8 +33,3 @@ function DesignPad() {
 }
 
 export default DesignPad
-{/* <div className='right-box'>
-            <div className='pad' style={{backgroundColor: colors}}>
-            </div>
-
-        </div> */}

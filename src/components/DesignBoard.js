@@ -5,7 +5,7 @@ function DesignBoard() {
     return (
         <div className='container'>
             
-             <PadInput/> 
+             
             <div className='pads'>
                 <DesignPad className='hi' style={{marginLeft:'100px'}}/>
                 <DesignPad className='h' />

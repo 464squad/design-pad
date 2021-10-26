@@ -15,7 +15,7 @@ function PadInput(props) {
     return (
         <div className='left-box'>
            <div className='inner-box'>
-            <button draggable='true' onDragStart={dragStart}onDragOver={dragOver}>1</button>
+            <button draggable='true' onDragStart={dragStart }onDragOver={dragOver}>1</button>
             <button draggable='true'>2</button>
             <button draggable='true'>3</button>
             <button draggable='true'>4</button>
