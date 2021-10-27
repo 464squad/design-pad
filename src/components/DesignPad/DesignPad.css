@@ -1,7 +1,7 @@
 .pad {
     display: block;
-    height: 14em;
-    width: 16em;
+    height: 100%;
+    width: 100%;
     border-radius: 1em;
     border: solid 2px black;
     box-shadow: 5px #888888;

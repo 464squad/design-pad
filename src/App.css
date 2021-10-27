@@ -4,40 +4,32 @@
     top: 100px;
     width: 350px;
     height: 250px;
-    background: grey;
     border-radius: 30px;
-    border: 1px solid black;
   }
 
 .design-board2 {
     position: relative;
     left: 350px;
-    top: 100px;
+    top: 103px;
     width: 350px;
     height: 250px;
-    background: grey;
     border-radius: 30px;
-    border: 1px solid black;
   }
 
 .design-board3 {
     position: relative;
     left: 702px;
-    bottom: 405px;
+    bottom: 400px;
     width: 350px;
     height: 250px;
-    background: grey;
     border-radius: 30px;
-    border: 1px solid black;
   }
 
 .design-board4 {
     position: relative;
     left: 702px;
-    bottom: 405px;
+    bottom: 397px;
     width: 350px;
     height: 250px;
-    background: grey;
     border-radius: 30px;
-    border: 1px solid black;
     }
