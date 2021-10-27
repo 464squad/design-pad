@@ -29,7 +29,7 @@ export class DesignContainer extends Component {
                 <h1 className= 'name'>Design Pad</h1>
                 <button className='btn'  onClick={this.updateEdit}>Edit</button>
             </div>
-            <PadInput />
+            {/* <PadInput /> */}
             <DesignBoard/>
         </div>
         )

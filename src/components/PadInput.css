@@ -4,6 +4,8 @@
   height: 500px;
   width: 300px;
   margin: 50px;
+  float:left;
+  
 }
 .left-box:hover {
   background-color: pink;
