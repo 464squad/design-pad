@@ -33,3 +33,15 @@ class EDIT extends React.Component
 }
 
 export default EDIT
+
+
+
+
+
+
+//Anything major - git add * 
+// Git status 
+// Git commit -m "message here" 
+//Git push
+
+//Git log (commit history)
