@@ -17,4 +17,4 @@ function DesignBoard(props){
 
 
 
-export default DesignBoard
+export default DesignBoard;
