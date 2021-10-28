@@ -10,7 +10,7 @@ function App() {
       
       <h1>Design Pad</h1>
         <PadInput />
-   
+
      
       
     </div>

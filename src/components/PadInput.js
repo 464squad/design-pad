@@ -2,29 +2,33 @@ import React, {useState} from 'react'
 import PadButton from './PadButton.js'
 import '../style/PadInput.css'
 
-// list of colors for rendering
-const colors = ['red', 'orange', 'yellow', 'green', 'purple', 'grey']
+// list of colors for rendering for each PadInput
+const colors = ['red', 'orange', 'yellow', 'green', 'purple', 'grey', 'pink', 'white']
 
 const PadInput = () => {
-  const [edit, setEdit] = useState(true)
+  const [editMode, setEdit] = useState(true)
 
   function isEdit() {
-    if (edit){
+    if (editMode){
       setEdit(false)
     } else {
       setEdit(true)
     }
   }
 
-  if (edit){
+  
+
+  if (editMode){
     return (
        <div>
            <button onClick={isEdit} style={{width:"400px"}}>Edit Mode</button>
            <div className="PadInput-Container">
-            <div className='PadInput'>
+             
+            <div className='PadInput' style={{ backgroundColor: 'blue' }}>
+            <h1> Currently in edit mode </h1>
             {/* map over the list of colors and render them */}
-            {colors.map((color, index) => (
-            <PadButton bgColor={color}  />
+            {colors.map((color) => (
+            <PadButton bgColor={color}  editMode={true}/>
           ))}
         </div>
         
@@ -35,9 +39,15 @@ const PadInput = () => {
   } else{
     return (
       <div>
-      <button onClick={isEdit} style={{width:"400px"}}>Edit Mode</button>
-      <h3>Not On Edit Mode Currently</h3>
+           <button onClick={isEdit} style={{width:"400px"}}>Edit Mode</button>
+           <div className="PadInput-Container">
+             
+            <div className='PadInput' style={{ backgroundColor: 'grey' }}>
+            <h1> Not in edit mode </h1>
+        </div>
+        
       </div>
+       </div> 
     )
   }
 } 

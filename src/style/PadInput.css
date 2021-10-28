@@ -4,9 +4,8 @@
   
   .PadInput {
     padding: 1rem;
-    width: 20vw;
-    height: 75vh;
-    background-color: blue;
+    width: 400px;
+    height: 520px;
     border: 5px solid black;
     display: flex;
     justify-content: center;
