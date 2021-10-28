@@ -1,5 +1,5 @@
 import React from "react";
-import DesignPad from "./DesignPad";
+import DesignPad from '.DesignPad/DesignPad';
 
 //const clrs = ['khaki','coral','maroon', 'salmon','slateblue','teal','olive','silver']
 

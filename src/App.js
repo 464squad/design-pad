@@ -3,8 +3,8 @@ import './App.css';
 import EDIT from './components/EDIT.js';
 import CHOICE from './components/CHOICE.js';
 
-import PadInput from './Components/PadInput';
-import DesignPad from './Components/DesignPad';
+import PadInput from './components/PadInput';
+import DesignPad from './components/DesignPad/DesignPad.js';
 import React, {useState} from 'react';
 import './App.css';
 // components
@@ -24,6 +24,9 @@ function App() {
 
       <EDIT />
       <CHOICE />
+      <DesignPad />
+      <DesignBoard />
+      <PadInput />
         
         
         
