@@ -21,12 +21,14 @@ function App() {
       <header className="App-header">
       <h1 className="h1">DESIGN PAD</h1>
       
-
+      
       <EDIT />
       <CHOICE />
+      <PadInput />
       <DesignPad />
       <DesignBoard />
-      <PadInput />
+      
+      
         
         
         
