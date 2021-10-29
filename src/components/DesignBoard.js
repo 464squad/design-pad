@@ -1,6 +1,6 @@
 import React from 'react'
 import DesignPad from './DesignPad'
-import PadInput from './PadInput'
+// import PadInput from './PadInput'
 function DesignBoard() {
     return (
         <div className='container'>
