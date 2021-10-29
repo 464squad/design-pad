@@ -70,7 +70,7 @@
   color: white;
 }
 
-.edit-button.edit-mode {
+.edit-button.disabled {
   background-color: black;
   border: none;
 }
