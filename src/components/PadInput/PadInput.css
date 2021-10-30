@@ -1,0 +1,16 @@
+
+  .buttonList button{
+    background-color: black; 
+    border: 1px solid silver; 
+    color: white; 
+    padding: 1px 20px; 
+    cursor: pointer; 
+    font-size: 20px;   
+    margin-top: 20px;
+    display: inline-block;
+    position:relative;
+    bottom: 790px;
+    left: 130px;
+
+   
+  }

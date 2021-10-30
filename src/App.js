@@ -1,19 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import PadInput from './Components/PadInput';
-import DesignBoard from './Components/DesignBoard';
-import DesignPad from './Components/DesignPad';
+// components
+import DesignBoard from "./components/DesignBoard";
+import CHOICE from './components/CHOICE'
+import EDIT from './components/EDIT';
+import PadInput from './components/PadInput/PadInput'
 
 function App() {
+  
+  
   return (
     <div className="App">
-      <div className="App-header">
-       <PadInput/>
-       <DesignBoard />
-       <DesignPad/>
-      
-      </div>
-    </div>
+      <DesignBoard />
+      <EDIT />
+      <CHOICE />
+      <PadInput/>
+        </div>
   );
 }
 
