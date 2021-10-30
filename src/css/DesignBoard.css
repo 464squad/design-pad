@@ -1,0 +1,25 @@
+.container {
+    
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    margin: auto;
+    width: 50%;
+    right: 350px;
+    bottom: 300px;
+   
+    
+  
+}
+.container > div {
+    background-color: grey;
+    border-color: black;
+    width: 22em;
+    height: 22em;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+
+
+}
