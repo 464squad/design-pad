@@ -7,17 +7,19 @@ class DesignBoard extends React.Component{
 
     constructor(props){
         super(props);
+
+        
     }
-    
     
     
     render(){
 
         return <div className="container"  >
-        <DesignPad id = "1"/>
-        <DesignPad id = "2"/>
-        <DesignPad id = "3" />
-        <DesignPad id = "4"/>
+            
+        <DesignPad id = "1" toggle = {this.props.toggle}/>
+        <DesignPad id = "2" toggle = {this.props.toggle}/>
+        <DesignPad id = "3" toggle = {this.props.toggle} />
+        <DesignPad id = "4" toggle = {this.props.toggle} />
             </div>
     }
     

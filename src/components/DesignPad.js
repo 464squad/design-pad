@@ -14,6 +14,7 @@ class DesignPad extends React.Component {
     drop = (event) => {
         event.preventDefault();
         const keypad_id = event.dataTransfer.getData("keypad_id");
+        if (this.props.toggle == "on"){
         
         if (keypad_id == "k1") {
             this.setState({color: "blue"});
@@ -45,7 +46,11 @@ class DesignPad extends React.Component {
         else if (keypad_id == "k8"){
             this.setState({color: "green"});
         }
+    }
 
+    else {
+        return 
+    }
     }
     
     dragOver = (event) => {
