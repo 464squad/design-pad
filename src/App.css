@@ -1,0 +1,35 @@
+.design-board1 {
+    position: relative;
+    left: 350px;
+    top: 100px;
+    width: 350px;
+    height: 250px;
+    border-radius: 30px;
+  }
+
+.design-board2 {
+    position: relative;
+    left: 350px;
+    top: 103px;
+    width: 350px;
+    height: 250px;
+    border-radius: 30px;
+  }
+
+.design-board3 {
+    position: relative;
+    left: 702px;
+    bottom: 400px;
+    width: 350px;
+    height: 250px;
+    border-radius: 30px;
+  }
+
+.design-board4 {
+    position: relative;
+    left: 702px;
+    bottom: 397px;
+    width: 350px;
+    height: 250px;
+    border-radius: 30px;
+    }
