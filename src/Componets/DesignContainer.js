@@ -16,17 +16,17 @@ export class DesignContainer extends Component {
 
     render() {
         return (
-            <div>
-                <div>
-                Design Pad
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-4">
+                        <span>Design Pad</span>
+                        <button onClick={this.onEdit}>Edit</button>
+                        <PadInput/>
+                    </div>
+                    <div className="col-8">
+                        <DesignBoard/>
+                    </div>
                 </div>
-                <button onClick={this.onEdit}>Edit</button>
-                <PadInput>
-
-                </PadInput>
-                <DesignBoard>
-
-                </DesignBoard>
             </div>
         )
     }

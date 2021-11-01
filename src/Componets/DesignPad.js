@@ -12,8 +12,9 @@ export class DesignPad extends Component {
 
     render() {
         return (
-            <div style={{height:"150px",
-            width:' 200px',
+            <div className="p-3 border bg-dark"  
+            style={{ height: '300px', width: '300px',
+            margin: '10px',
             borderRadius: "25px",
             backgroundColor:this.state.color}}> 
                 
