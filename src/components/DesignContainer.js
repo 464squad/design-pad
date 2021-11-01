@@ -6,19 +6,21 @@ import "../css/DesignContainer.css"
 class DesignContainer extends React.Component{
      constructor(props){
          super(props)
-
+        
          this.state = { toggle: "on", color: "black"};
          }
      
-         
+    
+    // handles click event (edit button)
     onClick = (event) => {
         event.preventDefault();
-        
+        // if toggle is on, we change it to "off" and change the color of the edit button to red
         if (this.state.toggle == "on") {
             this.setState({toggle: "off"})
             this.setState({color: "red"})
            
         }
+        // else we change it back to "on" and turn the edit button color to black 
         else {
             this.setState({toggle: "on"})
             this.setState({color: "black"})
@@ -26,7 +28,7 @@ class DesignContainer extends React.Component{
         }
     } 
 
-
+    
     render(){
         return(
             <div> 

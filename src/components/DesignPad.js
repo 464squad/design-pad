@@ -13,9 +13,14 @@ class DesignPad extends React.Component {
     //handles drop event
     drop = (event) => {
         event.preventDefault();
+
+        //gets the current key id and assign it to keypad_id
         const keypad_id = event.dataTransfer.getData("keypad_id");
+        
+        // if the toggle is on, we allow the user to change color of the pads
         if (this.props.toggle == "on"){
         
+        //each id is associated with different colors (sets the color depending in id)
         if (keypad_id == "k1") {
             this.setState({color: "blue"});
         }
@@ -60,7 +65,7 @@ class DesignPad extends React.Component {
 
 
     render() {
-
+        // style = {{...}} sets the color of the pad on the current value of this.state.color 
         return  <div id = {this.props.id}  onDrop = {this.drop} onDragOver = {this.dragOver} 
                   style = {{backgroundColor: this.state.color}}  >
 
