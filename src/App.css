@@ -77,7 +77,7 @@ button:focus{
 .choices
 {
   position: absolute;
-  left: 50px;
+  left: 30px;
   width: 20%;
   height: 50%;
   border: 3px solid gold;
@@ -114,10 +114,10 @@ button:focus{
 }
 
 .design-board4 {
-    position: relative;
-    left: 702px;
-    bottom: 397px;
-    width: 350px;
-    height: 250px;
-    border-radius: 30px;
-    }
+  position: relative;
+  left: 702px;
+  bottom: 397px;
+  width: 350px;
+  height: 250px;
+  border-radius: 30px;
+  }

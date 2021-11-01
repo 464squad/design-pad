@@ -24,7 +24,6 @@ function App() {
       
       <EDIT />
       <CHOICE />
-      <PadInput />
       <DesignPad />
       <DesignBoard />
       
