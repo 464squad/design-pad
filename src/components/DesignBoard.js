@@ -6,11 +6,24 @@ function DesignBoard() {
         <div className='container'>
             
              <PadInput/> 
-            <div className='pads'>
+            <div id='all-pads' className='pads'>
+                <div>
                 <DesignPad className='hi' style={{marginLeft:'100px'}}/>
+                </div>
+                <div>
                 <DesignPad className='h' />
+                </div>
+                <div>
                 <DesignPad className='t' />
+                </div>
+                <div>
                 <DesignPad className='f' />
+                </div>
+
+                
+                
+                
+                
              
             </div>
         </div>

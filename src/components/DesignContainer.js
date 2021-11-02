@@ -22,12 +22,20 @@ export class DesignContainer extends Component {
         alert("hi");
     }
 
+    clearBoard = (event) => {
+        document.querySelectorAll('#all-pads div').forEach(item => {item.style.background="red"}) 
+    }
+
+
+
+
     render() {
         return (
             <div className='container'>
             <div className='header'>
                 <h1 className= 'name'>Design Pad</h1>
                 <button className='btn'  onClick={this.updateEdit}>Edit</button>
+                <button className='btn' onClick={this.clearBoard}>Reset</button>
             </div>
             {/* <PadInput /> */}
             <DesignBoard/>
