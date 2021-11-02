@@ -1,0 +1,34 @@
+#container > div{
+    background-color: grey;
+    padding: 1rem;
+  }
+  
+#container > div:nth-child(odd){
+    background-color: grey;
+  }
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    /* vertical | horizontal */
+    padding: 2em 6em;
+  }
+
+
+@media only screen and (max-width: 600px) {
+    h1 {background:pink;}
+  }
+
+@media only screen and (min-width: 600px) {
+    h1 {background: green;}
+  }
+
+@media only screen and (min-width: 992px) {
+    h1 {background: orange;}
+  } 
+  
+@media only screen and (min-width: 1200px) {
+    h1 {background: blue;}
+  }

@@ -3,10 +3,9 @@
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
+    background-color: rgb(152, 168, 184);
     width: 200px;
     height: 350px;
-    bottom: 300px;
     left: 70px;
 }
 
@@ -17,6 +16,4 @@
     height: 30px;
     margin: 10px;
     text-align: center;
-
-
 }

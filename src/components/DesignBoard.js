@@ -1,6 +1,8 @@
 import React from "react";
 import DesignPad from "./DesignPad"
 import "../css/DesignBoard.css"
+import '../css/responsive.css'
+
 
 
 class DesignBoard extends React.Component{
@@ -16,12 +18,19 @@ class DesignBoard extends React.Component{
     //can change colors (if on it can change, if off it cannot change colors)
     render(){
 
-        return <div className="container"  >
-            
-        <DesignPad id = "1" toggle = {this.props.toggle}/>
-        <DesignPad id = "2" toggle = {this.props.toggle}/>
-        <DesignPad id = "3" toggle = {this.props.toggle} />
-        <DesignPad id = "4" toggle = {this.props.toggle} />
+        return <div className="container" id='container' >
+        <div className='align-pad 1'>    
+        <DesignPad  id = "1" toggle = {this.props.toggle}/>
+        </div>
+        <div className='align-pad 2'>
+        <DesignPad  id = "2" toggle = {this.props.toggle}/>
+        </div>
+        <div className='align-pad 3'>
+        <DesignPad  id = "3" toggle = {this.props.toggle} />
+        </div>
+        <div className='align-pad 4'>
+        <DesignPad  id = "4" toggle = {this.props.toggle} />
+        </div>
             </div>
     }
     
