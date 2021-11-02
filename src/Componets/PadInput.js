@@ -13,17 +13,26 @@ export class PadInput extends Component {
           console.log(event)
      }
 
+     onDragStarted = (event) => {
+         console.log(event)
+         let colorElement  = event.target;
+         let color = colorElement.getAttribute("color")
+         console.log(colorElement)
+         console.log(color)
+         event.dataTransfer.setData("color", color)
+     }
+
     render() {
         return (
             <div className="col-12" style={{backgroundColor:'blueviolet'}}>
-               <Button color="lol1" onDragEnd={this.handleDrag} draggable='true'> 1 </Button>
-               <Button color="lol2" onDragEnd={this.handleDrag} draggable='true'> 2 </Button>
-               <Button color="lol3" onDragEnd={this.handleDrag} draggable='true'> 3 </Button>
-               <Button color="lol4" onDragEnd={this.handleDrag} draggable='true'> 4 </Button>
-               <Button color="lol5" onDragEnd={this.handleDrag} draggable='true'> 5 </Button>
-               <Button color="lol6" onDragEnd={this.handleDrag} draggable='true'> 6 </Button>
-               <Button color="lol7" onDragEnd={this.handleDrag} draggable='true'> 7 </Button>
-               <Button color="lol8" onDragEnd={this.handleDrag} draggable='true'> 8 </Button>
+               <Button onDragStart={this.onDragStarted} color="red" onDragEnd={this.handleDrag} draggable='true'> 1 </Button>
+               <Button onDragStart={this.onDragStarted} color="blue" onDragEnd={this.handleDrag} draggable='true'> 2 </Button>
+               <Button onDragStart={this.onDragStarted} color="green" onDragEnd={this.handleDrag} draggable='true'> 3 </Button>
+               <Button onDragStart={this.onDragStarted} color="yellow" onDragEnd={this.handleDrag} draggable='true'> 4 </Button>
+               <Button onDragStart={this.onDragStarted} color="indigo" onDragEnd={this.handleDrag} draggable='true'> 5 </Button>
+               <Button onDragStart={this.onDragStarted} color="purple" onDragEnd={this.handleDrag} draggable='true'> 6 </Button>
+               <Button onDragStart={this.onDragStarted} color="orange" onDragEnd={this.handleDrag} draggable='true'> 7 </Button>
+               <Button onDragStart={this.onDragStarted} color="black" onDragEnd={this.handleDrag} draggable='true'> 8 </Button>
             </div>
         )
     }

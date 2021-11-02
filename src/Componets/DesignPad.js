@@ -10,12 +10,12 @@ export class DesignPad extends Component {
     }
 
     onDrop = (event) =>  {
-        const droppedItem = event.nativeEvent;
         event.preventDefault()
-        console.log("Dropped")
-        //console.log(event)
-        console.log(droppedItem)
-        console.log(droppedItem)
+        const transfer = event.dataTransfer;
+        const color = transfer.getData("color")
+        console.log("color: " + color)
+        this.setState({color: color})
+        this.forceUpdate()
     }
 
     onDragEnter = event => {
@@ -40,8 +40,8 @@ export class DesignPad extends Component {
             onDragOver={this.onDragOver} 
             onDragEnter={this.onDragEnter}
             onDragLeave={this.onDragLeave}
-            className="p-3 border bg-dark"  
-            style={{ height: '300px', width: '300px',
+            className="p-3 border"  
+            style={{ height: '200px', width: '200px',
             margin: '10px',
             borderRadius: "25px",
             backgroundColor:this.state.color}}> 
