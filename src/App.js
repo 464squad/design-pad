@@ -2,6 +2,9 @@ import React from 'react';
 
 import './App.css'
 import PadInput from './components/PadInput'
+import DesignPad from './components/DesignPad';
+import DesignBoard from './components/DesignBoard';
+
 
 
 function App() {
@@ -10,6 +13,7 @@ function App() {
       
       <h1>Design Pad</h1>
         <PadInput />
+        <DesignBoard/>
 
      
       
