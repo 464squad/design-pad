@@ -45,3 +45,8 @@ export default EDIT
 //Git push
 
 //Git log (commit history)
+//GIT CHECKOUT "BRANCH NAME" - Switches branches
+//Git pull to pull branches
+//Git merge PadInput/ or branch name
+
+//Source control in VS accept current changes for package-lock.json
