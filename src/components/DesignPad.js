@@ -9,8 +9,10 @@ function DesignPad() {
     return (
         <div className='row right-box'>
             <div className='col pad' 
+
             style={{backgroundColor: 'lightgray', backgroundImage:'none'}}
             
+
             
             >
             <div id='footer'>

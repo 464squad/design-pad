@@ -14,7 +14,9 @@ function DesignContainer() {
                 <h1 className= 'name'>Design Pad</h1>
                 <button className='btn'   >Edit</button>
             </div>
+
             <PadInput /> 
+
             <DesignBoard/>
 
         </div>
