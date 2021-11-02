@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useState } from "react";
 import "./DesignPad.css";
@@ -5,6 +6,7 @@ import PadInput from "./PadInput";
 class DesignPad extends React.Component {
   constructor(props) {
     super(props);
+
 
     this.state = {
       colors: "lightgrey",
@@ -44,10 +46,8 @@ class DesignPad extends React.Component {
   }
 }
 
-export default DesignPad;
 
-{/* <div className='right-box'>
-            <div className='pad' style={{backgroundColor: colors}}>
-            </div>
 
-        </div> */}
+
+export default DesignPad
+
