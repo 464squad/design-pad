@@ -1,0 +1,9 @@
+.designPad {
+    display: flex;
+    width: 350px;
+    height: 275px;
+    border-radius: 20px;
+    border: thin solid black;
+    align-items: center;
+    
+  }
