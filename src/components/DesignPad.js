@@ -8,6 +8,7 @@ class DesignPad extends React.Component {
 
     this.state = {
       colors: "lightgrey",
+      gif:"none"
     };
   }
  
@@ -18,7 +19,9 @@ class DesignPad extends React.Component {
 
   onDrop = (e) => {
     const newColor = e.dataTransfer.getData("colors");
+    const newGif = e.dataTransfer.getData("gif")
     this.setState({ colors: newColor });
+    this.setState({gif: newGif })
   };
 
   // you could use hooks(useState) or convert this into a class extend Component so you can use this.state like how the prof flowers taught but keep the same div and classname
@@ -29,7 +32,7 @@ class DesignPad extends React.Component {
       <div className="row right-box">
         <div
           className="col pad"
-          style={{ backgroundColor: this.state.colors }}
+          style={{ backgroundColor: this.state.colors, backgroundImage: `url(${this.state.gif})`, backgroundSize: "auto" }}
           
           onDragOver={this.dragOver}
           onDrop={this.onDrop}
@@ -42,6 +45,7 @@ class DesignPad extends React.Component {
 }
 
 export default DesignPad;
+
 {/* <div className='right-box'>
             <div className='pad' style={{backgroundColor: colors}}>
             </div>
