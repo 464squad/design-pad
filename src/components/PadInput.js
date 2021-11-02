@@ -18,9 +18,9 @@ function PadInput(props) {
         <div className='left-box'>
            <div className='inner-box'>
             <button draggable={props.offNon} onDragStart={event =>{event.dataTransfer.setData('gif', 'https://media.giphy.com/media/9fulYnA7MR1oQ/giphy.gif')} }onDragOver={dragOver}>1</button>
-            <button draggable={props.offNon} onDragStart={event =>{event.dataTransfer.setData('colors', 'red')} }onDragOver={dragOver}>2</button>
-            <button draggable={props.offNon} onDragStart={event =>{event.dataTransfer.setData('colors', 'blue')} }onDragOver={dragOver}>3</button>
-            <button draggable={props.offNon} onDragStart={event =>{event.dataTransfer.setData('colors', 'cyan')} }onDragOver={dragOver}>4</button>
+            <button draggable={props.offNon} onDragStart={event =>{event.dataTransfer.setData('gifs', 'https://media.giphy.com/media/5ki43KG78VCLFf19QA/giphy.gif')} }onDragOver={dragOver}>2</button>
+            <button draggable={props.offNon} onDragStart={event =>{event.dataTransfer.setData('gifs', 'https://media.giphy.com/media/u8zWzulxIVFt02FpxJ/giphy.gif')} }onDragOver={dragOver}>3</button>
+            <button draggable={props.offNon} onDragStart={event =>{event.dataTransfer.setData('gifs', 'https://media.giphy.com/media/FAFo1M7EC4gRZ4HETH/giphy.gif')} }onDragOver={dragOver}>4</button>
             <button draggable={props.offNon} onDragStart={event =>{event.dataTransfer.setData('colors', 'purple')} }onDragOver={dragOver}>5</button>
             <button draggable={props.offNon} onDragStart={event =>{event.dataTransfer.setData('colors', 'yellow')} }onDragOver={dragOver}>6</button>
             <button draggable={props.offNon} onDragStart={event =>{event.dataTransfer.setData('colors', 'green')} }onDragOver={dragOver}>7</button>
