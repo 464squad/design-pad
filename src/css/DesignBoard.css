@@ -2,19 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-
 .flex-column{
-    height: 100%;
-    width: 100%;
     flex-direction: column;
 }
 
 .flex-wrap{
     flex-wrap: wrap;
     height: 400px;
-    width: 900px;
-
+    width: 40vw;
 }

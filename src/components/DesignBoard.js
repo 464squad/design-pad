@@ -3,18 +3,20 @@ import DesignPad from './DesignPad';
 import "../css/DesignBoard.css"
 
 class DesignBoard extends React.Component {
+    board = ["1", "2", "3", "4"];
 
     render(){
-        return(
-            <div class="flex-container flex-column">
-            <div class="flex-container flex-wrap" id="board">
-                <DesignPad/>
-                <DesignPad/>
-                <DesignPad/>
-                <DesignPad/>
+        const { handleAllowDrop, handleOnDrop, edit } = this.props;
+        const { board } = this;
 
+        return(
+            <div className="flex-container flex-column">
+                <div className="flex-container flex-wrap" id="board">
+                    {board.map(function(board, i){
+                        return(<DesignPad edit={edit} key={i} handleAllowDrop={handleAllowDrop} handleOnDrop={handleOnDrop}/>)
+                    })}
+                </div>
             </div>
-        </div>
         )
     }
 }
