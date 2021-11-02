@@ -23,10 +23,8 @@ export class DesignContainer extends Component {
     }
 
     clearBoard = (event) => {
-        document.querySelectorAll('#all-pads div').forEach(item => {item.style.background="red"}) 
+        window.location.reload()
     }
-
-
 
 
     render() {
@@ -34,10 +32,10 @@ export class DesignContainer extends Component {
             <div className='container'>
             <div className='header'>
                 <h1 className= 'name'>Design Pad</h1>
-                <button className='btn'  onClick={this.updateEdit}>Edit</button>
+                <button className='btn' >Edit</button>
                 <button className='btn' onClick={this.clearBoard}>Reset</button>
             </div>
-            {/* <PadInput /> */}
+            <PadInput />
             <DesignBoard/>
         </div>
         )
