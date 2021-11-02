@@ -66,7 +66,7 @@ class DesignPad extends React.Component {
 
     render() {
         // style = {{...}} sets the color of the pad on the current value of this.state.color 
-        return  <div id = {this.props.id}  onDrop = {this.drop} onDragOver = {this.dragOver} 
+        return  <div  onDrop = {this.drop} onDragOver = {this.dragOver} 
                   style = {{backgroundColor: this.state.color}}  >
 
         </div>

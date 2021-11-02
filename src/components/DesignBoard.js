@@ -19,18 +19,18 @@ class DesignBoard extends React.Component{
     render(){
 
         return <div className="container" id='container' >
-        <div className='align-pad 1'>    
-        <DesignPad  id = "1" toggle = {this.props.toggle}/>
-        </div>
-        <div className='align-pad 2'>
-        <DesignPad  id = "2" toggle = {this.props.toggle}/>
-        </div>
-        <div className='align-pad 3'>
-        <DesignPad  id = "3" toggle = {this.props.toggle} />
-        </div>
-        <div className='align-pad 4'>
-        <DesignPad  id = "4" toggle = {this.props.toggle} />
-        </div>
+        
+        <DesignPad   toggle = {this.props.toggle}/>
+        
+        
+        <DesignPad   toggle = {this.props.toggle}/>
+        
+        
+        <DesignPad   toggle = {this.props.toggle} />
+        
+        
+        <DesignPad  toggle = {this.props.toggle} />
+        
             </div>
     }
     
