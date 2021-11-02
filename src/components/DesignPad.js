@@ -9,7 +9,10 @@ function DesignPad() {
     return (
         <div className='row right-box'>
             <div className='col pad' 
-            style={{backgroundColor: 'lightgrey'}}
+
+            style={{backgroundColor: 'lightgray', backgroundImage:'none'}}
+            
+
             
             >
             <div id='footer'>
@@ -26,8 +29,3 @@ function DesignPad() {
 }
 
 export default DesignPad
-{/* <div className='right-box'>
-            <div className='pad' style={{backgroundColor: colors}}>
-            </div>
-
-        </div> */}
