@@ -125,31 +125,6 @@ top: 30px;
 right: 40px;
 }
 
-.PadInput {
-  border: 5px solid yellow;
-  height: 250px;
-  width: 150px;
-  background-color: black;
-}
-.list button{
-  background-color: black; 
-  border: 1px solid silver; 
-  color: white; 
-  padding: 8px 20px; 
-  cursor: pointer; 
-  float:none; 
-  margin-bottom: 20%;
-  margin-inline: 5px;
-  
-  
-  right: 50px;
- 
-}
-.list li{
-  position:relative;
-  top: 550px;
-  list-style-type:none;
-}
 
 .design-board4 {
   position: relative;
