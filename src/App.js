@@ -9,6 +9,13 @@ import PadInput from './components/PadInput/PadInput'
 function App() {
   const [edit, setEdit]  = useState(false);
 
+  const [colors, setColors] = useState({ 0:'gray', 1:'gray', 2:'gray',3: 'gray',});
+
+  /*const P4dInput = (num, col) => {
+    setColors({...colors.num: col})
+  }*/
+
+
   const setEditMode = () => {
     setEdit(!edit) 
     //  ! means NOT , NOT {edit}
@@ -16,10 +23,10 @@ function App() {
   return (
     <div className="App">
 
-      <DesignBoard />
+      <DesignBoard colors={colors}/>
       <EDIT editting ={setEditMode} edit={edit}  />
       <CHOICE />
-      <PadInput/>
+      <PadInput Padding={edit}/>
         </div>
   );
 }
