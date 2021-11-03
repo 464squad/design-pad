@@ -11,9 +11,10 @@ function App() {
 
   const [colors, setColors] = useState({ 0:'gray', 1:'gray', 2:'gray',3: 'gray',});
 
-  /*const P4dInput = (num, col) => {
-    setColors({...colors.num: col})
-  }*/
+  const P4dInput = (col) => {
+    //setColors({...colors.: col})
+    console.log(col)
+  }
 
 
   const setEditMode = () => {
@@ -26,7 +27,7 @@ function App() {
       <DesignBoard colors={colors}/>
       <EDIT editting ={setEditMode} edit={edit}  />
       <CHOICE />
-      <PadInput Padding={edit}/>
+      <PadInput Padding={edit} Drag={P4dInput}/>
         </div>
   );
 }
