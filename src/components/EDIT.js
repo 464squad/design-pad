@@ -5,16 +5,19 @@ import React from 'react';
 class EDIT extends React.Component 
 {
 
-         constructor()
+         constructor(props)
          {
-             super()
-            this.state ={ EDIT: 'unknown' }
+             super(props)
+            this.state ={ 
+                EDIT: this.props.edit 
+            }
           }
 
 
         ButtonPressed = () => 
         {
-            this.setState({ EDIT: 'editing'})
+            // console.log(this.state.EDIT);
+            this.props.editting();
         }
 
 
@@ -33,7 +36,7 @@ class EDIT extends React.Component
 
         
     render(){
-        console.log(this.state.EDIT)
+        // console.log(this.state.EDIT)
         return(
             <div>
                 <div>
