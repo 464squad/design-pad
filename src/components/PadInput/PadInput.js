@@ -1,9 +1,5 @@
 import React from "react";
 import  './PadInput.css'
-import DesignPad from "../DesignPad/DesignPad";
-
-
-
 
 class PadInput extends React.Component{
     constructor(props){
@@ -17,34 +13,15 @@ class PadInput extends React.Component{
         {ids:'6',color: 'teal'},
         {ids:'7',color: 'olive'},
         {ids:'8',color: 'silver'}]
+        //array of color is created
         
         }
-    }
-
-    allowDrop = (e) =>{
-       e.preventDefault()
-    }
-    
+    }    
     handleDrag = (e) =>{
 
         e.dataTransfer.setData("colors",e.target.id)
         console.log("Dragged!",e.target.id)
-        e.target.style.backgroundColor=e.target.id;
-
     }
-    
-    handleDrop = (e) =>{
-        e.preventDefault()
-        
-        var data = e.dataTransfer.getData("colors")
-        e.target.appendChild(document.getElementById(data))
-        e.target.style.backgroundColor=data;
-        console.log('Dropped!',data)
-    
-    }
-
-
-
 
     render(){
         const editButton=this.props.Padding
@@ -60,18 +37,15 @@ class PadInput extends React.Component{
                 {editButton?
                  <button 
                     id={clors.color} 
-                    draggable = "true" 
-                    onDragStart={(e)=>this.handleDrag(e)} 
-                    onDragOver={(e)=>this.allowDrop(e)} 
-                    onDrop={(e)=>this.handleDrop(e)}>{clors.ids} 
+                    draggable = "false" 
+                    onDragStart={(e)=>this.handleDrag(e)}>{clors.ids} 
                  </button>
 
                  : <button 
                     id={clors.color} 
-                    draggable = "false" 
-                    onDragStart={(e)=>this.handleDrag(e)} 
-                    onDragOver={(e)=>this.allowDrop(e)} 
-                    onDrop={(e)=>this.handleDrop(e)}>{clors.ids} 
+                    draggable = "true" 
+                    style={{backgroundColor: clors.color}}
+                    onDragStart={(e)=>this.handleDrag(e)}>{clors.ids} 
                  </button> }
 
              </div>  ))}
