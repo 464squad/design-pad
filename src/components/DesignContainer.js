@@ -51,7 +51,14 @@ class DesignContainer extends React.Component {
                 </div>
                 <div className="mainContainer">
                     <div className="mainContainer--left"><PadInput edit={edit} handleOnDrag={handleOnDrag} /></div>
-                    <div className="mainContainer--center"><DesignBoard edit={edit} handleAllowDrop={handleAllowDrop} handleOnDrop={handleOnDrop} /></div>
+                    <div className="mainContainer--center">
+                        <DesignBoard 
+                            edit={edit} 
+                            handleOnDrag={handleOnDrag}
+                            handleAllowDrop={handleAllowDrop} 
+                            handleOnDrop={handleOnDrop} 
+                        />
+                    </div>
                     <div className="mainContainer--right"></div>
                 </div>
                 <div className="bottomContainer">

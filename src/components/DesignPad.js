@@ -3,11 +3,12 @@ import "../css/DesignPad.css"
 
 class DesignPad extends React.Component {
     render(){
-        const { handleAllowDrop, handleOnDrop, edit } = this.props;
+        const { handleOnDrag, handleAllowDrop, handleOnDrop, edit } = this.props;
 
         return(
             <div
                 className= "designPad"
+                onDragStart={handleOnDrag}
                 onDragOver={handleAllowDrop}
                 onDrop={handleOnDrop}
                 draggable={edit}
