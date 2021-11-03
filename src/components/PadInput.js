@@ -24,7 +24,7 @@ const PadInput = () => {
            <button onClick={isEdit} style={{width:"400px"}}>Edit Mode</button>
            <div className="PadInput-Container">
              
-            <div className='PadInput' style={{ backgroundColor: 'blue' }}>
+            <div className='PadInput' style={{ backgroundColor: 'blue'}}>
             <h1> Currently in edit mode </h1>
             {/* map over the list of colors and render them */}
             {colors.map((color) => (

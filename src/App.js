@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       
       <h1>Design Pad</h1>
-        <PadInput />
-        <DesignBoard/>
+       <div> <PadInput /></div>
+        <div><DesignBoard/></div>
 
      
       

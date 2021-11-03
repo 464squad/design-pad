@@ -1,5 +1,6 @@
+
 .PadButton {
-    width: 160px;
+    width: 150px;
     height: 50px;
   
     background-color: #ccc;
@@ -12,3 +13,15 @@
   .PadButton-text {
     font-size: 32px;
   }
+  section {
+    float: left;
+    margin: 0 1.5%;
+    width: 63%;
+  }
+  aside {
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+  }
+
+  
