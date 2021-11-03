@@ -17,6 +17,20 @@ class EDIT extends React.Component
             this.setState({ EDIT: 'editing'})
         }
 
+
+
+
+
+   /* If (EDIT = 'editing')
+    {
+        allowDrop = true;
+    }
+    else if 
+    {
+        allowDrop = false;
+
+    }*/ 
+
         
     render(){
         console.log(this.state.EDIT)

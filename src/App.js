@@ -11,6 +11,7 @@ function App() {
   
   return (
     <div className="App">
+
       <DesignBoard />
       <EDIT />
       <CHOICE />

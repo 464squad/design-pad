@@ -2,6 +2,9 @@ import React from "react";
 import  './PadInput.css'
 import DesignPad from "../DesignPad/DesignPad";
 
+
+
+
 class PadInput extends React.Component{
     constructor(){
         super()
@@ -38,7 +41,9 @@ class PadInput extends React.Component{
         console.log('Dropped!',data)
     
     }
-   
+
+
+
 
     render(){
         return(
