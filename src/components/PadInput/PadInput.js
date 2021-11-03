@@ -6,8 +6,8 @@ import DesignPad from "../DesignPad/DesignPad";
 
 
 class PadInput extends React.Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state={colors:[
         {ids:'1',color: 'Khaki'},
         {ids:'2',color: 'coral'},
@@ -40,9 +40,6 @@ class PadInput extends React.Component{
         e.target.appendChild(document.getElementById(data))
         e.target.style.backgroundColor=data;
         console.log('Dropped!',data)
-
-        //calls the callback function from APP and sends data from state
-        this.props.Drag( e.target.style.backgroundColor=data)
     
     }
 
@@ -62,19 +59,21 @@ class PadInput extends React.Component{
             
                 {editButton?
                  <button 
-                 id={clors.color} 
-                 draggable = "true" 
-                 onDragStart={(e)=>this.handleDrag(e)} 
-                 onDragOver={(e)=>this.allowDrop(e)} 
-                 onDrop={(e)=>this.handleDrop(e)}>{clors.ids} 
+                    id={clors.color} 
+                    draggable = "true" 
+                    onDragStart={(e)=>this.handleDrag(e)} 
+                    onDragOver={(e)=>this.allowDrop(e)} 
+                    onDrop={(e)=>this.handleDrop(e)}>{clors.ids} 
                  </button>
+
                  : <button 
-                 id={clors.color} 
-                 draggable = "false" 
-                 onDragStart={(e)=>this.handleDrag(e)} 
-                 onDragOver={(e)=>this.allowDrop(e)} 
-                 onDrop={(e)=>this.handleDrop(e)}>{clors.ids} 
+                    id={clors.color} 
+                    draggable = "false" 
+                    onDragStart={(e)=>this.handleDrag(e)} 
+                    onDragOver={(e)=>this.allowDrop(e)} 
+                    onDrop={(e)=>this.handleDrop(e)}>{clors.ids} 
                  </button> }
+
              </div>  ))}
 
               
