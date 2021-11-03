@@ -1,19 +1,18 @@
 .PadInput, 
-.PadButton{
+.PadButton {
     border: 1px #339FB7 solid;
     display: flex;
-   
     align-items: center;
     justify-content: center;
-
     margin: 10px 20px;
-    
 }
-.PadInput{
+
+.PadInput {
     flex-direction: column;
     padding: 10px;
     border-radius: 5px;
 }
+
 .PadButton {
     flex-direction: row;
     border-radius: 5px;
