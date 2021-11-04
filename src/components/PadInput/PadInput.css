@@ -7,11 +7,15 @@
     font-size: 20px;   
     margin-top: 6px;
     display: inline-block;
-    position:relative;
+    /* position:relative; */
     bottom: 860px;
     left: 140px;
     border-radius: 4px;
    
+  }
+
+  .buttonList {
+    /* margin: 0em; */
   }
 
   

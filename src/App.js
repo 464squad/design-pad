@@ -15,12 +15,16 @@ function App() {
 
   return (
     <div className="App">
-
+      <h1>DESIGN PAD</h1>
       <DesignBoard />
       <EDIT editting ={setEditMode} edit={edit}  />
-      <CHOICE />
-      <PadInput Padding={edit} />
-        </div>
+      
+      <div className ="options">
+        <CHOICE >
+          <PadInput Padding={edit} />
+        </CHOICE>
+      </div>
+    </div>
   );
 }
 

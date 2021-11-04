@@ -4,13 +4,19 @@ import React from 'react';
 
 class CHOICE extends React.Component 
 {
+    constructor(props) {
+        super(props)
+    }
 
     render()
     {
         return(
             <div>
-                <div>
-                    <h3 className="choices">options</h3>  
+                <div className="choices">
+                    <h3 >options</h3>
+                    <div>
+                        {this.props.children}                    
+                    </div>  
                 </div>
             </div>
         )
