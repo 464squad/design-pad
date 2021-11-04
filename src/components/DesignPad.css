@@ -1,0 +1,23 @@
+
+.pad {
+  border-radius: 15px;
+  height: 280px;
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  display:inline; 
+}
+#footer {
+  padding-bottom: 600px;
+}
+
+/*.right-box {
+   background-color: cyan;
+  height: 300px;
+  width: 500px;
+
+  margin-left: 700px;
+  margin-top: 20px; 
+} 
+*/

@@ -1,0 +1,28 @@
+.left-box {
+  background-color: blue;
+  border: 5px solid black;
+  height: 500px;
+  width: 300px;
+  margin: 50px;
+  float:left;
+  
+}
+.left-box:hover {
+  background-color: pink;
+  border: 5px solid red;
+}
+button {
+  height: 100px;
+  width: 125px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+button:hover {
+  background-color: lightgrey;
+}
+.inner-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 38px;
+}
