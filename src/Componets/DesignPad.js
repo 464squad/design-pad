@@ -41,8 +41,12 @@ export class DesignPad extends Component {
             onDragEnter={this.onDragEnter}
             onDragLeave={this.onDragLeave}
             className="p-3 border"  
-            style={{ height: '200px', width: '200px',
-            margin: '10px',
+            style={{ height: '250px', width: '260px',
+            margin: 'auto',
+            // marginLeft: '10px',
+            // marginRight: '20px',
+            // marginTop: '10px',
+            // marginBottom: '10px',
             borderRadius: "25px",
             backgroundColor:this.state.color}}> 
                 
