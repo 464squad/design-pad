@@ -1,0 +1,19 @@
+.PadInput-Container {
+    display: flex;
+  }
+  
+  .PadInput {
+    padding: 1rem;
+    width: 400px;
+    height: 520px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: flex-start;
+  }
+  
+  .PadButton {
+    margin: 1.2rem;
+  }

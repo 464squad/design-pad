@@ -1,0 +1,22 @@
+.pad-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex;
+    background-color: transparent;
+    width: 750px;
+    margin-left: 550px;
+    margin-top: -560px;
+    
+  }
+  
+  .pad {
+    display: flex;
+    width: 300px;
+    height: 275px;
+    border-radius: 20px;
+    border: thin solid black;
+    align-items: right;
+    justify-content: right;
+    
+  }
+  
