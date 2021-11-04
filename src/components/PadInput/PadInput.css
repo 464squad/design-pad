@@ -1,0 +1,21 @@
+  .buttonList button {
+    background-color: black; 
+    border: 3px solid black; 
+    color: white; 
+    padding: 1px 20px; 
+    cursor: pointer; 
+    font-size: 20px;   
+    margin-top: 6px;
+    display: inline-block;
+    /* position:relative; */
+    bottom: 860px;
+    left: 140px;
+    border-radius: 4px;
+   
+  }
+
+  .buttonList {
+    /* margin: 0em; */
+  }
+
+  
