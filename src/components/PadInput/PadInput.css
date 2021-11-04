@@ -1,6 +1,6 @@
   .buttonList button {
     background-color: black; 
-    border: 1px solid silver; 
+    border: 3px solid black; 
     color: white; 
     padding: 1px 20px; 
     cursor: pointer; 
@@ -8,9 +8,9 @@
     margin-top: 6px;
     display: inline-block;
     position:relative;
-    bottom: 820px;
+    bottom: 860px;
     left: 140px;
-
+    border-radius: 4px;
    
   }
 

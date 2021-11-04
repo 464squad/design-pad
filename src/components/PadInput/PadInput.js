@@ -18,7 +18,6 @@ class PadInput extends React.Component{
         }
     }    
     handleDrag = (e) =>{
-
         e.dataTransfer.setData("colors",e.target.id)
         console.log("Dragged!",e.target.id)
     }
@@ -28,7 +27,6 @@ class PadInput extends React.Component{
         return(
             <div className ='buttonList'>
 
-          
                 {this.state.colors.map((clors,index)=>(
              <div key={clors.color}>
 
@@ -49,8 +47,7 @@ class PadInput extends React.Component{
                  </button> }
 
              </div>  ))}
-
-              
+             
             </div>
         )
     }
