@@ -6,7 +6,7 @@ import "./DesignBoard.css";
 function DesignBoard() {
   return (
     <div>
-      <div  id="flex">
+      <div  className='flex'>
         <DesignPad/>
         <DesignPad/>
         <DesignPad/>

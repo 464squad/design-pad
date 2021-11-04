@@ -1,5 +1,5 @@
 .flex{
-    grid-column: auto;
-    justify-content: start;
-
-}
+    display: grid;
+    grid-template-columns: repeat(2 ,0fr);
+    gap: 0px;
+  }
