@@ -24,15 +24,103 @@ export class PadInput extends Component {
 
     render() {
         return (
-            <div className="col-12" style={{backgroundColor:'blueviolet'}}>
-               <Button onDragStart={this.onDragStarted} color="red" onDragEnd={this.handleDrag} draggable='true'> 1 </Button>
-               <Button onDragStart={this.onDragStarted} color="blue" onDragEnd={this.handleDrag} draggable='true'> 2 </Button>
-               <Button onDragStart={this.onDragStarted} color="green" onDragEnd={this.handleDrag} draggable='true'> 3 </Button>
-               <Button onDragStart={this.onDragStarted} color="yellow" onDragEnd={this.handleDrag} draggable='true'> 4 </Button>
-               <Button onDragStart={this.onDragStarted} color="indigo" onDragEnd={this.handleDrag} draggable='true'> 5 </Button>
-               <Button onDragStart={this.onDragStarted} color="purple" onDragEnd={this.handleDrag} draggable='true'> 6 </Button>
-               <Button onDragStart={this.onDragStarted} color="orange" onDragEnd={this.handleDrag} draggable='true'> 7 </Button>
-               <Button onDragStart={this.onDragStarted} color="black" onDragEnd={this.handleDrag} draggable='true'> 8 </Button>
+            <div className="col-1" style={{backgroundColor:'blueviolet',
+                    width:'370px',
+                    height: '635px',
+                    borderRadius:'15px',
+                    position: 'absolute',
+                    padding: '15px',
+                    margin: 'auto'
+            }}>
+               <Button onDragStart={this.onDragStarted} color="red" onDragEnd={this.handleDrag} draggable='true'  style={{
+                   width:'100px',
+                   borderRadius:'15px',
+                   padding: '15px',
+                   backgroundColor:'lightgrey',
+                   float:  'none',
+                   marginTop: '20px',
+                   marginBottom: '50px',
+                   marginLeft: '20px',
+                   marginRight: '20px'
+                   
+               }}> 1 </Button>
+               <Button onDragStart={this.onDragStarted} color="blue" onDragEnd={this.handleDrag} draggable='true' style={{
+                   width:'100px',
+                   borderRadius:'15px',
+                   padding: '15px',
+                   backgroundColor:'lightgrey',
+                   float:  'none',
+                   marginTop: '20px',
+                   marginBottom: '50px',
+                   marginLeft: '20px',
+                   marginRight: '20px'
+               }}> 2 </Button>
+               <Button onDragStart={this.onDragStarted} color="green" onDragEnd={this.handleDrag} draggable='true' style={{
+                   width:'100px',
+                   borderRadius:'15px',
+                   padding: '15px',
+                   backgroundColor:'lightgrey',
+                   float:  'none',
+                   marginTop: '20px',
+                   marginBottom: '50px',
+                   marginLeft: '20px',
+                   marginRight: '20px'
+               }}> 3 </Button>
+               <Button onDragStart={this.onDragStarted} color="yellow" onDragEnd={this.handleDrag} draggable='true' style={{
+                   width:'100px',
+                   borderRadius:'15px',
+                   padding: '15px',
+                   backgroundColor:'lightgrey',
+                   float:  'none',
+                   marginTop: '20px',
+                   marginBottom: '50px',
+                   marginLeft: '20px',
+                   marginRight: '20px'
+               }}> 4 </Button>
+               <Button onDragStart={this.onDragStarted} color="indigo" onDragEnd={this.handleDrag} draggable='true' style={{
+                   width:'100px',
+                   borderRadius:'15px',
+                   padding: '15px',
+                   backgroundColor:'lightgrey',
+                   float:  'none',
+                   marginTop: '20px',
+                   marginBottom: '50px',
+                   marginLeft: '20px',
+                   marginRight: '20px'
+               }}> 5 </Button>
+               <Button onDragStart={this.onDragStarted} color="purple" onDragEnd={this.handleDrag} draggable='true' style={{
+                   width:'100px',
+                   borderRadius:'15px',
+                   padding: '15px',
+                   backgroundColor:'lightgrey',
+                   float:  'none',
+                   marginTop: '20px',
+                   marginBottom: '50px',
+                   marginLeft: '20px',
+                   marginRight: '20px'
+               }}> 6 </Button>
+               <Button onDragStart={this.onDragStarted} color="orange" onDragEnd={this.handleDrag} draggable='true' style={{
+                   width:'100px',
+                   borderRadius:'15px',
+                   padding: '15px',
+                   backgroundColor:'lightgrey',
+                   float:  'none',
+                   marginTop: '20px',
+                   marginBottom: '50px',
+                   marginLeft: '20px',
+                   marginRight: '20px'
+               }}> 7 </Button>
+               <Button onDragStart={this.onDragStarted} color="black" onDragEnd={this.handleDrag} draggable='true' style={{
+                   width:'100px',
+                   borderRadius:'15px',
+                   padding: '15px',
+                   backgroundColor:'lightgrey',
+                   float:  'none',
+                   marginTop: '20px',
+                   marginBottom: '50px',
+                   marginLeft: '20px',
+                   marginRight: '20px'
+               }}> 8 </Button>
             </div>
         )
     }
