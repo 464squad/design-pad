@@ -27,7 +27,7 @@ const[color, setColor] = useState("lightblue");
     return (
      
           <div class="flex-container2">
-            {/* THE FOUR PADS ARE BELOW */}
+            {/* THE FOUR PADS ARE BELOW-STILL NEEDS TO BE WORKED ON */}
                 <div onDrop={handleDrop} onDragOver={handleDragOver} style={{backgroundColor: color}}>1 {color}</div>
                 <div onDrop={handleDrop} onDragOver={handleDragOver} style={{backgroundColor: color}}>2</div>
                 <div onDrop={handleDrop} onDragOver={handleDragOver} style={{backgroundColor: color}}>3</div>  

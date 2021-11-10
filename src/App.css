@@ -16,6 +16,7 @@
   color: black;
 }
 
+/* THIS IS WHERE ALL OF MY CSS EDITS START- G */
 body{
   height: 100vh;
   background: 
@@ -79,13 +80,6 @@ h1{
   justify-content: space-between;
   padding: 0 700px;
 }
-
-/* .DesignBoardContainer{
-  
-  border: 15px solid black;
-  
-} */
-
 
 .flex-container {
   display: flex;

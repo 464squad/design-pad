@@ -7,6 +7,7 @@ function DesignContainer(){
   //BELOW LET'S YOU KNOW THE EDIT BUTTON WORKS
   function myFunction() {
     alert("You clicked the edit button!");
+    // THIS SHOULD ALSO HAVE A STATE WHERE IT TURNS IT ON OR OFF WHEN YOU CAN EDIT
   }
   
     return (
