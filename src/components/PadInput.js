@@ -24,7 +24,8 @@ import React, {useState} from 'react';
             <div className="grey" ondragstart={drag} draggable="true">grey</div>  
             <div className="orange" ondragstart={drag} draggable="true">orange</div>
             <div className="white" ondragstart={drag} draggable="true">white</div>
-          <p>{color}</p>
+          
+          
           </div>  
     );
   }
