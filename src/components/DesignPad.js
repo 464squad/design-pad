@@ -2,7 +2,9 @@ import { render } from '@testing-library/react';
 import React, {useState} from 'react';
 
 function DesignPad() {
+  // SETTING STATE TO SOMETHING RANDOM FOR RIGHT NOW
 const[color, setColor] = useState("lightblue");
+
 // LETS YOU KNOW WHAT HAPPENS WHEN YOU DROP A COLOR ON TOP OF A PAD
     let handleDrop = e => {
       e.preventDefault();
@@ -12,10 +14,11 @@ const[color, setColor] = useState("lightblue");
     // alert("dropped"); this was used to let my know this works
   }
 
-  // RESETS THE FOUR PADS
+  // RESETS THE FOUR PADS TO WHITE
  let reset =(e) => {
   setColor("white");
  }
+
 // ALLOWS YOU TO DRAG WITHOUT AN ISSUE
   let handleDragOver = e => {
     e.preventDefault(); 
