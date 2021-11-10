@@ -7,32 +7,171 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: #e6e0b0;
+  border-radius: 20px;
+ width: 200px;
+ text-align: center;
   font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+body{
+  height: 100vh;
+  background: 
+    linear-gradient(45deg, gray, transparent),
+    repeating-linear-gradient(45deg, rgb(73, 34, 180) 0%,rgb(194, 240, 205) 5%, transparent 5%, transparent 10%,rgb(73, 34, 180) 0%, rgb(56, 35, 56) 11%, transparent 11%,transparent 13%),
+    white repeating-linear-gradient(-45deg, rgb(73, 34, 180) 0%,rgb(194, 240, 205), transparent 5%, transparent 10%);
+}
+
+.PadInput{
+  background-color: black;
+}
+
+.container{
+  border-radius: 20px;
+  width: 200px;
+  height: 20px;
+
+}
+
+
+h1{
+  background-color: white;
+  border: 3px solid blue;
+  border-radius: 200px;
+  text-align: center;
+  width:500px;
+}
+
+.EditButton{
+  background-color: blue;
   color: white;
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  margin-left: 50px;
+
 }
 
-.App-link {
-  color: #61dafb;
+/* BELOW CONTROLS WHAT HAPPENS WHEN YOU PUT YOUR CURSOR OVER THE EDIT BUTTON; IT'S JUST AN ANIMATION SHIFTING COLORS */
+.EditButton:hover{
+ 
+    animation-name: rainbow;
+    animation: rainbow 2s infinite;
+}
+  @keyframes rainbow{
+    0% {
+    background-color: rgb(100, 100, 104);
+    }
+    50% {
+      background-color: lightblue;
+    }
+    100% {
+      background-color: rgb(214, 163, 214);
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 700px;
+}
+
+/* .DesignBoardContainer{
+  
+  border: 15px solid black;
+  
+} */
+
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  border: 5px solid black;
+  /* background-color: DodgerBlue; */
+  width: 170px;
+  margin: 20px;
+}
+
+.flex-container > div {
+  /* background-color: white; */
+  margin: 5px;
+  width: 45px;
+  border-radius:120px;
+  text-align: center;
+  line-height: 75px;
+  padding: 2px 15px 5px;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid black;
+  background-color: DodgerBlue;
+  width: 580px;
+  justify-content: center;
+  height: 390px;
+}
+
+.flex-container2 > div {
+  background-color: #f1f1f1;
+  margin: 5px;
+  width: 260px;
+  height: 180px;
+  border-radius:20px;
+  text-align: center;
+  
+}
+
+.DesignBoard{
+  /* float: left; */
+  display: flex;
+justify-content: center;
+width: 1580px;
+}
+
+
+/* BELOW CONTROLS THE INDIVIDUAL PAD INPUTS */
+.red{
+color: red;
+background-color: red;
+}
+
+.blue{
+  color: blue;
+  background-color: blue;
+}
+
+.green{
+  color: green;
+  background-color: green;
+}
+
+.yellow{
+  color: rgb(128, 128, 10);
+  background-color: rgb(128, 128, 10);
+}
+
+.purple{
+  color: purple;
+  background-color: purple;
+}
+.grey{
+  color: grey;
+  background-color: grey;
+}
+.orange{
+  color: orange;
+  background-color: orange;
+}
+.white{
+  color: white;
+  background-color: white;
+}
+
+#div1,#div2{
+  border: 5px dotted black;
 }
