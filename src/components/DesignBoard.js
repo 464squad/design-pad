@@ -5,7 +5,6 @@ import DesignPad from './DesignPad';
 function DesignBoard() {
   
   
-
     return (
       <div className="DesignBoard">
 
