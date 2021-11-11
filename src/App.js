@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import DesignContainer from "./components/DesignContainer";
+import './index.css';
 
 function App() {
+  // keep track of the dragged element
+  const [currentDragged, setCurrentDragged] = useState(null);
+
+  //state of button when clicked 
+  const [editMode, setEditMode] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DesignContainer
+        setEditMode={setEditMode}
+        editMode={editMode}
+        currentDragged={currentDragged}
+        setCurrentDragged={setCurrentDragged}
+      />
     </div>
   );
 }
