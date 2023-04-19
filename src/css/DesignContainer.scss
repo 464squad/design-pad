@@ -1,6 +1,6 @@
 .DesignContainer {
     min-height: 100vh;
-    width: auto;
+    width: 80%;
     justify-content: center;
     background: white;
     border-left: #C6EFF9 1px solid;
@@ -47,7 +47,6 @@
 .topContainer--header {
     flex: 1 0 60%;
     font-size: 50px;
-    width: 50vw;
     color: #87D1E1;
 }
 
@@ -79,11 +78,6 @@
     color: #E74C3C;
 }
 
-.mainContainer,
-.bottomContainer {
-    width: calc(50vw + 100px);
-}
-
 .mainContainer {
     flex-direction: row;
     margin: 0 auto;
@@ -92,6 +86,7 @@
 
 .bottomContainer {
     flex-direction: column;
+    width: 80%;
     min-height: 10vh;
     position: absolute;
     bottom: 0;
@@ -100,8 +95,8 @@
     color: #6ab3c4;
     background: #C6EFF9;
     border-bottom: #6ab3c4 10px solid;
-}
 
-.bottomContainer--cred {
-    color: #4798aa;
+    &:--cred {
+        color: #4798aa;
+    }
 }

@@ -1,32 +1,25 @@
-import React from 'react'
+import React from 'react';
 import DesignPad from './DesignPad';
-import "../css/DesignBoard.css"
+import '../css/DesignBoard.scss';
 
-class DesignBoard extends React.Component {
-    board = ["1", "2", "3", "4"];
+const DesignBoard = ({ handleOnDrag, handleAllowDrop, handleOnDrop, edit }) => {
+  const board = Array.from({ length: 6 }, (_, i) => i + 1);
 
-    render(){
-        const { handleOnDrag, handleAllowDrop, handleOnDrop, edit } = this.props;
-        const { board } = this;
-
-        return(
-            <div className="flex-container flex-column">
-                <div className="flex-container flex-wrap" id="board">
-                    {board.map(function(board, i){
-                        return(
-                            <DesignPad 
-                                edit={edit} 
-                                key={i} 
-                                handleOnDrag={handleOnDrag} 
-                                handleAllowDrop={handleAllowDrop} 
-                                handleOnDrop={handleOnDrop}
-                            />
-                        )
-                    })}
-                </div>
-            </div>
-        )
-    }
-}
+  return (
+    <div className="DesignBoard">
+      <div className="DesignBoard__grid flex-container flex-wrap">
+        {board.map((boardNum) => (
+          <DesignPad
+            edit={edit}
+            key={boardNum}
+            handleOnDrag={handleOnDrag}
+            handleAllowDrop={handleAllowDrop}
+            handleOnDrop={handleOnDrop}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default DesignBoard;

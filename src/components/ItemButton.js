@@ -1,15 +1,12 @@
 import React from 'react';
-import "../css/PadInput.css"
+import "../css/PadInput.scss";
 
-class ItemButton extends React.Component {
-    render(){
-        const { edit, color, handleOnDrag } = this.props;
-        const stylier = {backgroundColor: edit ? "#E74C3C" : "#f6f6f6"}
+const ItemButton = ({ edit, color, handleOnDrag }) => {
+    const stylier = { backgroundColor: edit ? "#E74C3C" : "#f6f6f6" }
 
-        return(
-            <input className="PadButton" type="color" defaultValue={color} placeholder={color} draggable={edit} onDragStart={handleOnDrag} style={stylier} disabled />
-        );
-    }
+    return (
+        <input className="PadButton" type="color" defaultValue={color} placeholder={color} draggable={edit} onDragStart={handleOnDrag} style={stylier} disabled />
+    );
 }
 
 export default ItemButton;
